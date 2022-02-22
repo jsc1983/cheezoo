@@ -21,7 +21,7 @@
 
 <body>
 
-  <!-- Modal -->
+  <!-- invite Modal -->
   <div class="modal fade invte_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -45,7 +45,52 @@
       </div>
     </div>
   </div>
-    <!-- Modal -->
+    <!-- invite Modal -->
+
+      <!-- add shot Modal -->
+  <div class="modal fade invte_modal add_shot_modal" id="exampleModal_addshot" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="md_title">Add Shot</span>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form class="row g-3">
+          <div class="col-12 mb-4">
+            <input type="text" class="form-control" id="" placeholder="Opening Ceremony">
+          </div>
+          <div class="col-6 mb-4">
+            <input type="text" class="form-control" id="" placeholder="02-20-2022">
+          </div>
+          <div class="col-6 mb-4">
+            <input type="text" class="form-control" id="" placeholder="02-23-2022">
+          </div>
+          <div class="col-6 mb-4">
+            <input type="text" class="form-control" id="" placeholder="10:00 AM">
+          </div>
+          <div class="col-6 mb-4">
+            <input type="text" class="form-control" id="" placeholder="11:00 AM">
+          </div>
+          <div class="col-6 mb-4">
+            <select id="" class="form-select">
+              <option>Select Duration</option>
+           </select>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              I agree to the Terms of Service and Privacy Policy                
+            </label>
+          </div>
+         
+          <div class="col-12">
+            <button type="button" class="form-control btn btn-save">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+    <!-- add shot Modal -->
 
 
 <div class="main_wrapper">
@@ -233,8 +278,9 @@
                 <li class="d-flex align-items-center justify-content-between">
                   <span class="d-flex flex-column event_info_title">Event Schedule</span>
                   <span class="d-flex flex-row-reverse connect-btn">
-                    <button type="button" class="form-control btn shot_button">
+                    <button type="button" class="form-control btn shot_button" data-bs-toggle="modal" data-bs-target="#exampleModal_addshot">
                       <span class="add_icon"><i class="fas fa-plus fa-fw"></i></span>Add Shot</button></span>
+                      <!-- <button type="button" class="form-control btn shot_button" data-bs-toggle="modal" data-bs-target="#exampleModal">Invite</button></span> -->
                  </li>
                  <!-- li -->
                 </ul>
@@ -316,7 +362,68 @@
              <!-- row colab_row -->
 
             </div>  <!-- tab-pane fade -->
-            <div class="tab-pane fade" id="Gallery" role="tabpanel" aria-labelledby="Gallery-tab">Gallery</div>  <!-- tab-pane fade -->
+            <div class="tab-pane fade" id="Gallery" role="tabpanel" aria-labelledby="Gallery-tab">
+              <div class="gallery_showcase_section">
+               <div class="gallery_showcase_icon">
+                <i class="far fa-user-plus fa-fw"></i>
+                <i class="far fa-shopping-cart fa-fw"></i>
+               </div>
+               <!-- gallery_showcase_icon -->
+
+               <div class="row image_gallery_row">
+                 <div class="col">
+                   <div class="gallery_col">
+                   <div class="gallery_img_block">
+                     <div class="gallery_img_count">8</div>
+                    <img src="https://as1.ftcdn.net/v2/jpg/03/05/62/88/1000_F_305628877_FBgLZGK6Y94xPaED6rZbA9mKCxUHbNBg.jpg">
+                   </div>
+                   <!-- gallery_img_block -->
+                   <div class="gallery_caption_info">
+                    Wedding Show <span class="caption_right_icon"><i class="fas fa-share fa-fw"></i></span>
+                   </div>
+                   <!-- gallery_caption_info -->
+                  </div>
+                  <!-- gallery_col -->
+                 </div>
+                 <!-- col-md-4  -->
+
+                 <div class="col">
+                  <div class="gallery_col">
+                  <div class="gallery_img_block">
+                    <div class="gallery_img_count">8</div>
+                   <img src="https://as1.ftcdn.net/v2/jpg/03/05/62/88/1000_F_305628877_FBgLZGK6Y94xPaED6rZbA9mKCxUHbNBg.jpg">
+                  </div>
+                  <!-- gallery_img_block -->
+                  <div class="gallery_caption_info">
+                   Wedding Show <span class="caption_right_icon"><i class="fas fa-share fa-fw"></i></span>
+                  </div>
+                  <!-- gallery_caption_info -->
+                 </div>
+                 <!-- gallery_col -->
+                </div>
+                <!-- col-md-4  -->
+
+                <div class="col">
+                  <div class="gallery_col">
+                  <div class="gallery_img_block">
+                    <div class="gallery_img_count">8</div>
+                   <img src="https://as1.ftcdn.net/v2/jpg/03/05/62/88/1000_F_305628877_FBgLZGK6Y94xPaED6rZbA9mKCxUHbNBg.jpg">
+                  </div>
+                  <!-- gallery_img_block -->
+                  <div class="gallery_caption_info">
+                   Wedding Show <span class="caption_right_icon"><i class="fas fa-share fa-fw"></i></span>
+                  </div>
+                  <!-- gallery_caption_info -->
+                 </div>
+                 <!-- gallery_col -->
+                </div>
+                <!-- col-md-4  -->
+               </div>
+               <!-- row image_gallery_row -->
+
+              </div>
+              <!-- gallery_showcase -->
+            </div>  <!-- tab-pane fade -->
             <div class="tab-pane fade" id="Chat" role="tabpanel" aria-labelledby="Chat-tab">Chat</div>  <!-- tab-pane fade -->
           </div>
         </div>

@@ -436,7 +436,22 @@ text-align: center; line-height: 35px;}
 .invte_modal .modal-header .md_title {font-size: 38px;font-weight: 600;color: #e1a103;display: block;text-align: center;width: 100%;padding-bottom: 30px;}
 .invte_modal .modal-header .btn-close {position: absolute;right: 13px;z-index: 999;top: 13px;}  
 .invte_modal input {border: 1px solid #dadada;padding: 18px 10px;font-size: 26px;font-weight: 600;}
+.invte_modal select {border: 1px solid #dadada;padding: 18px 10px;font-size: 26px;font-weight: 600;}
+.invte_modal input[type=checkbox] { width: 20px;  height: 20px; border-radius: 0px; font-size: inherit; padding: 0;    margin-left: -16px;
+    margin-right: 10px;}
+.invte_modal .form-check-label { font-size: 21px; padding-left: 10px; display: flex;}
 
+
+.gallery_showcase_section {}
+.gallery_showcase_icon{ text-align: right;    text-align: right;padding-bottom: 20px;}
+.gallery_showcase_icon i {font-size: 22px;display: inline-block;padding: 0 20px;}
+.gallery_col {background-color: #f5f5f5;}
+.gallery_img_block { height: 204px; position: relative;}
+.gallery_img_block img {max-width: 100%; object-fit: cover;     height: 100%;}
+.gallery_caption_info {font-size: 18px; font-weight: 600;    padding: 12px 10px;}
+.caption_right_icon {float: right;}
+.gallery_img_count { position: absolute; right: 10px; top: 10px; width: 28px; height: 29px; background-color: #fff; border-radius: 100%; font-size: 18px; color: #333233;     text-align: center;
+    line-height: 28px;}
 /* event info  css */    
 
 
@@ -640,6 +655,9 @@ ul.find_photographer li span {width: 100%; display:block !important;}
 .add_icon_plus { right: 0; top: 53px;}
 ul.user_profile_gender li { display: block;}
 ul.work_profile_listing li {display: block;}
+.image_gallery_row .col {flex: inherit;    margin-bottom: 15px;}
+.gallery_img_block img {width: 100%;}
+.add_shot_modal .col-6 { flex: inherit;  width: 100%;}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 719px) {
