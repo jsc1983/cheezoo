@@ -429,37 +429,106 @@ ul.event_photographerinfo_col li span.event_info_title {font-size: 25px; font-we
 .edit_icon_inf0{  position: absolute;    background: #333333;top: 20px; cursor: pointer; right: 25px; border: 1px solid #dadada; color: #fff;  width: 35px;  height: 35px; border-radius: 50%;
 text-align: center; line-height: 35px;}  
 
-.invte_modal .modal-dialog {
-max-width: 893px;
-}
+.invte_modal .modal-dialog {max-width: 893px;}
 
-.invte_modal .modal-content {
-padding: 40px;}
-.invte_modal .modal-header {
-border-bottom: none;
-padding: 0;
-}
-.invte_modal .modal-header .md_title {font-size: 38px;
-font-weight: 600;
-color: #e1a103;
-display: block;
-text-align: center;
-width: 100%;
-padding-bottom: 30px;}
-.invte_modal .modal-header .btn-close {
-position: absolute;
-right: 13px;
-z-index: 999;
-top: 13px;
-}  
-.invte_modal input {
-border: 1px solid #dadada;
-padding: 18px 10px;
-font-size: 26px;
-font-weight: 600;
-}
+.invte_modal .modal-content {padding: 40px;}
+.invte_modal .modal-header {border-bottom: none;padding: 0;}
+.invte_modal .modal-header .md_title {font-size: 38px;font-weight: 600;color: #e1a103;display: block;text-align: center;width: 100%;padding-bottom: 30px;}
+.invte_modal .modal-header .btn-close {position: absolute;right: 13px;z-index: 999;top: 13px;}  
+.invte_modal input {border: 1px solid #dadada;padding: 18px 10px;font-size: 26px;font-weight: 600;}
 
 /* event info  css */    
+
+
+/* manage_profile css */
+.mp_heading { font-size: 45px;color: #333233;font-weight: 700; padding-bottom: 40px; text-align: center;}
+.manage_profile {    padding: 160px 0px 80px;}
+.up_tabs_col {    max-width: 454px}
+.up_tabs_section {background-color: #fff;    min-height: 100vh;}
+.up_tabs_section i{padding-right: 10px;}
+.manage_profile .nav-pills .nav-link { text-align: left; font-size: 24px;padding: 29px 25px;     border-radius: 0; border-bottom: 1px solid #dadada;}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {color: #000; background-color: #e1a103;}
+
+.user_profile_form {background-color: #fff;    padding: 30px;}
+.user_profile_avatar_section { position: relative;    margin-bottom: 50px;}
+.user_profile_avatar {width: 233px; height: 233px; border-radius: 50%;display: block; margin: auto; overflow: hidden; position: relative;}
+.user_profile_avatar img { object-fit: cover;width: 100%; height: 100%;}
+.up_edit_icon {  position: absolute;  background: #333333; top: 0px;cursor: pointer;  border: 1px solid #dadada;color: #fff; width: 35px;  
+height: 35px;  border-radius: 50%; text-align: center; line-height: 35px; left: 110px; right: 0; margin: auto;z-index: 99;}
+.user_profile_form label {font-size: 26px;font-weight: 600;}
+.user_profile_form input {width: 100%;padding: 11px 6px; color: #333;border: 1px solid #ced4da; border-radius: 0; font-size: 24px;}
+.user_profile_form input::placeholder {color: #333; border-radius: 0;}
+
+
+ul.user_profile_gender {margin: 0;padding-left: 17px;padding-right: 17px;}
+ul.user_profile_gender li {font-weight: 600;  margin-bottom: 5px;     display: inline;font-size: 24px;}
+ul.user_profile_gender li input {width: auto;padding: inherit;}
+ul.user_profile_gender li .form-check {display: inline-block; margin-bottom: 0;margin-right: 10px;     margin-left: 10px;}
+ul.user_profile_gender li .form-check-input[type=radio] {margin-top: 0 !important;margin-right: 10px;  width: 21px; height: 21px; padding: 0;position: relative;
+top: 8px;}
+ul.user_profile_gender li .form-check-input[type=checkbox]{    width: 21px; height: 21px; border-radius: 0px;  border-color: #000; }
+ul.user_profile_gender li span{position: relative; top: -4px;}
+ul.user_profile_gender li .form-check-input:checked {background-color: #e1a103; border-color: #e1a103;}
+.btn-up-button { color: #fff;  background-color: #333233; border-color: #333233; font-size: 21px;  padding: 10px; font-weight: 600;  margin: auto; max-width: 300px;  display: block;
+width: 300px; margin-top: 40px;}
+.btn-up-button:hover { color: #fff;}
+
+.user_workprofile_form {background-color: #fff;    padding: 30px;}
+.user_workprofile_form label {font-size: 26px;font-weight: 600;}
+.user_workprofile_form input {width: 100%;padding: 11px 6px; color: #333; font-weight: 600;border: 1px solid #ced4da; border-radius: 0; font-size: 24px;}
+.user_workprofile_form input::placeholder {color: #333; border-radius: 0;font-weight: 600;}
+.user_workprofile_form select {width: 100%;padding: 11px 6px; color: #333; border: 1px solid #ced4da; border-radius: 0;font-size: 24px;}
+.user_workprofile_form select::placeholder {color: #333; border-radius: 0;}
+
+ul.work_profile_listing {margin: 0;padding-left: 11px;padding-right: 17px;}
+ul.work_profile_listing li {font-weight: 600;  margin-bottom: 5px;     display: inline;font-size: 24px;    margin-right: 20px;}
+ul.work_profile_listing li input {width: auto;padding: inherit;}
+ul.work_profile_listing li .form-check {display: inline-block; margin-bottom: 0;margin-right: 10px;     margin-left: 10px;}
+ul.work_profile_listing li .form-check-input[type=radio] {margin-top: 0 !important;margin-right: 10px;  width: 21px; height: 21px; padding: 0;position: relative;
+top: 8px;}
+ul.work_profile_listing li .form-check-input[type=checkbox]{    width: 21px; height: 21px; border-radius: 0px;  border-color: #000; }
+ul.work_profile_listing li span{position: relative; top: -4px;}
+ul.work_profile_listing li .form-check-input:checked {background-color: #e1a103; border-color: #e1a103;}
+
+
+.up_workprofile_form {background-color: #fff;    padding: 30px;}
+.up_workprofile_form label {font-size: 26px;font-weight: 600;}
+.up_workprofile_form input {width: 100%;padding: 11px 6px; color: #333; font-weight: 600;border: 1px solid #ced4da; border-radius: 0; font-size: 24px;}
+.up_workprofile_form input::placeholder {color: #333; border-radius: 0;font-weight: 600;}
+.up_workprofile_form select {width: 100%;padding: 11px 6px; color: #333; border: 1px solid #ced4da; border-radius: 0;font-size: 24px;}
+.up_workprofile_form select::placeholder {color: #333; border-radius: 0;}
+.up_workprofile_form textarea {width: 100%; height: 100px; padding: 11px 6px; color: #333; font-weight: 600;border: 1px solid #ced4da; border-radius: 0;}
+.browse_button {background-color: #d8d8d8;}
+.up_workprofile_form input[type=file] {border: 1px dashed #d8d8d8;}
+.up_workprofile_form input[type=file]:focus { color: #212529;  background-color: #d8d8d8; border-color: #d8d8d8;  outline: 0; box-shadow: none; }
+.up_workprofile_form input[type=file]::file-selector-button {background-color: #d8d8d8; } 
+.up_workprofile_form input[type=file]::file-selector-button:focus { background-color: #d8d8d8; }
+
+
+ul.photo_selection {margin: 0; padding: 0;display: flex;}
+ul.photo_selection li {    margin: 0px 19px 0 0; padding: 0; list-style-type: none;display: inline-block; position: relative;}
+ul.photo_selection li span {max-width: 125px;  height: 106px; display: block;}
+ul.photo_selection li span img {max-width: 100%; object-fit: cover;height: 100%;}
+ul.photo_selection li span.overlay_total {position: absolute; z-index: 9; color: #fff; background-color: rgb(0 0 0 / 0.40); width: 100%; height: 100%; top: 0; bottom: 0; left: 0; right: 0;
+text-align: center;line-height: 106px;}
+
+ul.video_selection {margin: 0; padding: 0;display: flex;}
+ul.video_selection li {    margin: 0px 19px 0 0; padding: 0; list-style-type: none;display: inline-block; position: relative;}
+ul.video_selection li span {max-width: 125px;  height: 106px; display: block;}
+ul.video_selection li span video {max-width: 100%; object-fit: cover;height: 100%;}
+ul.video_selection li span.overlay_total {position: absolute; z-index: 9; color: #fff; background-color: rgb(0 0 0 / 0.40); width: 100%; height: 100%; top: 0; bottom: 0; left: 0; right: 0;
+text-align: center;line-height: 106px;} 
+
+ul.userprofile_star_rating {padding:12px 0 0 0; margin: 0; }
+ul.userprofile_star_rating li {margin: 0; padding: 0;    display: inline-block;}
+ul.userprofile_star_rating li i {color: #fecf0a;font-size: 26px;margin-right: 6px;}
+ul.userprofile_star_rating li i.blackstar{color: #767676;}
+.total_rate_box {background-color: #292b2e;color: #fff;  padding: 3px 6px;  font-size: 12px;  position: relative;  top: -3px;}
+.total_rate_box i {font-size: inherit !important; color: #fff !important; margin-right: 0 !important; }
+.add_icon_plus {background-color: #292b2e; color: #fff;  position: absolute; right: -80px; padding: 10px;  height: 48px; line-height: 31px;  top: 52px; cursor: pointer;}
+
+
+/* manage_profile css */ 
 
 /* footer css */
 .ft-wrapper {background: #333233; padding: 40px 0px; color: #fff;}
@@ -488,6 +557,12 @@ ul.social-media li a i {color: #000;font-size: 18px;}
 ul.photographer_paid li span.paid_text {padding: 4px; margin-left: 0 !important;   }
 ul.find_photographer {padding-top: 0;}
 
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1279px) {
+.up_tabs_section { background-color: #fff;  min-height: inherit; }
+.user_profile_form, .up_workprofile_form, .user_workprofile_form { margin-top: 30px;}
+.up_tabs_col {  max-width: 100%; flex: auto; }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1199px) {
@@ -527,6 +602,7 @@ footer .ft-wrapper .col {flex: inherit; margin-bottom: 20px; text-align: center;
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 .navbar-nav .nav-link {padding-right: 6px !important;padding-left: 6px !important;  font-size: 14px;}
 .navbar .loginphtographer-btn {padding: 11px 10px;font-size: 12px;}
+.add_icon_plus {right: -51px;}
 }
 
 
@@ -561,6 +637,9 @@ ul.photographer_paid li span.paid_text { margin-left: 0; padding: 4px 0px;}
 ul.find_photographer li button.connect-btn {margin-left: 0;    width: 100%;}
 ul.find_photographer li span {width: 100%; display:block !important;}
 .cebtn_button {float: none; width: 100%; margin-left: 0;}
+.add_icon_plus { right: 0; top: 53px;}
+ul.user_profile_gender li { display: block;}
+ul.work_profile_listing li {display: block;}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 719px) {
@@ -570,6 +649,8 @@ ul.find_photographer li span {width: 100%; display:block !important;}
 @media only screen and (min-width: 320px) and (max-width: 575px) {
 .ce-or-section span::before {width: calc(100% - 80%);}
 .ce-or-section span::after {width: calc(100% - 80%);}
+.manage_profile .nav-pills .nav-link { padding: 20px 15px;}
+.browse_button {font-size: 14px !important;}
 }
 
 
