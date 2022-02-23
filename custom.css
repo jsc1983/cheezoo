@@ -440,7 +440,7 @@ text-align: center; line-height: 35px;}
 .invte_modal input[type=checkbox] { width: 20px;  height: 20px; border-radius: 0px; font-size: inherit; padding: 0;    margin-left: -16px;
     margin-right: 10px;}
 .invte_modal .form-check-label { font-size: 21px; padding-left: 10px; display: flex;}
-
+.invte_modal textarea {border: 1px solid #dadada;padding: 18px 10px;font-size: 26px;font-weight: 600;}
 
 .gallery_showcase_section {}
 .gallery_showcase_icon{ text-align: right;    text-align: right;padding-bottom: 20px;}

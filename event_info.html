@@ -92,6 +92,46 @@
   </div>
     <!-- add shot Modal -->
 
+          <!-- edit info Modal -->
+  <div class="modal fade invte_modal add_shot_modal" id="exampleModal_editinfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <span class="md_title">Add Shot</span> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form class="row g-3">
+          <div class="col-12 mb-4">
+            <input type="text" class="form-control" id="" placeholder="Brother Wedding">
+          </div>
+          <div class="col-6 mb-4">
+            <input type="text" class="form-control" id="" placeholder="02-20-2022">
+          </div>
+          <div class="col-6 mb-4">
+            <input type="text" class="form-control" id="" placeholder="02-23-2022">
+          </div>
+          <div class="col-6 mb-4">
+            <input type="text" class="form-control" id="" placeholder="10:00 AM">
+          </div>
+          <div class="col-6 mb-4">
+            <input type="text" class="form-control" id="" placeholder="11:00 AM">
+          </div>
+          <div class="col-12 mb-4">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="2nd Flor, Building no 4A, Apex Athena, Sector 75, Noida, Uttar Pradesh, India"></textarea>
+          </div>       
+          <div class="col-12 mb-4">
+            <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" placeholder="Notes"></textarea>
+          </div>        
+          <div class="col-12">
+            <button type="button" class="form-control btn btn-save">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+    <!-- edit info Modal -->
+
+
 
 <div class="main_wrapper">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-shadow" aria-label="">
@@ -213,7 +253,7 @@
 
      <div class="col-md-8">
        <div class="event_info_section">
-        <span class="edit_icon_inf0"><i class="fas fa-pen fa-fw"></i></span>
+        <span class="edit_icon_inf0" data-bs-toggle="modal" data-bs-target="#exampleModal_editinfo"><i class="fas fa-pen fa-fw"></i></span>
          <div class="event_info_datetime"><span class="event_date_info">17 March 2022</span>   -  <span class="event_time_info">6:30 AM</span></div>
          <div class="event_info_heading">Brother Wedding</div>
          <div class="event_info_address">2nd Flor, Building no 4A, Apex Athena, Sector 75, Noida, Uttar Pradesh, India</div>
