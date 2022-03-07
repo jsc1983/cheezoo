@@ -545,6 +545,37 @@ ul.userprofile_star_rating li i.blackstar{color: #767676;}
 
 /* manage_profile css */ 
 
+/* weather css */
+.weather_output {min-height: 470px; background-color: #333333; padding: 30px;}
+.weather_topinfo { color: #fff;padding-top: 0px;}
+.date_address_col {}
+.update_col {text-align: right;}
+.weather_icon {color: #fff; text-align: center; font-size: 74px; line-height: normal;}
+.weather_temperature {font-size: 50px; color: #fff;text-align: center; line-height: normal; padding-bottom: 20px;}
+.low_high_text {color: #fff; text-align: center; padding-bottom: 30px;}
+.low_info {padding-right: 40px;}
+.high_info {padding-left: 40px;}
+ul.weather_itemlist {margin: 0; padding: 0; display: flex;}
+ul.weather_itemlist li {list-style-type: none; margin: 0; padding: 0 5.6%; display: inline-block; text-align: center;     border-radius: 4px;}
+ul.weather_itemlist li span.weather_iconitem {font-size: 45px; display: block;}
+ul.weather_itemlist li span.weather_heading {font-size: 12px;  display: block;}
+ul.weather_itemlist li span.weather_time { display: block;}
+
+.tw_heading {font-size: 21px;color: #333233;margin: 30px 0px 14px; padding-bottom: 0;  line-height: normal; font-weight: 600;}
+ul.today_weather {margin: 0; padding: 0; display: flex;}
+ul.today_weather li {    list-style-type: none; color: #fff;  background-color: #333233;  text-align: center;  padding: 12px 23px; margin: 0 0.5%;     border-radius: 4px;}
+ul.today_weather li span.tw_time {display: block;}
+ul.today_weather li span.tw_icon {display: block;font-size: 28px;  padding: 10px 0px;}
+ul.today_weather li span.tw_temperature {display: block;}
+
+ul.today_weather_list {margin-bottom:0.5%; padding: 14px 0px; display: flex;background-color: #333233;border-radius: 4px;  }
+ul.today_weather_list li { width: 100%;list-style-type: none; color: #fff; text-align: center;}
+ul.today_weather_list li span.tw_list_heading {display: block;}
+ul.today_weather_list li span.tw_list_subheading {display: block; color: #8e98a1; font-size: 14px;}
+.tw_list_icon {font-size: 28px;}
+/* weather css */
+
+
 /* footer css */
 .ft-wrapper {background: #333233; padding: 40px 0px; color: #fff;}
 .app-icon {padding-bottom: 10px;}
@@ -587,6 +618,7 @@ ul.find_photographer {padding-top: 0;}
 .create_event_info .card {display: inherit;}
 .create_event_info .photographer_imgplaceholder img {width: 100% !important;}
 .create_event_info .photographer_imgplaceholder { position: initial;}
+ul.weather_itemlist { display: block; text-align: center;}
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -658,6 +690,11 @@ ul.work_profile_listing li {display: block;}
 .image_gallery_row .col {flex: inherit;    margin-bottom: 15px;}
 .gallery_img_block img {width: 100%;}
 .add_shot_modal .col-6 { flex: inherit;  width: 100%;}
+ul.today_weather {display: block;}
+ul.today_weather li { margin-bottom: 10px; margin-bottom: 10px;}
+
+ul.today_weather_list { display: block;}
+ul.today_weather_list li {width: 32.333%; display: inline-block; margin-bottom: 20px;}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 719px) {
