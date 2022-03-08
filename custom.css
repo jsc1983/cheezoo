@@ -575,8 +575,10 @@ ul.userprofile_star_rating li i.blackstar{color: #767676;}
 
 /* weather css */
 .weather_button_section { text-align: right;  padding-bottom: 12px;}
-.weather_button_section i {font-size: 24px; cursor: pointer;}
-.weather_output {min-height: 470px; background-color: #333333; padding: 30px;}
+.celsius_btn { background: #333;color: #fff;font-size: 14px; padding: 6px 10px; border-radius: 4px;cursor: pointer; }
+.fahrenheit_btn{background: #333; color: #fff; font-size: 14px;  padding: 6px 10px; border-radius: 4px;cursor: pointer;}
+
+.weather_output {min-height: 470px; background-color: #333333; padding: 30px;border-radius: 4px;}
 .weather_topinfo { color: #fff;padding-top: 0px;}
 .date_address_col {}
 .update_col {text-align: right;}
