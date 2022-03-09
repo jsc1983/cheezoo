@@ -298,8 +298,8 @@ ul.hourly_connect li span .connect-btn{color: #fff;background-color: #333333;bor
 
 .se_row {padding:0px 40px 20px 40px; }
 .event_occasion {border: 1px solid #dee2e6; border-radius: 6px;text-align: center; padding: 10px 0px;}
-.event_occasion:hover {border-color: #e1a103;} 
-.event_occassion_name {font-size: 23px;color: #e1a103;}
+.event_occasion:hover {border-color: #333333;} 
+.event_occassion_name {font-size: 23px;color: #333333;}
 .event_ocassion_location{font-size: 16px;}
 .event_ocassion_location span i {padding-right: 6px;}
 .graphic-pic {padding-bottom: 10px;}
@@ -307,7 +307,7 @@ ul.hourly_connect li span .connect-btn{color: #fff;background-color: #333333;bor
 
 .btn-connect {    color: #fff;background-color: #333333;border-color: #333333;font-size: 24px;border-radius: 6px;display: block;padding: 10px 0px;}
 .btn-connect:hover {color: #fff;}
-.btn-create-event {color: #000;background-color: #e1a103;border-color: #e1a103;font-size: 24px;border-radius: 6px;display: block;padding: 10px 0px;}    
+.btn-create-event {color: #fff;background-color: #7a7a78;border-color: #7a7a78;font-size: 24px;border-radius: 6px;display: block;padding: 10px 0px;}    
 .ce-or-section {text-align: center;}
 .ce-or-section span {text-transform: uppercase;}
 .ce-or-section span::before{ width: 45%; height: 1px; background: #000; content: '';    display: inline-block;}

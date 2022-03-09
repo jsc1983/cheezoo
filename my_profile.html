@@ -20,6 +20,66 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade select_event_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="se_heading">Select Event</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form class="row g-3 se_row">
+            <div class="col-md-6">
+              <div class="event_occasion">
+                 <div class="graphic-pic"><img src="images/graphic.jpg"></div>
+                 <div class="event_occassion_name">Wedding Show</div>
+                 <div class="event_ocassion_location"><span><i class="fas fa-map-marker-alt"></i></span>Trunk Park, New York</div>
+              </div>
+              <!-- event_occasion -->
+            </div>
+            <!-- col-md-6 -->
+  
+            <div class="col-md-6">
+              <div class="event_occasion">
+                 <div class="graphic-pic"><img src="images/graphic.jpg"></div>
+                 <div class="event_occassion_name">Wedding Show</div>
+                 <div class="event_ocassion_location"><span><i class="fas fa-map-marker-alt"></i></span>Trunk Park, New York</div>
+              </div>
+              <!-- event_occasion -->
+            </div>
+            <!-- col-md-6 -->
+  
+            <div class="col-md-6">
+              <div class="event_occasion">
+                 <div class="graphic-pic"><img src="images/graphic.jpg"></div>
+                 <div class="event_occassion_name">Wedding Show</div>
+                 <div class="event_ocassion_location"><span><i class="fas fa-map-marker-alt"></i></span>Trunk Park, New York</div>
+              </div>
+              <!-- event_occasion -->
+            </div>
+            <!-- col-md-6 -->
+  
+            <div class="col-md-6">
+              <div class="event_occasion">
+                 <div class="graphic-pic"><img src="images/graphic.jpg"></div>
+                 <div class="event_occassion_name">Wedding Show</div>
+                 <div class="event_ocassion_location"><span><i class="fas fa-map-marker-alt"></i></span>Trunk Park, New York</div>
+              </div>
+              <!-- event_occasion -->
+            </div>
+            <!-- col-md-6 -->
+            <div class="request_text">You can send hiring request to maximum 3 photographers per event</div>
+         
+            <div class="col-12">
+              <button type="button" class="form-control btn btn-connect">Connect</button>
+              <div class="ce-or-section"><span><div class="ce-or-text">or</div></span></div>
+              <button type="button" class="form-control btn btn-create-event">Create New Event</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+      <!-- Modal -->
 <div class="main_wrapper">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-shadow" aria-label="">
     <div class="container">
@@ -146,7 +206,7 @@
          <!-- <div class="hourly-rate">$60.0/hr</div> -->
          <p class="d-inline-block card-text tags">Wedding Expert</p>
          <div class="button-section d-flex justify-content-center">
-           <a class="hirebtn" href="">Connect</a>
+           <a class="hirebtn" href=""  data-bs-toggle="modal" data-bs-target="#exampleModal">Connect</a>
            <a class="msgbtn" href="">Chat</a>
          </div>
          <!-- button-section d-flex justify-content-center -->
