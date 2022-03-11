@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.88.1">
+  <title>Cheezoo</title>
+  <link rel="canonical" href="">
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="custom.css" rel="stylesheet">
+  <link href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- invite Modal -->
+  <div class="modal fade invte_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="md_title">Invite</span>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form class="row g-3">
+
+          <div class="col-12 mb-4">
+            <input type="text" class="form-control" id="" placeholder="Name">
+          </div>
+          <div class="col-12 mb-4">
+            <input type="text" class="form-control" id="" placeholder="Email Address">
+          </div>
+
+          <div class="col-12">
+            <button type="button" class="form-control btn btn-save">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- invite Modal -->
+
+  <!-- add shot Modal -->
+ <div class="modal fade invte_modal add_shot_modal" id="exampleModal_addshot" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="md_title">Add Shot</span>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form class="row g-3">
+          <div class="col-12 mb-4">
+            <input type="text" class="form-control" id="" placeholder="Opening Ceremony">
+          </div>
+          <div class="col-6 mb-4">
+            <input type="text" class="form-control" id="" placeholder="02-20-2022">
+          </div>
+          <div class="col-6 mb-4">
+            <input type="text" class="form-control" id="" placeholder="02-23-2022">
+          </div>
+          <div class="col-6 mb-4">
+            <input type="text" class="form-control" id="" placeholder="10:00 AM">
+          </div>
+          <div class="col-6 mb-4">
+            <input type="text" class="form-control" id="" placeholder="11:00 AM">
+          </div>
+          <div class="col-6 mb-4">
+            <select id="" class="form-select">
+              <option>Select Duration</option>
+            </select>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              I agree to the Terms of Service and Privacy Policy
+            </label>
+          </div>
+          <div class="col-12">
+            <button type="button" class="form-control btn btn-save">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div> 
+
+  <!-- new code - Rishika>--->
+   <div class="modal fade invte_modal add_shot_modal" id="exampleModal_add_album" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="md_title">Create Album</span>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label for="Album name"><b><h3>Album name</h3></b></label>
+            <input type="text" class="form-control" id="" placeholder="">
+          </div>
+          <div class="col-12">
+
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="form-control btn btn-block btn-dark btn-save" name="button">Create Album</button>
+          </div>
+     </div>
+    </div>
+  </div>
+
+
+  <!-- add shot Modal -->
+
+  <!-- edit info Modal -->
+  <div class="modal fade invte_modal add_shot_modal" id="exampleModal_editinfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <span class="md_title">Add Shot</span> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form class="row g-3">
+          <div class="col-12 mb-4">
+            <input type="text" class="form-control" id="" placeholder="Brother Wedding">
+          </div>
+          <div class="col-6 mb-4">
+            <input type="text" class="form-control" id="" placeholder="02-20-2022">
+          </div>
+          <div class="col-6 mb-4">
+            <input type="text" class="form-control" id="" placeholder="02-23-2022">
+          </div>
+          <div class="col-6 mb-4">
+            <input type="text" class="form-control" id="" placeholder="10:00 AM">
+          </div>
+          <div class="col-6 mb-4">
+            <input type="text" class="form-control" id="" placeholder="11:00 AM">
+          </div>
+          <div class="col-12 mb-4">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="2nd Flor, Building no 4A, Apex Athena, Sector 75, Noida, Uttar Pradesh, India"></textarea>
+          </div>
+          <div class="col-12 mb-4">
+            <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" placeholder="Notes"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="button" class="form-control btn btn-save">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- edit info Modal -->
+
+
+
+  <div class="main_wrapper">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-shadow" aria-label="">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/cheezoo-logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex flex-row-reverse orderclass">
+          <ul class="account-setting">
+            <li>
+              <span class="notify-bell dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="far fa-bell"></i>
+                <span class="badge badge-light">4</span>
+              </span>
+              <div class="dropdown-menu dropdown-notification">
+                <div class="dropdown-item noti-title">
+                  <h5 class="m-0">
+                    <span class="float-end">
+                      <a href="javascript: void(0);" class="text-dark">
+                        <small>Clear All</small>
+                      </a>
+                    </span>Notification
+                  </h5>
+                </div>
+                <!-- dropdown-item noti-title -->
+                <ul class="notify-item">
+                  <li>
+                    <span class="notify-icon notify-color"><i class="fas fa-user"></i></span>
+                    <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+                  </li>
+                  <li>
+                    <span class="notify-icon notify-color"><i class="fas fa-user"></i></span>
+                    <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+                  </li>
+                  <li>
+                    <span class="notify-icon"><img class="img-fluid rounded-circle" src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg"></span>
+                    <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+                  </li>
+                  <li>
+                    <span class="notify-icon notify-color"><i class="fas fa-user"></i></span>
+                    <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+                  </li>
+                </ul>
+                <a href="javascript:void(0);" class="notify-all">View All</a>
+              </div>
+              <!-- dropdown-menu dropdown-notification -->
+            </li>
+            <!-- li -->
+
+
+            <li>
+              <span class="account-user dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="img-fluid rounded-circle" src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg">
+              </span>
+              <div class="dropdown-menu dropdown-account">
+                <ul class="account-item">
+                  <li>
+                    <span class="account-icon account-color"><i class="fas fa-user"></i></span>
+                    <span class="account-content">My Account</span>
+                  </li>
+                  <li>
+                    <span class="account-icon account-color"><i class="fas fa-cog"></i></span>
+                    <span class="account-content">Settings</span>
+                  </li>
+                  <li>
+                    <span class="account-icon account-color"><i class="far fa-life-ring"></i></span>
+                    <span class="account-content">Support</span>
+                  </li>
+                  <li>
+                    <span class="account-icon account-color"><i class="fas fa-sign-out-alt"></i></span>
+                    <span class="account-content">Logout</span>
+                  </li>
+
+                </ul>
+              </div>
+              <!-- dropdown-menu dropdown-account -->
+            </li>
+
+          </ul>
+          <!-- account-setting -->
+        </div>
+        <!-- d-flex -->
+
+
+        <!--
+      <div class="collapse navbar-collapse" id="navbarCollapse" style="">
+        <ul class="navbar-nav  ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Find a Photographer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Be a Photographer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+        </ul>
+      </div> -->
+        <!-- collapse navbar-collapse  -->
+
+
+      </div>
+      <!-- container -->
+    </nav>
+    <!-- nav close here -->
+
+    <section class="mid-content bg-grey">
+      <div class="banner-section-eventinfo">
+        <div class="container">
+          <!-- <div class="row">
+      <div class="col position-relative"><span class="edit_icon_banner"><i class="fas fa-pen fa-fw"></i></span></div>
+    </div> -->
+        </div>
+      </div> <!-- banner-section -->
+      <div class="event_info_block">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-8">
+              <div class="event_info_section">
+                <!-- <span class="edit_icon_inf0" data-bs-toggle="modal" data-bs-target="#exampleModal_editinfo"><i class="fas fa-pen fa-fw"></i></span> -->
+                <div class="event_info_datetime"><span class="event_date_info">17 March 2022</span> - <span class="event_time_info">6:30 AM</span></div>
+                <div class="event_info_heading">Brother Wedding</div>
+                <div class="event_info_address">2nd Flor, Building no 4A, Apex Athena, Sector 75, Noida, Uttar Pradesh, India</div>
+                <div class="event_info_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                </div>
+                <!-- event_info_description -->
+
+             
+
+                <div class="event_photographer border_tp pt-3">
+                  <span class="event_photographer_heading">Event Owner</span>
+                  <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                    <div class="avatar-pic"><img src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg"></div>
+                    <div class="card-body d-flex flex-column align-items-start">
+                      <div class="avatar-name">Alex Carter</div>
+
+                      <div class="button-section d-flex justify-content-center">
+                        <a class="chatbtn" href="">Chat</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- event_photographer -->
+
+                <div class="col event_photographerinfo_col">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="shotlist-tab" data-bs-toggle="tab" data-bs-target="#shotlist" type="button" role="tab" aria-controls="shotlist" aria-selected="true">Shot List</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="Weather-tab" data-bs-toggle="tab" data-bs-target="#Weather" type="button" role="tab" aria-controls="Weather" aria-selected="false">Weather</button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="Gallery-tab" data-bs-toggle="tab" data-bs-target="#Gallery" type="button" role="tab" aria-controls="Gallery" aria-selected="false">Gallery</button>
+                    </li>
+
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="shotlist" role="tabpanel" aria-labelledby="shotlist-tab">
+                      <ul class="event_photographerinfo_col">
+                        <li class="d-flex align-items-center justify-content-end shot_button_two">
+
+                          <span class="d-flex flex-row-reverse connect-btn">
+                            <button type="button" class="form-control btn btn-secondary shot_button_three">
+                              <span>Import template</button></span>
+                          <button type="button" class="form-control btn add_shot_button" data-bs-toggle="modal" data-bs-target="#exampleModal_addshot">
+                            <span class="add_icon"><i class="fas fa-plus fa-fw"></i></span>Add Shot</button></span>
+                          <!-- <button type="button" class="form-control btn shot_button" data-bs-toggle="modal" data-bs-target="#exampleModal">Invite</button></span> -->
+                        </li>
+                        <!-- li -->
+                      </ul>
+                      <!-- event_photographerinfo_col -->
+
+                      <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                        <div class="circle_time">9:00 <span class="meridiem">AM</span></div>
+                        <div class="card-body d-flex flex-column align-items-start">
+                          <div class="event_name">Opening Ceremony <br>
+                            <h6><b>Near Sunflower Garden</b></h6>
+                          </div>
+
+                          <div class="event_time_detail"><span>12:30 pm</span> - <span>13:30 pm</span></div>
+                        </div>
+                        <!-- card-body d-flex flex-column align-items-start -->
+                      </div>
+                      <!-- card flex-md-row mb-4 box-shadow h-md-250 -->
+
+                      <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                        <div class="circle_time">9:00 <span class="meridiem">AM</span></div>
+                        <div class="card-body d-flex flex-column align-items-start">
+                          <div class="event_name">Bride Entrance<br>
+                            <h6><b>Near Sunflower Garden</b></h6>
+                          </div>
+                          <div class="event_time_detail"><span>12:30 pm</span> - <span>13:30 pm</span></div>
+                        </div>
+                        <!-- card-body d-flex flex-column align-items-start -->
+                      </div>
+                      <!-- card flex-md-row mb-4 box-shadow h-md-250 -->
+
+                      <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                        <div class="circle_time">9:00 <span class="meridiem">AM</span></div>
+                        <div class="card-body d-flex flex-column align-items-start">
+                          <div class="event_name">Cake Cutting<br>
+                            <h6><b>Near Sunflower Garden</b></h6>
+                          </div>
+                          <div class="event_time_detail"><span>12:30 pm</span> - <span>13:30 pm</span></div>
+                        </div>
+                        <!-- card-body d-flex flex-column align-items-start -->
+                      </div>
+                      <!-- card flex-md-row mb-4 box-shadow h-md-250 -->
+
+
+                      <!-- new code -Rishika --->
+                      <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                        <div class="circle_time">11:00 <span class="meridiem">AM</span></div>
+                        <div class="card-body d-flex flex-column align-items-start">
+                          <div class="event_name">Dance<br>
+                            <h6><b>Near Sunflower Garden</b></h6>
+                          </div>
+                          <div class="event_time_detail"><span>12:30 pm</span> - <span>13:30 pm</span></div>
+                        </div>
+                        <!-- card-body d-flex flex-column align-items-start -->
+                      </div>
+                      <!-- card flex-md-row mb-4 box-shadow h-md-250 -->
+
+
+                      <!-- new code - Rishika -->
+                      <hr>
+                      <div class="event_photographer">
+                        <span class="event_photographer_heading">Remarks</span>
+                        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                          <div><img src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg" class="profile-pic"></div>
+                          <div class="card-body d-flex flex-column align-items-start">
+                            <div>
+                              <p class="Remarks-para">
+                               <span class="remark_profilename">Alex carter</span> <b class="plain-text">24 mins ago,</b><br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- tab-pane fade show active -->
+                    <div class="tab-pane fade" id="Weather" role="tabpanel" aria-labelledby="Weather-tab">
+                      <div class="weather_button_section">
+                        <div class="d-flex align-items-center justify-content-between weather_select_otpion">
+                        <span class="d-flex justify-content-start">
+                          <select id="">
+                          <option>Select</option>
+                        </select>
+                      </span>
+                        <span class="d-flex justify-content-end celfah_btn">
+                      <span class="celsius_btn"><i class="fas fa-droplet-degree fa-fw"></i>Celsius</span>   
+                      <span class="fahrenheit_btn"><i class="fas fa-temperature-half fa-fw"></i>Fahrenheit</span>   
+                    </span>
+                    </div>
+                    <!-- d-flex align-items-center justify-content-between -->
+                      </div>
+                      <div class="weather_output">
+                        <div class="weather_topinfo">
+                          <div class="row">
+                            <div class="date_address_col col">
+                              <p>Saturday, March 26th 2022</p>
+                              <p>San Francisco, CA</p>
+                            </div>
+                            <!-- date_address_col -->
+                            <div class="update_col col">
+                              <p>Updated: 31/01/2022 6:32pm</p>
+                            </div>
+                            <!-- update_col -->
+                            <!-- weather_topinfo -->
+                          </div>
+                          <!-- row -->
+
+
+                          <div class="fahrenheit_info">
+                            <div class="weather_icon"><i class="fal fa-cloud-sun fa-fw"></i></div>
+                            <!-- weather_icon -->
+                            <div class="weather_temperature">64°F</div>
+                            <!-- weather_temperature -->
+                            <div class="low_high_text">
+                              <span class="low_info">Low:59°</span>
+                              <span class="high_info">High:78°</span>
+                            </div>
+                            <!-- low_high_text -->
+                            <ul class="weather_itemlist">
+                              <li>
+                                <span class="weather_iconitem"><i class="fal fa-sunrise fa-fw"></i></span>
+                                <span class="weather_heading">Sunrise</span>
+                                <span class="weather_time">6:00 AM</span>
+                              </li>
+                              <!-- li -->
+
+                              <li>
+                                <span class="weather_iconitem"><i class="fal fa-sunset fa-fw"></i></span>
+                                <span class="weather_heading">Sunset</span>
+                                <span class="weather_time">6:00 AM</span>
+                              </li>
+                              <!-- li -->
+
+                              <li>
+                                <span class="weather_iconitem"><i class="fal fa-droplet-percent fa-fw"></i></span>
+                                <span class="weather_heading">Humidity</span>
+                                <span class="weather_time">85%</span>
+                              </li>
+                              <!-- li -->
+
+                              <li>
+                                <span class="weather_iconitem"><i class="fal fa-raindrops fa-fw fa-fw"></i></span>
+                                <span class="weather_heading">Chance of Rain</span>
+                                <span class="weather_time">0%</span>
+                              </li>
+                              <!-- li -->
+
+                              <li>
+                                <span class="weather_iconitem"><i class="fal fa-wind fa-fw"></i></span>
+                                <span class="weather_heading">Wind Speed</span>
+                                <span class="weather_time">20MPH</span>
+                              </li>
+                              <!-- li -->
+                            </ul>
+                          </div>
+                          <!-- fahrenheit_info -->
+                        </div>
+                        <!-- weather_topinfo -->
+                      </div>
+                      <!-- weather_output -->
+
+                      <div class="tw_heading">Today's Weather</div>
+                      <ul class="today_weather">
+                        <li>
+                          <span class="tw_time">4:00 AM</span>
+                          <span class="tw_icon"><i class="fal fa-cloud-sun fa-fw"></i></span>
+                          <span class="tw_temperature">64°</span>
+                        </li>
+                        <!-- li -->
+
+                        <li>
+                          <span class="tw_time">4:00 AM</span>
+                          <span class="tw_icon"><i class="fal fa-cloud-sun fa-fw"></i></span>
+                          <span class="tw_temperature">64°</span>
+                        </li>
+                        <!-- li -->
+
+                        <li>
+                          <span class="tw_time">4:00 AM</span>
+                          <span class="tw_icon"><i class="fal fa-cloud-sun fa-fw"></i></span>
+                          <span class="tw_temperature">64°</span>
+                        </li>
+                        <!-- li -->
+
+                        <li>
+                          <span class="tw_time">4:00 AM</span>
+                          <span class="tw_icon"><i class="fal fa-cloud-sun fa-fw"></i></span>
+                          <span class="tw_temperature">64°</span>
+                        </li>
+                        <!-- li -->
+
+                        <li>
+                          <span class="tw_time">4:00 AM</span>
+                          <span class="tw_icon"><i class="fal fa-sun-bright fa-fw"></i></span>
+                          <span class="tw_temperature">64°</span>
+                        </li>
+                        <!-- li -->
+
+                        <li>
+                          <span class="tw_time">4:00 AM</span>
+                          <span class="tw_icon"><i class="fal fa-sun-bright fa-fw"></i></span>
+                          <span class="tw_temperature">64°</span>
+                        </li>
+                        <!-- li -->
+
+
+                        <li>
+                          <span class="tw_time">4:00 AM</span>
+                          <span class="tw_icon"><i class="fal fa-sun-bright fa-fw"></i></span>
+                          <span class="tw_temperature">64°F</span>
+                        </li>
+                        <!-- li -->
+                      </ul>
+                      <!-- today_weather -->
+
+                      <div class="tw_heading">Next 5 Days</div>
+                      <ul class="today_weather_list">
+                        <li>
+                          <span class="tw_list_heading">Tue</span>
+                          <span class="tw_list_subheading">30/7</span>
+                        </li>
+                        <!-- li -->
+
+                        <li>
+                          <span class="tw_list_icon"><i class="fal fa-sun-bright fa-fw"></i></span>
+                        </li>
+                        <!-- li -->
+
+                        <li>
+                          <span class="tw_list_heading">10</span>
+                          <span class="tw_list_subheading">Low</span>
+                        </li>
+                        <!-- li -->
+
+
+                        <li>
+                          <span class="tw_list_heading">21</span>
+                          <span class="tw_list_subheading">High</span>
+                        </li>
+                        <!-- li -->
+
+
+                        <li>
+                          <span class="tw_list_heading">0%</span>
+                          <span class="tw_list_subheading">Rain</span>
+                        </li>
+                        <!-- li -->
+
+                        <li>
+                          <span class="tw_list_heading">12mph</span>
+                          <span class="tw_list_subheading">Wind</span>
+                        </li>
+                        <!-- li -->
+
+
+
+                      </ul>
+                      <!-- today_weather_list -->
+
+                      <ul class="today_weather_list">
+                        <li>
+                          <span class="tw_list_heading">Tue</span>
+                          <span class="tw_list_subheading">30/7</span>
+                        </li>
+                        <!-- li -->
+
+                        <li>
+                          <span class="tw_list_icon"><i class="fal fa-cloud-sun fa-fw"></i></span>
+                        </li>
+                        <!-- li -->
+
+                        <li>
+                          <span class="tw_list_heading">10</span>
+                          <span class="tw_list_subheading">Low</span>
+                        </li>
+                        <!-- li -->
+
+
+                        <li>
+                          <span class="tw_list_heading">21</span>
+                          <span class="tw_list_subheading">High</span>
+                        </li>
+                        <!-- li -->
+
+
+                        <li>
+                          <span class="tw_list_heading">0%</span>
+                          <span class="tw_list_subheading">Rain</span>
+                        </li>
+                        <!-- li -->
+
+                        <li>
+                          <span class="tw_list_heading">12mph</span>
+                          <span class="tw_list_subheading">Wind</span>
+                        </li>
+                        <!-- li -->
+                      </ul>
+                      <!-- today_weather_list -->
+
+                    </div> <!-- tab-pane fade -->
+
+                    <div class="tab-pane fade" id="Collab" role="tabpanel" aria-labelledby="Collab-tab">
+                      <ul class="event_photographerinfo_col">
+                        <li class="d-flex align-items-center justify-content-between">
+                          <span class="d-flex flex-column event_info_title">Collab</span>
+                          <span class="d-flex flex-row-reverse connect-btn">
+                            <button type="button" class="form-control btn shot_button" data-bs-toggle="modal" data-bs-target="#exampleModal">Invite</button></span>
+                        </li>
+                        <!-- li -->
+                      </ul>
+                      <!-- event_photographerinfo_col -->
+                      <div class="row colab_row">
+                        <div class="col-md-6">
+                          <div class="card shadow-sm">
+                            <div class="colab_placeholder"><img class="" src="images/colab-placeholder.jpg"></div>
+                            <div class="card-body">
+                              <div class="delete_icon"><i class="fas fa-trash fa-fw text_red"></i></div>
+                              <p class="card-text colab_photographer_name">Alex Carter</p>
+                              <p class="colab_photographer_email">Alex123@gmail.com</p>
+                              <p class="colab_photographer_invitation text_red">Invitation Pending</p>
+                            </div>
+                            <!-- card-body -->
+                          </div>
+                          <!-- card shadow-sm -->
+                        </div>
+                        <!-- col-md-6 -->
+                        <div class="col-md-6">
+                          <div class="card shadow-sm">
+                            <div class="colab_placeholder"><img class="" src="images/colab-placeholder.jpg"></div>
+                            <div class="card-body">
+                              <div class="delete_icon"><i class="fas fa-trash fa-fw text_red"></i></div>
+                              <p class="card-text colab_photographer_name">Alex Carter</p>
+                              <p class="colab_photographer_email">Alex123@gmail.com</p>
+                              <p class="colab_photographer_invitation text_green">Invitation Accepted</p>
+                            </div>
+                            <!-- card-body -->
+                          </div>
+                          <!-- card shadow-sm -->
+                        </div>
+                        <!-- col-md-6 -->
+                      </div>
+                      <!-- row colab_row -->
+
+                    </div> <!-- tab-pane fade -->
+
+                    <div class="tab-pane fade" id="Gallery" role="tabpanel" aria-labelledby="Gallery-tab">
+                      <div class="gallery_showcase_section">
+                        <!--new code -Rishika-->
+
+                        <ul class="event_photographerinfo_col">
+                          <li class="d-flex align-items-center justify-content-between">
+                            <span class="d-flex flex-column event_info_title">Gallery</span>
+                            <span class="d-flex flex-row-reverse connect-btn">
+                              <button type="button" class="form-control btn shot_button" data-bs-toggle="modal" data-bs-target="#exampleModal_add_album">
+                                <span class="add_icon"><i class="fas fa-plus fa-fw"></i></span>Add Albums</button></span>
+                                <!-- <button type="button" class="form-control btn shot_button" data-bs-toggle="modal" data-bs-target="#exampleModal">Invite</button></span> -->
+                           </li>
+                           <!-- li -->
+                          </ul>
+
+                        <div class="row image_gallery_row">
+                          <div class="no-album-text">No Album Created</div>
+                          <div class="col">
+                            <div class="gallery_col">
+                              <div class="gallery_img_block">
+                                <div class="gallery_img_count">8</div>
+                                <img src="https://as1.ftcdn.net/v2/jpg/03/05/62/88/1000_F_305628877_FBgLZGK6Y94xPaED6rZbA9mKCxUHbNBg.jpg">
+                              </div>
+                              <!-- gallery_img_block -->
+                              <div class="gallery_caption_info">
+                                Wedding Decorations <span class="caption_right_icon"></span>
+                              </div>
+                              <!-- gallery_caption_info -->
+                            </div>
+                            <!-- gallery_col -->
+                          </div>
+                          <!-- col-md-4  -->
+
+                          <div class="col">
+                            <div class="gallery_col">
+                              <div class="gallery_img_block">
+                                <div class="gallery_img_count">8</div>
+                                <img src="https://as1.ftcdn.net/v2/jpg/03/05/62/88/1000_F_305628877_FBgLZGK6Y94xPaED6rZbA9mKCxUHbNBg.jpg">
+                              </div>
+                              <!-- gallery_img_block -->
+
+                              <!-- icon removed - <i class="fas fa-share fa-fw"></i>
+                <i class="fas fa-share fa-fw"></i>
+              <i class="fas fa-share fa-fw"></i>-->
+
+                              <div class="gallery_caption_info">
+                                Bride Entrance<span class="caption_right_icon"></span>
+                              </div>
+                              <!-- gallery_caption_info -->
+                            </div>
+                            <!-- gallery_col -->
+                          </div>
+                          <!-- col-md-4  -->
+
+                          <div class="col">
+                            <div class="gallery_col">
+                              <div class="gallery_img_block">
+                                <div class="gallery_img_count">8</div>
+                                <img src="https://as1.ftcdn.net/v2/jpg/03/05/62/88/1000_F_305628877_FBgLZGK6Y94xPaED6rZbA9mKCxUHbNBg.jpg">
+                              </div>
+                              <!-- gallery_img_block -->
+                              <div class="gallery_caption_info">
+                                Dance<span class="caption_right_icon"></span>
+                              </div>
+                              <!-- gallery_caption_info -->
+                            </div>
+                            <!-- gallery_col -->
+                          </div>
+                          <!-- col-md-4  -->
+                        </div>
+                        <!-- row image_gallery_row -->
+
+                      </div>
+                      <!-- gallery_showcase -->
+                    </div> <!-- tab-pane fade -->
+                    <div class="tab-pane fade" id="Chat" role="tabpanel" aria-labelledby="Chat-tab">Chat</div> <!-- tab-pane fade -->
+                  </div>
+                </div>
+                <!-- col -->
+
+              </div>
+              <!-- event_info_section -->
+
+            </div>
+            <!-- col-md-8 -->
+            <div class="col-md-4">
+              <div class="event_timer">
+                <div class="event_timer_heading">Count every second until the event</div>
+                <div id="countdown">
+                  <ul>
+                    <li><span id="days"></span><span class="count_text_yellow fs_20">Days</span></li>
+                    <li><span id="hours"></span><span class="count_text_yellow fs_20">Hours</span></li>
+                    <li><span id="minutes"></span><span class="count_text_yellow fs_20">Minutes</span></li>
+                    <li><span id="seconds"></span><span class="count_text_yellow fs_20">Seconds</span></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- event_timer -->
+              <div class="event_map_info">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13004069.896900944!2d-104.65611544442767!3d37.27565371492453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sin!4v1643893040234!5m2!1sen!2sin"
+                  width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+              <!-- event_map_info -->
+            </div>
+            <!-- col-md-4 -->
+          </div>
+          <!-- row -->
+        </div>
+        <!-- profile_info -->
+      </div>
+      <!-- container -->
+    </section>
+    <!-- mid-content bg-grey -->
+    <footer>
+      <div class="ft-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col info-col">
+              <div class="ft-logo"><img src="images/cheezoo-logo-footer.png"></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. </p>
+              <div class="app-icon"><img src="images/ios-logo.png"></div>
+              <div><img src="images/google-play-logo.png"></div>
+            </div>
+            <!-- col info-col -->
+            <div class="col link-col">
+              <div class="link-heading"> Quick links</div>
+              <ul class="ft-link">
+                <li><a href="">Home</a></li>
+                <li><a href="">Who we are</a></li>
+                <li><a href="">join</a></li>
+                <li><a href="">blog</a></li>
+                <li><a href="">gallery</a></li>
+              </ul>
+            </div>
+            <!-- col info-col -->
+            <div class="col link-col">
+              <div class="link-heading">Navigation</div>
+              <ul class="ft-link">
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Resources</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <!-- col info-col -->
+            <div class="col subscribe-col">
+              <div class="subscribe-heading">Subscribe Now</div>
+              <form>
+                <input type="text" class="form-control border-radius-0" id="" placeholder="">
+                <button type="submit" class="form-control btn btn-subscribe border-radius-0 mb-3">Subscribe</button>
+              </form>
+              <ul class="social-media">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              </ul>
+            </div>
+            <!-- col info-col -->
+          </div>
+          <!-- row -->
+          <div class="row copyright-row">
+            <p>Copright 2021 Cheezoo</p>
+          </div>
+        </div>
+        <!-- container -->
+      </div>
+      <!-- ft-wrapper -->
+    </footer>
+    <!-- footer -->
+  </div>
+  <!-- main_wrapper close here -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+
+<script>
+  (function() {
+    const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+    //I'm adding this section so I don't have to keep updating this pen every year :-)
+    //remove this if you don't need it
+    let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "09/30/",
+      birthday = dayMonth + yyyy;
+
+    today = mm + "/" + dd + "/" + yyyy;
+    if (today > birthday) {
+      birthday = dayMonth + nextYear;
+    }
+    //end
+
+    const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {
+
+        const now = new Date().getTime(),
+          distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+</script>
+
+</html>

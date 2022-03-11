@@ -71,7 +71,7 @@
             <div class="request_text">You can send hiring request to maximum 3 photographers per event</div>
          
             <div class="col-12">
-              <button type="button" class="form-control btn btn-connect">Connect</button>
+              <button type="button" class="form-control btn btn-connect" data-bs-toggle="modal" data-bs-target="#summaryModal">Submit</button>
               <div class="ce-or-section"><span><div class="ce-or-text">or</div></span></div>
               <button type="button" class="form-control btn btn-create-event">Create New Event</button>
             </div>
@@ -80,6 +80,138 @@
       </div>
     </div>
       <!-- Modal -->
+      
+    <!-- summary_event_modal -->
+    <div class="modal fade summary_event_modal" id="summaryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="se_heading">Summary</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- modal-header -->
+          <div class="row g-3 se_row">
+            <div class="summary_itembox">
+              <div class="summary_selected_heading">Selected Photographer</div>
+         <div class="selected_photographer">
+          <div class="row g-0  overflow-hidden flex-md-row">
+            <div class="col-auto d-lg-block">
+              <div class="summaryavatar-pic">
+              <img src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg">
+            </div>
+            <!-- summaryavatar-pic -->
+          </div>
+          <!-- col-auto d-lg-block -->
+            <div class="col d-flex flex-column position-relative align-self-center summary_content_col">
+              <a href="" class="summmarywish_list_icon"><i class="fas fa-heart"></i></a>
+              <h3 class="mb-0">Alex Carter</h3>
+              <ul class="summarymodal_star_rating">
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star blackstar"></i></li>
+                <li><i class="fas fa-star blackstar"></i></li>
+                <li><span>(2450)</span></li>
+              </ul>
+              <!-- summarymodal_star_rating -->
+              <p class="card-text mb-auto"><span class="map-icon"><i class="fas fa-map-marker-alt"></i></span>Trunk Park, New York</p>
+            </div>
+            <!-- col d-flex flex-column position-relative align-self-center summary_content_col -->
+          </div>
+          <!-- row g-0  overflow-hidden flex-md-row -->
+         </div>
+         <!-- selected_photographer -->
+            </div>
+            <!-- summary_itembox -->
+
+            <div class="summary_itembox">
+              <div class="summary_selected_heading">Selected Event</div>
+         <div class="selected_event">
+          <div class="row g-0  overflow-hidden flex-md-row">
+            <div class="col-auto d-lg-block">
+              <div class="summaryavatar-pic">
+              <img src="images/cheezo_icon_white.jpg">
+            </div>
+            <!-- summaryavatar-pic -->
+          </div>
+          <!-- col-auto d-lg-block -->
+            <div class="col d-flex flex-column position-relative align-self-center summary_content_col">
+              <a href="" class="summmarywish_list_icon"><i class="fas fa-heart"></i></a>
+              <h3 class="mb-0">Wedding Show</h3>
+             <div class="date_timne_summary">
+              <span class="summary_date_text">15 Dec 2022</span>
+              <span class="summary_time_text">1:00 PM</span>
+             </div>
+              <!-- summarymodal_star_rating -->
+              <p class="card-text mb-auto"><span class="map-icon"><i class="fas fa-map-marker-alt"></i></span>Trunk Park, New York</p>
+            </div>
+            <!-- col d-flex flex-column position-relative align-self-center summary_content_col -->
+          </div>
+          <!-- row g-0  overflow-hidden flex-md-row -->
+         </div>
+         <!-- selected_event -->
+            </div>
+            <!-- summary_itembox -->
+
+            <div class="summary_itembox">
+              <div class="summary_selected_heading">Selected Packages</div>
+         <div class="selected_packages">
+          <div class="row g-0  overflow-hidden flex-md-row">
+            <div class="col d-flex flex-column position-relative align-self-center summary_content_col">
+              <ul class="selected_packages">
+                <li>
+                  <span class="sp_title">Package Name:</span>
+                  <span class="sp_subtitle">Wedding 1</span>
+                </li>
+                <!-- li -->
+
+                <li>
+                  <span class="sp_title">No of Pictures:</span>
+                  <span class="sp_subtitle">20</span>
+                </li>
+                <!-- li -->
+
+                <li>
+                  <span class="sp_title">No. of hours:</span>
+                  <span class="sp_subtitle">2</span>
+                </li>
+                <!-- li -->
+
+                <li>
+                  <span class="sp_title">Total Price:</span>
+                  <span class="sp_subtitle">$20</span>
+                </li>
+                <!-- li -->
+
+
+              </ul>
+            </div>
+            <!-- col d-flex flex-column position-relative align-self-center summary_content_col -->
+          </div>
+          <!-- row g-0  overflow-hidden flex-md-row -->
+         </div>
+         <!-- selected_packages -->
+            </div>
+            <!-- summary_itembox -->
+
+            <ul class="d-flex justify-content-end  summary_modal_button">
+              <li class="d-flex align-items-center justify-content-between">
+                <!-- <span class="d-flex flex-column hourly-rate"><span class="amount">$20</span>/hr</span> -->
+                <span class="connect-btn"><button type="button" class="form-control btn send_request_btn">Send Request</button></span>
+                <span class="connect-btn"><button type="button" class="form-control btn cancel_request_btn">Cancel Request</button></span>
+               </li>
+               <!-- li -->
+              </ul>
+          </div>
+          <!-- row g-3 se_row -->
+        </div>
+        <!-- modal-content -->
+      </div>
+      <!-- modal-dialog modal-dialog-centered -->
+    </div>
+      <!-- summary_event_modal -->
+
+
 <div class="main_wrapper">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-shadow" aria-label="">
     <div class="container">

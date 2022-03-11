@@ -292,9 +292,10 @@ ul.hourly_connect li span .connect-btn{color: #fff;background-color: #333333;bor
 
 .select_event_modal .modal-content {padding: 20px 0px;}
 .select_event_modal .modal-dialog {max-width: 670px;}
-.select_event_modal .modal-header{    text-align: center;  display: block; margin-bottom: 30px;padding-top: 0;margin-top: 0;}
+.select_event_modal .modal-header{    text-align: center;  display: block; margin-bottom: 30px;padding-top: 0;margin-top: 0; border-bottom: none;}
 .select_event_modal .modal-header .btn-close {position: absolute;right: 13px;  z-index: 999; top: 13px;}
 .se_heading {font-size: 23px;}
+
 
 .se_row {padding:0px 40px 20px 40px; }
 .event_occasion {border: 1px solid #dee2e6; border-radius: 6px;text-align: center; padding: 10px 0px;}
@@ -306,8 +307,9 @@ ul.hourly_connect li span .connect-btn{color: #fff;background-color: #333333;bor
 .request_text { display: block; font-size: 16px;}
 
 .btn-connect {    color: #fff;background-color: #333333;border-color: #333333;font-size: 24px;border-radius: 6px;display: block;padding: 10px 0px;}
-.btn-connect:hover {color: #fff;}
-.btn-create-event {color: #fff;background-color: #7a7a78;border-color: #7a7a78;font-size: 24px;border-radius: 6px;display: block;padding: 10px 0px;}    
+.btn-connect:hover {color: #fff; background-color: #333333;}
+.btn-create-event {color: #fff;background-color: #7a7a78;border-color: #7a7a78;font-size: 24px;border-radius: 6px;display: block;padding: 10px 0px;}   
+.btn-create-event:hover {color: #fff;background-color: #7a7a78;} 
 .ce-or-section {text-align: center;}
 .ce-or-section span {text-transform: uppercase;}
 .ce-or-section span::before{ width: 45%; height: 1px; background: #000; content: '';    display: inline-block;}
@@ -315,6 +317,43 @@ ul.hourly_connect li span .connect-btn{color: #fff;background-color: #333333;bor
 .ce-or-text {padding: 0px 9px;display: inline-block;position: relative;top: 4px;font-size: 21px;margin-top: 12px;margin-bottom: 12px;}
 
 .tags {background-color: #fef0d3; font-size: 14px; margin-top: 8px; margin-bottom: 18px; padding: 3px 10px;}
+
+
+
+.summary_event_modal .modal-content {padding: 20px 0px;}
+.summary_event_modal .modal-dialog {max-width: 800px;}
+.summary_event_modal .modal-header{    text-align: center;  display: block; margin-bottom: 30px;padding-top: 0;margin-top: 0; border-bottom: none;}
+.summary_event_modal .modal-header .btn-close {position: absolute;right: 13px;  z-index: 999; top: 13px;}
+.summary_selected_heading {font-size: 20px; color: #333; padding-bottom: 10px;}
+.summary_itembox .selected_photographer {background-color: #f4f4f4; padding: 15px; position: relative; margin-bottom: 20px;}
+.summaryavatar-pic {    width: 140px;height: 110px; display: block;  margin: auto;overflow: hidden; background: #fff;}
+.summaryavatar-pic img { object-fit: cover; width: 100%; height: 100%;}
+ul.summarymodal_star_rating {padding: 5px 0px; margin: 0;}
+ul.summarymodal_star_rating li {margin: 0; padding: 0;    display: inline-block;}
+ul.summarymodal_star_rating  li i {color: #fecf0a;font-size: 15px;}
+ul.summarymodal_star_rating  li i.blackstar { color: #767676;}
+
+.summmarywish_list_icon {background-color: #fff; position: absolute; right: 0px;
+  top: 0px; z-index: 9; border: 1px solid #c8c8c8; width: 30px; height: 30px; border-radius: 50%;    text-align: center;line-height: 33px;}
+.summmarywish_list_icon i{font-size: 16px; color: #c8c8c8;}
+a.summmarywish_list_icon:hover i {color: #dd1717;}
+.summary_itembox .map-icon {padding-right: 5px;}
+.summary_content_col {padding-left: 20px;}
+.date_timne_summary {}
+.summary_date_text {}
+.summary_time_text {padding-left: 20px;}
+
+.summary_itembox .selected_event {background-color: #f4f4f4; padding: 15px; position: relative;     margin-bottom: 20px;}
+.summary_itembox .selected_packages {background-color: #f4f4f4; padding: 15px 0px; position: relative;     margin-bottom: 0px;}
+ul.selected_packages {margin: 0; padding: 0;}
+ul.selected_packages li {margin: 0; padding: 0; list-style-type: none; display:inline-block;     width: 49%;}
+.sp_title { color: #797979;}
+.sp_subtitle{    color: #333;}
+
+ul.summary_modal_button {margin: 50px 0 0px;padding: 22px 0 0px; width: 100%; }
+ul.summary_modal_button li {font-weight: 600; font-size: 18px; }
+.send_request_btn {color: #fff;background-color: #333333;border-color: #333333; font-size: 21px;width: auto;    padding:12px 23px;    margin-left: 40px; font-weight: 600;}
+.cancel_request_btn{color: #fff;background-color: #737278;border-color: #333333; font-size: 21px;width: auto;    padding:12px 23px;    margin-left: 15px; font-weight: 600;}
 
 /* search photographer css */
 
@@ -577,6 +616,9 @@ ul.userprofile_star_rating li i.blackstar{color: #767676;}
 .weather_button_section { text-align: right;  padding-bottom: 12px;}
 .celsius_btn { background: #333;color: #fff;font-size: 14px; padding: 6px 10px; border-radius: 4px;cursor: pointer; }
 .fahrenheit_btn{background: #333; color: #fff; font-size: 14px;  padding: 6px 10px; border-radius: 4px;cursor: pointer;}
+.weather_button_section span select { border: 1px solid #ebebeb;width: 100%; padding: 8px;    min-width: 300px;}
+.celsius_btn {margin-right: 10px;}
+
 
 .weather_output {min-height: 470px; background-color: #333333; padding: 30px;border-radius: 4px;}
 .weather_topinfo { color: #fff;padding-top: 0px;}
@@ -606,6 +648,26 @@ ul.today_weather_list li span.tw_list_heading {display: block;}
 ul.today_weather_list li span.tw_list_subheading {display: block; color: #8e98a1; font-size: 14px;}
 .tw_list_icon {font-size: 28px;}
 /* weather css */
+
+
+
+/*photographer event info*/
+.Remarks-para{ padding: 4px;margin-left:0;}
+.profile-pic{ border-radius: 50%;  width: 80px;  height: 80px; padding:10px;  margin-top:10px;}
+.plain-text{ color:grey;}
+.event_info_heading{color:black;}
+.event_photographer_heading{ padding:4px;}
+.shot_button_three{ padding: 11px 22px; background-color:grey;font-size: 21px;width: auto;margin-left: 40px;font-weight: 600;}
+.btn-create-album{padding: 11px 22px; font-size: 21px;width: auto;font-weight: 600;}
+
+.add_shot_button { float: right; color: #fff;  background-color: #333233;  border-color: #333233;  font-size: 21px;  width: auto;  padding: 11px 22px; margin-left: 8px;font-weight: 600;}
+.add_shot_button:hover {color: #fff;} 
+.add_shot_button:focus {color: #333233;}
+.remark_profilename {font-weight: bold;}
+.border_tp {    border-top: 1px solid #dadada;}
+.no-album-text {font-size: 30px;     padding: 20px;}
+
+/*photographer event info*/
 
 
 /* footer css */
@@ -676,6 +738,8 @@ footer .ft-wrapper .col {flex: inherit; margin-bottom: 20px; text-align: center;
 .filter_section { min-height: inherit; margin-bottom: 1.5rem!important;}
 .event_info_block .col-md-8 {flex: inherit; width: 100%;}
 .event_info_block .col-md-4 { flex: inherit; width: 100%;}
+.packages_heading {display:block !important;}
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -732,6 +796,8 @@ ul.today_weather li { margin-bottom: 10px; margin-bottom: 10px;}
 
 ul.today_weather_list { display: block;}
 ul.today_weather_list li {width: 32.333%; display: inline-block; margin-bottom: 20px;}
+.weather_select_otpion {display: block !important;}
+.celfah_btn {display: block !important; margin: 20px 0px;}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 719px) {
