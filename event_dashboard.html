@@ -268,175 +268,52 @@
       <div class="col event_search_col">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="Inprogress-tab" data-bs-toggle="tab" data-bs-target="#Inprogress" type="button" role="tab" aria-controls="Inprogress" aria-selected="true">Inprogress</button>
+            <button class="nav-link active" id="Current-tab" data-bs-toggle="tab" data-bs-target="#Current" type="button" role="tab" aria-controls="Current" aria-selected="true">Current</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="Upcoming-tab" data-bs-toggle="tab" data-bs-target="#Upcoming" type="button" role="tab" aria-controls="Upcoming" aria-selected="false">Upcoming</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="Completed-tab" data-bs-toggle="tab" data-bs-target="#Completed" type="button" role="tab" aria-controls="Completed" aria-selected="false">Completed</button>
+            <button class="nav-link" id="Past-tab" data-bs-toggle="tab" data-bs-target="#Past" type="button" role="tab" aria-controls="Past" aria-selected="false">Past</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="Cancelled-tab" data-bs-toggle="tab" data-bs-target="#Cancelled" type="button" role="tab" aria-controls="Cancelled" aria-selected="false">Cancelled</button>
+            <button class="nav-link" id="Request-tab" data-bs-toggle="tab" data-bs-target="#Request" type="button" role="tab" aria-controls="Request" aria-selected="false">Request</button>
           </li>
       
         </ul>
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="Inprogress" role="tabpanel" aria-labelledby="Inprogress-tab">
+          <div class="tab-pane fade show active" id="Current" role="tabpanel" aria-labelledby="Current-tab">
             <div class="create_event_info">
               <div class="col-md-12">
                 <div class="card flex-md-row box-shadow h-md-250">
                   <span class="photographer_imgplaceholder">
-                    <div class="status"><span class="status_bx color_yellow"></span>Upcoming</div>
+                    <!-- <div class="status"><span class="status_bx color_yellow"></span>Upcoming</div> -->
                   <img class="card-img-right flex-auto d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [325x312]" style="width: 325px; height: 312px;" 
                   src="images/cheezoo_placeholder.jpg" data-holder-rendered="true">
                 </span>
+                
                   <div class="card-body d-flex flex-column align-items-start">
+                    <div class="create_event_info_name mb-0">
+                      <a href="#">Wedding Show</a>
+                    </div>
                     <div class="delete_icon"><i class="fas fa-trash fa-fw text_red"></i></div>
                     <ul class="date_time">
                       <li><span class="icon_style"><i class="fas fa-calendar-alt fa-fw"></i></span>15 Dec 2021</li>
                       <li><span class="icon_style"><i class="far fa-clock fa-fw"></i></span>12:30 pm - 13:30 pm</li>
                     </ul>
-                    <div class="create_event_info_name mb-0">
-                      <a href="#">Wedding Show</a>
-                    </div>
+                    
                 
                     <p class="card-text event_place"><span><i class="fas fa-map-marker-alt"></i></span> Trunk Park, New York</p>
                     <!-- <div class="divider-style  mb-auto"></div> -->
     
-                    <p class="card-text total_request">Total Request sent: 
-                      <span class="total_event_count">0</span>
-                     <!-- <span class="badge badge-success badge_dimesion" data-toggle="tooltip" data-placement="top" title="Success"></span>
-                      <span class="badge badge-success badge_dimesion" data-toggle="tooltip" data-placement="top" title="Success"></span>
-                      <span class="badge badge-warning badge_dimesion" data-toggle="tooltip" data-placement="top" title="Waiting"></span> -->
-                    </p>
-                    <!-- card-text total_request -->
+                
 
-                    <ul class="photographer_paid">
-                      <li class="d-flex align-items-center justify-content-between">
-                        <span class="d-flex flex-column assign_text"><span class="icon_style"><i class="fas fa-user-alt fa-fw"></i></span>Photographer Not Assigned</span>
-                        <span class="d-flex flex-row-reverse paid_text"><span class="text_red">Not Paid</span> <span class="icon_style"><i class="fas fa-money-bill fa-fw"></i></span></span>
-                       </li>
-                       <!-- li -->
-                      </ul>
-                      <!-- photographer_paid -->
+            
     
                     <ul class="find_photographer">
                       <li class="d-flex align-items-center justify-content-end">
                         <!-- <span class="d-flex flex-column hourly-rate"><span class="amount">$20</span>/hr</span> -->
-                        <span class="d-flex flex-row-reverse"><button type="button" class="form-control btn connect-btn">Find Photographer</button></span>
-                       </li>
-                       <!-- li -->
-                      </ul>
-                      <!-- find_photographer -->
-                
-                  </div>
-                  <!-- card-body d-flex flex-column align-items-start -->
-                </div>
-                <!-- card flex-md-row mb-4 box-shadow h-md-250 -->
-              </div>
-              <!-- col-md-12 -->
-            </div>
-            <!-- create_event_info -->
-
-            <div class="create_event_info">
-              <div class="col-md-12">
-                <div class="card flex-md-row box-shadow h-md-250">
-                  <span class="photographer_imgplaceholder">
-                    <div class="status"><span class="status_bx color_yellow"></span>Upcoming</div>
-                  <img class="card-img-right flex-auto d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [325x312]" style="width: 325px; height: 312px;" 
-                  src="images/cheezoo_placeholder.jpg" data-holder-rendered="true">
-                </span>
-                  <div class="card-body d-flex flex-column align-items-start">
-                    <div class="delete_icon"><i class="fas fa-trash fa-fw text_red"></i></div>
-                    <ul class="date_time">
-                      <li><span class="icon_style"><i class="fas fa-calendar-alt fa-fw"></i></span>15 Dec 2021</li>
-                      <li><span class="icon_style"><i class="far fa-clock fa-fw"></i></span>12:30 pm - 13:30 pm</li>
-                    </ul>
-                    <div class="create_event_info_name mb-0">
-                      <a href="#">Wedding Show</a>
-                    </div>
-                
-                    <p class="card-text event_place"><span><i class="fas fa-map-marker-alt"></i></span> Trunk Park, New York</p>
-                    <!-- <div class="divider-style  mb-auto"></div> -->
-    
-                    <p class="card-text total_request">Total Request sent: 
-                      <span class="total_event_count">1</span>
-                     <!-- <span class="badge badge-success badge_dimesion" data-toggle="tooltip" data-placement="top" title="Success"></span>
-                      <span class="badge badge-success badge_dimesion" data-toggle="tooltip" data-placement="top" title="Success"></span>
-                      <span class="badge badge-warning badge_dimesion" data-toggle="tooltip" data-placement="top" title="Waiting"></span> -->
-                    </p>
-                    <!-- card-text total_request -->
-
-                    <ul class="photographer_paid">
-                      <li class="d-flex align-items-center justify-content-between">
-                        <span class="d-flex flex-column assign_text text_red"><span class="icon_style"><i class="fas fa-user-alt fa-fw"></i></span>Photographer Rejected</span>
-                        <span class="d-flex flex-row-reverse paid_text"><span class="text_red">Not Paid</span> <span class="icon_style"><i class="fas fa-money-bill fa-fw"></i></span></span>
-                       </li>
-                       <!-- li -->
-                      </ul>
-                      <!-- photographer_paid -->
-    
-                    <ul class="find_photographer">
-                      <li class="d-flex align-items-center justify-content-end">
-                        <!-- <span class="d-flex flex-column hourly-rate"><span class="amount">$20</span>/hr</span> -->
-                        <span class="d-flex flex-row-reverse"><button type="button" class="form-control btn connect-btn">Find Photographer</button></span>
-                       </li>
-                       <!-- li -->
-                      </ul>
-                      <!-- find_photographer -->
-                
-                  </div>
-                  <!-- card-body d-flex flex-column align-items-start -->
-                </div>
-                <!-- card flex-md-row mb-4 box-shadow h-md-250 -->
-              </div>
-              <!-- col-md-12 -->
-            </div>
-            <!-- create_event_info -->
-
-            <div class="create_event_info">
-              <div class="col-md-12">
-                <div class="card flex-md-row box-shadow h-md-250">
-                  <span class="photographer_imgplaceholder">
-                    <div class="status"><span class="status_bx color_yellow"></span>Upcoming</div>
-                  <img class="card-img-right flex-auto d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [325x312]" style="width: 325px; height: 312px;" 
-                  src="images/cheezoo_placeholder.jpg" data-holder-rendered="true">
-                </span>
-                  <div class="card-body d-flex flex-column align-items-start">
-                    <div class="delete_icon"><i class="fas fa-trash fa-fw text_red"></i></div>
-                    <ul class="date_time">
-                      <li><span class="icon_style"><i class="fas fa-calendar-alt fa-fw"></i></span>15 Dec 2021</li>
-                      <li><span class="icon_style"><i class="far fa-clock fa-fw"></i></span>12:30 pm - 13:30 pm</li>
-                    </ul>
-                    <div class="create_event_info_name mb-0">
-                      <a href="#">Wedding Show</a>
-                    </div>
-                
-                    <p class="card-text event_place"><span><i class="fas fa-map-marker-alt"></i></span> Trunk Park, New York</p>
-                    <!-- <div class="divider-style  mb-auto"></div> -->
-    
-                    <p class="card-text total_request">Total Request sent: 
-                      <span class="total_event_count">3</span>
-                     <span class="badge badge-success badge_dimesion" data-toggle="tooltip" data-placement="top" title="Success"></span>
-                      <span class="badge badge-success badge_dimesion" data-toggle="tooltip" data-placement="top" title="Success"></span>
-                      <span class="badge badge-warning badge_dimesion" data-toggle="tooltip" data-placement="top" title="Waiting"></span>
-                    </p>
-                    <!-- card-text total_request -->
-
-                    <ul class="photographer_paid">
-                      <li class="d-flex align-items-center justify-content-between">
-                        <span class="d-flex flex-column assign_text"><span class="icon_style"><i class="fas fa-user-alt fa-fw text_yellow"></i></span>John Boltz, Alex Cater</span>
-                        <span class="d-flex flex-row-reverse paid_text"><span class="text_red">Not Paid</span> <span class="icon_style"><i class="fas fa-money-bill fa-fw"></i></span></span>
-                       </li>
-                       <!-- li -->
-                      </ul>
-                      <!-- photographer_paid -->
-    
-                    <ul class="find_photographer">
-                      <li class="d-flex align-items-center justify-content-end">
-                        <!-- <span class="d-flex flex-column hourly-rate"><span class="amount">$20</span>/hr</span> -->
-                        <span class="d-flex flex-row-reverse"><button type="button" class="form-control btn connect-btn">Find Photographer</button></span>
+                        <span class="d-flex flex-row-reverse pt_82"><button type="button" class="form-control btn chat-btn">Chat</button></span>
                        </li>
                        <!-- li -->
                       </ul>
@@ -452,49 +329,35 @@
             <!-- create_event_info -->
           </div>
           <!-- tab-pane fade show active -->
+
           <div class="tab-pane fade" id="Upcoming" role="tabpanel" aria-labelledby="Upcoming-tab">
             <div class="create_event_info">
               <div class="col-md-12">
                 <div class="card flex-md-row box-shadow h-md-250">
                   <span class="photographer_imgplaceholder">
-                    <div class="status"><span class="status_bx color_yellow"></span>Upcoming</div>
+                    <!-- <div class="status"><span class="status_bx color_yellow"></span>Upcoming</div> -->
                   <img class="card-img-right flex-auto d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [325x312]" style="width: 325px; height: 312px;" 
                   src="images/cheezoo_placeholder.jpg" data-holder-rendered="true">
                 </span>
+                
                   <div class="card-body d-flex flex-column align-items-start">
+                    <div class="create_event_info_name mb-0">
+                      <a href="#">Wedding Show</a>
+                    </div>
                     <div class="delete_icon"><i class="fas fa-trash fa-fw text_red"></i></div>
                     <ul class="date_time">
                       <li><span class="icon_style"><i class="fas fa-calendar-alt fa-fw"></i></span>15 Dec 2021</li>
                       <li><span class="icon_style"><i class="far fa-clock fa-fw"></i></span>12:30 pm - 13:30 pm</li>
                     </ul>
-                    <div class="create_event_info_name mb-0">
-                      <a href="#">Wedding Show</a>
-                    </div>
+                    
                 
                     <p class="card-text event_place"><span><i class="fas fa-map-marker-alt"></i></span> Trunk Park, New York</p>
                     <!-- <div class="divider-style  mb-auto"></div> -->
     
-                    <p class="card-text total_request">Total Request sent: 
-                      <span class="total_event_count">0</span>
-                     <!-- <span class="badge badge-success badge_dimesion" data-toggle="tooltip" data-placement="top" title="Success"></span>
-                      <span class="badge badge-success badge_dimesion" data-toggle="tooltip" data-placement="top" title="Success"></span>
-                      <span class="badge badge-warning badge_dimesion" data-toggle="tooltip" data-placement="top" title="Waiting"></span> -->
-                    </p>
-                    <!-- card-text total_request -->
-
-                    <ul class="photographer_paid">
-                      <li class="d-flex align-items-center justify-content-between">
-                        <span class="d-flex flex-column assign_text"><span class="icon_style"><i class="fas fa-user-alt fa-fw"></i></span>Photographer Not Assigned</span>
-                        <span class="d-flex flex-row-reverse paid_text"><span class="text_red">Not Paid</span> <span class="icon_style"><i class="fas fa-money-bill fa-fw"></i></span></span>
-                       </li>
-                       <!-- li -->
-                      </ul>
-                      <!-- photographer_paid -->
-    
                     <ul class="find_photographer">
                       <li class="d-flex align-items-center justify-content-end">
                         <!-- <span class="d-flex flex-column hourly-rate"><span class="amount">$20</span>/hr</span> -->
-                        <span class="d-flex flex-row-reverse"><button type="button" class="form-control btn connect-btn">Find Photographer</button></span>
+                        <span class="d-flex flex-row-reverse pt_82"><button type="button" class="form-control btn chat-btn">Job Started</button></span>
                        </li>
                        <!-- li -->
                       </ul>
@@ -509,53 +372,44 @@
             </div>
             <!-- create_event_info -->
           </div>  <!-- tab-pane fade -->
-          <div class="tab-pane fade" id="Completed" role="tabpanel" aria-labelledby="Completed-tab">
+
+          <div class="tab-pane fade" id="Past" role="tabpanel" aria-labelledby="Past-tab">
+
+             <div class="past_select_bx">
+            <div class="d-flex align-items-center  justify-content-between past_heading">
+              <span>Past </span> 
+               <span>
+                 <select id="">
+                   <option>- Completed Events -</option>
+                 </select>
+               </span>
+             </div>
+            </div>
+             
             <div class="create_event_info">
               <div class="col-md-12">
                 <div class="card flex-md-row box-shadow h-md-250">
                   <span class="photographer_imgplaceholder">
-                    <div class="status"><span class="status_bx color_yellow"></span>Upcoming</div>
+                    <!-- <div class="status"><span class="status_bx color_yellow"></span>Upcoming</div> -->
                   <img class="card-img-right flex-auto d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [325x312]" style="width: 325px; height: 312px;" 
                   src="images/cheezoo_placeholder.jpg" data-holder-rendered="true">
                 </span>
+                
                   <div class="card-body d-flex flex-column align-items-start">
+                    <div class="create_event_info_name mb-0">
+                      <a href="#">Wedding Show</a>
+                    </div>
                     <div class="delete_icon"><i class="fas fa-trash fa-fw text_red"></i></div>
                     <ul class="date_time">
                       <li><span class="icon_style"><i class="fas fa-calendar-alt fa-fw"></i></span>15 Dec 2021</li>
                       <li><span class="icon_style"><i class="far fa-clock fa-fw"></i></span>12:30 pm - 13:30 pm</li>
                     </ul>
-                    <div class="create_event_info_name mb-0">
-                      <a href="#">Wedding Show</a>
-                    </div>
                 
                     <p class="card-text event_place"><span><i class="fas fa-map-marker-alt"></i></span> Trunk Park, New York</p>
+                    <p class="card-text tags_past green_color">Request Accepted</p>
                     <!-- <div class="divider-style  mb-auto"></div> -->
     
-                    <p class="card-text total_request">Total Request sent: 
-                      <span class="total_event_count">0</span>
-                     <!-- <span class="badge badge-success badge_dimesion" data-toggle="tooltip" data-placement="top" title="Success"></span>
-                      <span class="badge badge-success badge_dimesion" data-toggle="tooltip" data-placement="top" title="Success"></span>
-                      <span class="badge badge-warning badge_dimesion" data-toggle="tooltip" data-placement="top" title="Waiting"></span> -->
-                    </p>
-                    <!-- card-text total_request -->
-
-                    <ul class="photographer_paid">
-                      <li class="d-flex align-items-center justify-content-between">
-                        <span class="d-flex flex-column assign_text"><span class="icon_style"><i class="fas fa-user-alt fa-fw"></i></span>Photographer Not Assigned</span>
-                        <span class="d-flex flex-row-reverse paid_text"><span class="text_red">Not Paid</span> <span class="icon_style"><i class="fas fa-money-bill fa-fw"></i></span></span>
-                       </li>
-                       <!-- li -->
-                      </ul>
-                      <!-- photographer_paid -->
-    
-                    <ul class="find_photographer">
-                      <li class="d-flex align-items-center justify-content-end">
-                        <!-- <span class="d-flex flex-column hourly-rate"><span class="amount">$20</span>/hr</span> -->
-                        <span class="d-flex flex-row-reverse"><button type="button" class="form-control btn connect-btn">Find Photographer</button></span>
-                       </li>
-                       <!-- li -->
-                      </ul>
-                      <!-- find_photographer -->
+                 
                 
                   </div>
                   <!-- card-body d-flex flex-column align-items-start -->
@@ -565,50 +419,111 @@
               <!-- col-md-12 -->
             </div>
             <!-- create_event_info -->
-          </div>  <!-- tab-pane fade -->
-          <div class="tab-pane fade" id="Cancelled" role="tabpanel" aria-labelledby="Cancelled-tab">
+
             <div class="create_event_info">
               <div class="col-md-12">
                 <div class="card flex-md-row box-shadow h-md-250">
                   <span class="photographer_imgplaceholder">
-                    <div class="status"><span class="status_bx color_yellow"></span>Upcoming</div>
+                    <!-- <div class="status"><span class="status_bx color_yellow"></span>Upcoming</div> -->
                   <img class="card-img-right flex-auto d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [325x312]" style="width: 325px; height: 312px;" 
                   src="images/cheezoo_placeholder.jpg" data-holder-rendered="true">
                 </span>
+                
                   <div class="card-body d-flex flex-column align-items-start">
+                    <div class="create_event_info_name mb-0">
+                      <a href="#">Wedding Show</a>
+                    </div>
                     <div class="delete_icon"><i class="fas fa-trash fa-fw text_red"></i></div>
                     <ul class="date_time">
                       <li><span class="icon_style"><i class="fas fa-calendar-alt fa-fw"></i></span>15 Dec 2021</li>
                       <li><span class="icon_style"><i class="far fa-clock fa-fw"></i></span>12:30 pm - 13:30 pm</li>
                     </ul>
+                
+                    <p class="card-text event_place"><span><i class="fas fa-map-marker-alt"></i></span> Trunk Park, New York</p>
+                    <p class="card-text tags_past orange_color">Request Accepted</p>
+                    <!-- <div class="divider-style  mb-auto"></div> -->
+  
+                  </div>
+                  <!-- card-body d-flex flex-column align-items-start -->
+                </div>
+                <!-- card flex-md-row mb-4 box-shadow h-md-250 -->
+              </div>
+              <!-- col-md-12 -->
+            </div>
+            <!-- create_event_info -->
+            
+
+            <div class="create_event_info">
+              <div class="col-md-12">
+                <div class="card flex-md-row box-shadow h-md-250">
+                  <span class="photographer_imgplaceholder">
+                    <!-- <div class="status"><span class="status_bx color_yellow"></span>Upcoming</div> -->
+                  <img class="card-img-right flex-auto d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [325x312]" style="width: 325px; height: 312px;" 
+                  src="images/cheezoo_placeholder.jpg" data-holder-rendered="true">
+                </span>
+                
+                  <div class="card-body d-flex flex-column align-items-start">
                     <div class="create_event_info_name mb-0">
                       <a href="#">Wedding Show</a>
                     </div>
+                    <div class="delete_icon"><i class="fas fa-trash fa-fw text_red"></i></div>
+                    <ul class="date_time">
+                      <li><span class="icon_style"><i class="fas fa-calendar-alt fa-fw"></i></span>15 Dec 2021</li>
+                      <li><span class="icon_style"><i class="far fa-clock fa-fw"></i></span>12:30 pm - 13:30 pm</li>
+                    </ul>
+                
+                    <p class="card-text event_place"><span><i class="fas fa-map-marker-alt"></i></span> Trunk Park, New York</p>
+                    <p class="card-text tags_past red_color">Request Accepted</p>
+                    <!-- <div class="divider-style  mb-auto"></div> -->
+                  
+                  </div>
+                  <!-- card-body d-flex flex-column align-items-start -->
+                </div>
+                <!-- card flex-md-row mb-4 box-shadow h-md-250 -->
+              </div>
+              <!-- col-md-12 -->
+            </div>
+            <!-- create_event_info -->
+          </div>  <!-- tab-pane fade -->
+
+          <div class="tab-pane fade" id="Request" role="tabpanel" aria-labelledby="Request-tab">
+            <div class="past_select_bx">
+              <div class="d-flex align-items-center  justify-content-between past_heading">
+                <span>Request </span> 
+                 <span>
+                   <select id="">
+                     <option>- Request Received -</option>
+                   </select>
+                 </span>
+               </div>
+              </div>
+            <div class="create_event_info">
+              <div class="col-md-12">
+                <div class="card flex-md-row box-shadow h-md-250">
+                  <span class="photographer_imgplaceholder">
+                    <!-- <div class="status"><span class="status_bx color_yellow"></span>Upcoming</div> -->
+                  <img class="card-img-right flex-auto d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [325x312]" style="width: 325px; height: 312px;" src="images/cheezoo_placeholder.jpg" data-holder-rendered="true">
+                </span>
+                
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <div class="create_event_info_name mb-0">
+                      <a href="#">Wedding Show</a>
+                    </div>
+                    <div class="delete_icon"><i class="fas fa-trash fa-fw text_red"></i></div>
+                    <ul class="date_time">
+                      <li><span class="icon_style"><i class="fas fa-calendar-alt fa-fw"></i></span>15 Dec 2021</li>
+                      <li><span class="icon_style"><i class="far fa-clock fa-fw"></i></span>12:30 pm - 13:30 pm</li>
+                    </ul>
+                    
                 
                     <p class="card-text event_place"><span><i class="fas fa-map-marker-alt"></i></span> Trunk Park, New York</p>
                     <!-- <div class="divider-style  mb-auto"></div> -->
-    
-                    <p class="card-text total_request">Total Request sent: 
-                      <span class="total_event_count">0</span>
-                     <!-- <span class="badge badge-success badge_dimesion" data-toggle="tooltip" data-placement="top" title="Success"></span>
-                      <span class="badge badge-success badge_dimesion" data-toggle="tooltip" data-placement="top" title="Success"></span>
-                      <span class="badge badge-warning badge_dimesion" data-toggle="tooltip" data-placement="top" title="Waiting"></span> -->
-                    </p>
-                    <!-- card-text total_request -->
 
-                    <ul class="photographer_paid">
-                      <li class="d-flex align-items-center justify-content-between">
-                        <span class="d-flex flex-column assign_text"><span class="icon_style"><i class="fas fa-user-alt fa-fw"></i></span>Photographer Not Assigned</span>
-                        <span class="d-flex flex-row-reverse paid_text"><span class="text_red">Not Paid</span> <span class="icon_style"><i class="fas fa-money-bill fa-fw"></i></span></span>
-                       </li>
-                       <!-- li -->
-                      </ul>
-                      <!-- photographer_paid -->
-    
                     <ul class="find_photographer">
-                      <li class="d-flex align-items-center justify-content-end">
+                      <li class="d-flex align-items-center justify-content-end pt_82">
                         <!-- <span class="d-flex flex-column hourly-rate"><span class="amount">$20</span>/hr</span> -->
-                        <span class="d-flex flex-row-reverse"><button type="button" class="form-control btn connect-btn">Find Photographer</button></span>
+                        <span class="d-flex flex-row-reverse"><button type="button" class="form-control btn approve-btn">Approve</button></span>
+                        <span class="d-flex flex-row-reverse"><button type="button" class="form-control btn reject-btn">Reject</button></span>
                        </li>
                        <!-- li -->
                       </ul>

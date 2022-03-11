@@ -668,8 +668,31 @@ ul.today_weather_list li span.tw_list_subheading {display: block; color: #8e98a1
 .no-album-text {font-size: 30px;     padding: 20px;}
 
 /*photographer event info*/
+.chat-btn{color: #fff;background-color: #333333;border-color: #333333; font-size: 21px;width: auto;    padding:12px 23px;    margin-left: 40px; font-weight: 600;}
+.chat-btn:hover{color: #fff;background-color: #333333;border-color: #333333; font-size: 21px;width: auto;    padding:12px 23px;    margin-left: 40px; font-weight: 600;}
+.past_select_bx .form-check { display: block; min-height: inherit; padding-left: inherit; margin-bottom: inherit;}
+.past_select_bx .form-check-input:checked {background-color: #343434; border-color: #343434;}
+.past_select_bx .form-check .form-check-input {margin-left: 0;}
+.past_select_bx select {border: 1px solid #ebebeb;width: 100%;   padding: 9px 12px; min-width: 300px;}
 
+.past_heading {
+  font-size: 20px;
+  border-bottom: 1px solid #dadada;
+  color: #333;
+  text-align: left;
+  padding: 0 20px 20px;
+  font-weight: 700;
+}
 
+.tags_past { font-size: 14px;/* margin-top: 8px; */ margin-bottom: 0px; padding: 3px 10px;}
+.green_color {background-color: #cfffd5; color: #10b324;}
+.orange_color {background-color: #fff0ce; color: #f6ae4c;}
+.red_color {background-color: #ffc9c9; color: #f82256;}
+
+.approve-btn {color: #fff;  background-color: #333233;  border-color: #333233;  font-size: 21px;  width: auto;  padding: 11px 22px; margin-left: 8px;font-weight: 600;}
+.approve-btn:hover{color: #fff;background-color: #333333;border-color: #333333; font-size: 21px;width: auto;    padding:12px 23px;    font-weight: 600;}
+.reject-btn{color: #fff;  background-color: #737375;  border-color: #333233;  font-size: 21px;  width: auto;  padding: 11px 22px; margin-left: 8px;font-weight: 600;}
+.reject-btn:hover{color: #fff;background-color: #737375;border-color: #333333; font-size: 21px;width: auto;    padding:12px 23px;    font-weight: 600;}
 /* footer css */
 .ft-wrapper {background: #333233; padding: 40px 0px; color: #fff;}
 .app-icon {padding-bottom: 10px;}
@@ -690,6 +713,8 @@ ul.social-media li {margin: 0 3px; padding: 0; list-style-type: none; display: i
 ul.social-media li a {background: #fff; width: 40px; height: 40px; display: block;  text-align: center; border-radius: 40px;  line-height: 44px;}
 ul.social-media li a i {color: #000;font-size: 18px;}
 .copyright-row p {text-align: center; font-size: 18px;}
+
+.pt_82{padding-top: 82px;}
 /* footer css */
 
 
