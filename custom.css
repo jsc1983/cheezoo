@@ -693,6 +693,22 @@ ul.today_weather_list li span.tw_list_subheading {display: block; color: #8e98a1
 .approve-btn:hover{color: #fff;background-color: #333333;border-color: #333333; font-size: 21px;width: auto;    padding:12px 23px;    font-weight: 600;}
 .reject-btn{color: #fff;  background-color: #737375;  border-color: #333233;  font-size: 21px;  width: auto;  padding: 11px 22px; margin-left: 8px;font-weight: 600;}
 .reject-btn:hover{color: #fff;background-color: #737375;border-color: #333333; font-size: 21px;width: auto;    padding:12px 23px;    font-weight: 600;}
+
+
+/* notification css here */
+.notification_bx { padding: 160px 0px 80px;}
+.notification_heading {font-size: 45px; color: #333233;font-weight: 700; padding-bottom: 40px; text-align: center;}
+.profile-picture{ margin:10px 5px;  border-radius: 50%; width: 45px; height: 45px;}
+.notification-box{border-left: 10px solid #000; background-color: #fff;}
+.paragraph{ padding:12px; }
+.time-text{text-align:right;  margin-top:13px;  font-size: 14px;}
+ div.notification-box:hover{background-color: #f5f5f5;}
+ .person_name {font-size: 22px; font-weight: 600; display: block; color: #333233;}
+ .notification_info {font-size: 18px; color: #333233;}
+.notification_time {font-size: 14px;color: #333233;}
+/* notification css here */
+
+
 /* footer css */
 .ft-wrapper {background: #333233; padding: 40px 0px; color: #fff;}
 .app-icon {padding-bottom: 10px;}
@@ -823,6 +839,38 @@ ul.today_weather_list { display: block;}
 ul.today_weather_list li {width: 32.333%; display: inline-block; margin-bottom: 20px;}
 .weather_select_otpion {display: block !important;}
 .celfah_btn {display: block !important; margin: 20px 0px;}
+
+.chat_btn_section .pt_82 {padding-top: 0;}
+.chat_btn_section button {margin-left: 0;}
+
+.jobstarted_btn_section .pt_82 {padding-top: 0;}
+.jobstarted_btn_section button {margin-left: 0;}
+
+.approve_reject_btn_section .pt_82 {padding-top: 0;}
+.approve_reject_btn_section button {margin-left: 0;}
+
+ul.approve_reject_btn_section {
+  padding-top: 0;
+  align-items: inherit !important;
+  display: block !important;
+  width: 100%;
+  justify-content: inherit !important;
+}
+ul.approve_reject_btn_section li span {
+  width: 100%;
+  display: block !important;
+  flex-direction: column !important;
+}
+ul.approve_reject_btn_section li{
+align-items: inherit !important;
+justify-content: inherit !important; width: 100%;
+display: block !important;
+}
+.approve_reject_btn_section button {
+  margin-left: 0;
+  width: 100%;
+  margin-bottom: 10px;
+}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 719px) {
