@@ -1129,8 +1129,118 @@ color: white;} */
 .pt-45  {padding-top: 45px;}
 .form-label-heading {font-size: 32px; font-weight: 600;}
 
-/* Jigyasa CSS ends here */
 
+.img_name{
+  text-align: center;
+  color: #333233;
+  font-weight: 600; 
+  font-size: 20px;
+  padding-top: 10px;     
+  padding-bottom: 10px;
+}
+.card_border{
+  border: none;
+  border-bottom: 1px solid #dadada;
+  margin-top: 5px;
+}
+
+.card-text span{
+  color: #737375;
+}
+/* .input_design:checked{
+  background-color: #333;
+  border-color: #333
+} */
+.input_design{
+  width: 65px;
+  height: 30px;
+  background-color: #333;
+  border-color: #333
+}
+.input_design:focus{
+  border:none;
+  box-shadow: none;
+  
+  width: 65px;
+  height: 30px;
+}
+
+.form-switch .input_design{
+  background-image: url('images/circle.svg');
+  background-color: #737375;     width: 4.5em;
+  height: 38px;
+} 
+.form-switch .input_design:focus{
+  background-image: url('images/circle.svg');
+} 
+.form-switch .input_design:checked{
+  background-color: #333;;
+} 
+
+
+ul.user_profile_notification li { display: block;}
+
+ul.user_profile_notification {margin: 0;padding-left: 17px;padding-right: 17px; display: flex;
+  align-items: center;}
+ul.user_profile_notification li {font-weight: 600;  margin-bottom: 5px;display: inline-block;font-size: 24px; min-width: 225px;}
+ul.user_profile_notification li input {width: auto;padding: inherit;}
+
+ul.user_profile_notification li .form-check {display: inline-block; margin-bottom: 0;margin-right: 10px; margin-left: 30px;}
+
+
+.form-label-size i{
+  color: green;
+  font-weight: 600;
+}
+
+.form-label-size{
+  font-size: 24px;
+}
+
+.create_event_info_name_black {font-size: 30px; font-weight: 700; color: #333; padding: 4px 0px;}
+
+
+.add-to-fav-btn{
+  margin-top: 25px;
+  background-color: #333;
+  color: #fff;
+}
+.card-image{
+  max-width: 370px;
+}
+
+.bd-highlights {
+  /* color: white; */
+  /* max-width: 800px; */
+  text-align: center;
+}
+.transection_history{
+  width: 100%;
+}
+
+.transection_icon{
+  color: #000;
+  background-color: #fefeca;
+  font-weight: 600;
+  font-size: 50px;
+  border-radius: 50%;
+  max-height: 120px;
+  padding: 30px;
+  align-items: center;
+  width: 120px;
+}
+
+.back_color{
+  background-color: #f0f0f0;
+}
+
+
+.paid_text {
+  font-size: 20px;
+}
+.transection_history .event_place {padding-bottom: 0;}
+
+/* Jigyasa CSS ends here */
 
 
 
@@ -1329,6 +1439,14 @@ display: block !important;
 .nwh_row  .col {
   flex: inherit;
 }
+.th_block {display: block !important;}
+.th_itemlist {display: block !important; justify-content: inherit !important;     align-items: inherit !important;}
+.transection_icon {margin: auto;} 
+.event_info_heading {text-align:center; }
+.recieve_on {display: block !important; justify-content: inherit !important;     align-items: inherit !important;} 
+.transection_history li   {display: block !important; justify-content: inherit !important;     align-items: inherit !important;}
+.transection_history li span {display: block !important;     padding-top: 6px;}
+
 }
 
 @media only screen and (min-width: 320px) and (max-width: 719px) {
