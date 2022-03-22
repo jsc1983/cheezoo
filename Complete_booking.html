@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Hugo 0.88.1">
+      <title>Cheezoo</title>
+      <link rel="canonical" href="">
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom styles for this template -->
+      <link href="custom.css" rel="stylesheet">
+      <link href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="main_wrapper">
+         <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-shadow" aria-label="">
+            <div class="container">
+               <a class="navbar-brand" href="#"><img src="images/cheezoo-logo.png"></a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="d-flex flex-row-reverse orderclass">
+                  <ul class="account-setting">
+                     <li>
+                        <span class="notify-bell dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-light">4</span>
+                        </span>
+                        <div class="dropdown-menu dropdown-notification">
+                           <div class="dropdown-item noti-title">
+                              <h5 class="m-0">
+                                 <span class="float-end">
+                                 <a href="javascript: void(0);" class="text-dark">
+                                 <small>Clear All</small>
+                                 </a>
+                                 </span>Notification
+                              </h5>
+                           </div>
+                           <!-- dropdown-item noti-title -->
+                           <ul class="notify-item">
+                              <li>
+                                 <span class="notify-icon notify-color"><i class="fas fa-user"></i></span>
+                                 <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+                              </li>
+                              <li>
+                                 <span class="notify-icon notify-color"><i class="fas fa-user"></i></span>
+                                 <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+                              </li>
+                              <li>
+                                 <span class="notify-icon"><img class="img-fluid rounded-circle" src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg"></span>
+                                 <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+                              </li>
+                              <li>
+                                 <span class="notify-icon notify-color"><i class="fas fa-user"></i></span>
+                                 <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+                              </li>
+                           </ul>
+                           <a href="javascript:void(0);" class="notify-all">View All</a>
+                        </div>
+                        <!-- dropdown-menu dropdown-notification -->
+                     </li>
+                     <!-- li -->
+                     <li>
+                        <span class="account-user dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="img-fluid rounded-circle" src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg">
+                        </span>
+                        <div class="dropdown-menu dropdown-account">
+                           <ul class="account-item">
+                              <li>
+                                 <span class="account-icon account-color"><i class="fas fa-user"></i></span>
+                                 <span class="account-content">My Account</span>
+                              </li>
+                              <li>
+                                 <span class="account-icon account-color"><i class="fas fa-cog"></i></span>
+                                 <span class="account-content">Settings</span>
+                              </li>
+                              <li>
+                                 <span class="account-icon account-color"><i class="far fa-life-ring"></i></span>
+                                 <span class="account-content">Support</span>
+                              </li>
+                              <li>
+                                 <span class="account-icon account-color"><i class="fas fa-sign-out-alt"></i></span>
+                                 <span class="account-content">Logout</span>
+                              </li>
+                           </ul>
+                        </div>
+                        <!-- dropdown-menu dropdown-account -->
+                     </li>
+                  </ul>
+                  <!-- account-setting -->
+               </div>
+               <!-- d-flex -->
+               <div class="collapse navbar-collapse" id="navbarCollapse" style="">
+                  <ul class="navbar-nav  ml-auto">
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Find a Photographer</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Be a Photographer</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Resources</a>
+                     </li>
+                  </ul>
+               </div>
+               <!-- collapse navbar-collapse  -->
+            </div>
+            <!-- container -->
+         </nav>
+         <!-- nav close here -->
+         <section class="mid-content bg-grey">
+            <div class="manage_profile">
+               <div class="mp_heading">Complete your booking</div>
+                
+                    <div class="accordion m-auto" id="accordionExample">
+                        <div class="steps">
+                            <progress id="progress" value=0 max=100 ></progress>
+                            <div class="step-item">
+                                <button class="step-button text-center" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fa-regular fa-check"></i>
+                                </button>
+                                <div class="step-title">
+                                    Summary
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <button class="step-button text-center collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fa-regular fa-check"></i>
+                                </button>
+                                <div class="step-title">
+                                    Payment
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <button class="step-button text-center collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fa-regular fa-check"></i>
+                                </button>
+                                <div class="step-title">
+                                    Payment Confirmed
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+               <div class="container">
+                  <div class="row">
+                     <div class="col-7 user_profile_forms">
+                         <div class="payment_content mb-3">
+                            <label for="" class="form-label">Selected Photographer</label>
+                            <div class="create_event_info">
+                                <div class="col-md-12">
+                                  <div class="card cards flex-md-row box-shadow h-md-250">
+                                    <span class="photographer_imgplaceholder">
+                                    <img class="card-img-right flex-auto d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [325x312]" style="width: 180px; height: 160px;" 
+                                    src="images/placeholder.jpg" data-holder-rendered="true">
+                                  </span>
+                                    <div class="card-body d-flex flex-column align-items-start">
+                                      <div class="event_info_heading">
+                                        Alex Carter
+                                      </div>
+                                      <ul class="star-rating-phtographer">
+                                       <li><i class="fas fa-star"></i></li>
+                                       <li><i class="fas fa-star"></i></li>
+                                       <li><i class="fas fa-star"></i></li>
+                                       <li><i class="fas fa-star blackstar"></i></li>
+                                       <li><i class="fas fa-star blackstar"></i></li>
+                                       <li>(2450)</li>
+                                     </ul>
+                                      <p class="card-text event_place"><span><i class="fas fa-map-marker-alt"></i></span> Trunk Park, New York</p>
+                                      <!-- card-text total_request -->
+                                  
+                                    </div>
+                                    <!-- card-body d-flex flex-column align-items-start -->
+                                  </div>
+                                  <!-- card flex-md-row mb-4 box-shadow h-md-250 -->
+                                </div>
+                                <!-- col-md-12 -->
+                              </div>
+
+
+                         </div>
+                         <div class="payment_content mb-3">
+                            <label for="" class="form-label">Selected Event</label>
+                            <div class="create_event_info">
+                                <div class="col-md-12">
+                                  <div class="card cards flex-md-row box-shadow h-md-250">
+                                    <span class="photographer_imgplaceholder">
+                                    <img class="card-img-right flex-auto d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [325x312]" style="width: 180px; height: 160px;" 
+                                    src="images/placeholder.jpg" data-holder-rendered="true">
+                                  </span>
+                                    <div class="card-body d-flex flex-column align-items-start">
+                                      <div class="event_info_heading">
+                                        Alex Carter
+                                      </div>
+                                      <ul class="star-rating-phtographer card-text event_place">
+                                       <li>15 Dec 2020</li>
+                                       <li>1:00 PM</li>
+                                     </ul>
+                                      <p class="card-text event_place"><span><i class="fas fa-map-marker-alt"></i></span> Trunk Park, New York</p>
+                                      <!-- card-text total_request -->
+                                  
+                                    </div>
+                                    <!-- card-body d-flex flex-column align-items-start -->
+                                  </div>
+                                  <!-- card flex-md-row mb-4 box-shadow h-md-250 -->
+                                </div>
+                                <!-- col-md-12 -->
+                              </div>
+
+
+                         </div>
+                         <div class="payment_content mb-3">
+                            <label for="" class="form-label">Selected Event</label>
+                            <div class="create_event_info">
+                                <div class="col-md-12">
+                                  <div class="card cards flex-md-row box-shadow h-md-250">
+                                    <div class="d-flex" >
+                                        <div class="p-2 col flex-fill card-text event_place">
+                                            <ul class="star-rating-phtographer card-text event_place">
+                                                <li><span>Package Name: </span>Wedding 1</li>
+                                                 <br>
+                                                <li><span>No. of hours: </span>2</li>
+                                              </ul>
+                                        </div>
+                                        <div class="flex-fill col card-text event_place">
+                                            <ul class="star-rating-phtographer card-text event_place" style="margin-left: 100px;">
+                                                <li><span>No. of Pictures: </span>20</li>
+                                                 <br>
+                                                <li><span>Total Price: </span>$20</li>
+                                              </ul>
+                                        </div>
+                                      </div>
+                                      <!-- card-text total_request -->
+                                  </div>
+                                    </div>
+                                    <!-- card-body d-flex flex-column align-items-start -->
+                                  </div>
+                                  <!-- card flex-md-row mb-4 box-shadow h-md-250 -->
+                                </div>
+                         </div>
+
+                     <div class="col-4  user_profile_forms">
+                        <label for="" class="form-label">Summary</label>
+                        <!-- <div class="d-flex" >
+                            <div class="p-2 flex-fill col-md-6 card-text event_place">
+                                <span>
+                               <p>Price</p>
+                               <p>Coupon Discount(Cheezoo1)</p>
+                               <p><B>TOTAL</B></p>
+                            </span>
+                            </div>
+                            <div class="flex-fill col-md-6 card-text event_place text-end">
+                            <span>
+                                <p>$23 </p>
+                                 <p>-$23</p>
+                                 <p class="text_black"><B>$87.00</B></p>
+                               
+                            </span>
+                            </div>
+                          </div> -->
+                          <div class="pr-2 col flex-fill card-text event_place">
+                          <ul class="star-rating-phtographer card-text event_place">
+                              <li  class="col-9">Price</li>
+                              <li class=" col-2 text-end text-success">$23</li>
+                          </ul>
+                        
+                          <ul class="star-rating-phtographer card-text event_place">
+                            <li class="col-9">Coupon Discount(Cheezoo1)</li>
+                            <li class="text-end col-2 text-success">-$23</li>
+                        </ul>
+                        <ul class="star-rating-phtographer card-text event_place">
+                            <li class="col-9"></li>
+                            <li class="text-end col-2 text-danger">Remove</li>
+                        </ul>
+                        <hr>
+                        <ul class="star-rating-phtographer card-text event_place">
+                            <li class="col-9"><B>TOTAL</B></li>
+                            <li class="text-end col-2"><B>$87.00</B></li>
+                        </ul></div>
+                          <!--Flex ends here-->
+                          <button type="submit" class="btn btn-up-button btn_submit">Checkout</button>
+                          <br>
+                          <p class="center text-warning">Having a Coupon?</p>
+                     </div>
+                  <!-- row -->
+               </div>
+               <!-- container -->
+            </div>
+            
+            <!-- manage_profile -->
+         </section>
+         <!-- mid-content bg-grey -->
+         <footer>
+            <div class="ft-wrapper">
+               <div class="container">
+                  <div class="row">
+                     <div class="col info-col">
+                        <div class="ft-logo"><img src="images/cheezoo-logo-footer.png"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                           labore et dolore magna aliqua. 
+                        </p>
+                        <div class="app-icon"><img src="images/ios-logo.png"></div>
+                        <div><img src="images/google-play-logo.png"></div>
+                     </div>
+                     <!-- col info-col -->
+                     <div class="col link-col">
+                        <div class="link-heading"> Quick links</div>
+                        <ul class="ft-link">
+                           <li><a href="">Home</a></li>
+                           <li><a href="">Who we are</a></li>
+                           <li><a href="">join</a></li>
+                           <li><a href="">blog</a></li>
+                           <li><a href="">gallery</a></li>
+                        </ul>
+                     </div>
+                     <!-- col info-col -->
+                     <div class="col link-col">
+                        <div class="link-heading">Navigation</div>
+                        <ul class="ft-link">
+                           <li><a href="">Pricing</a></li>
+                           <li><a href="">Resources</a></li>
+                           <li><a href="">Support</a></li>
+                           <li><a href="">Terms & Conditions</a></li>
+                           <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                     </div>
+                     <!-- col info-col -->
+                     <div class="col subscribe-col">
+                        <div class="subscribe-heading">Subscribe Now</div>
+                        <form>
+                           <input type="text" class="form-control border-radius-0" id="" placeholder="">
+                           <button type="submit" class="form-control btn btn-subscribe border-radius-0 mb-3">Subscribe</button>
+                        </form>
+                        <ul class="social-media">
+                           <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                           <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                           <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                     </div>
+                     <!-- col info-col -->
+                  </div>
+                  <!-- row -->
+                  <div class="row copyright-row">
+                     <p>Copright 2021 Cheezoo</p>
+                  </div>
+               </div>
+               <!-- container -->
+            </div>
+            <!-- ft-wrapper -->
+         </footer>
+         <!-- footer -->
+      </div>
+      <!-- main_wrapper close here -->
+   </body>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> -->
+   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+      });
+   </script>
+   <SCript>
+        const stepButtons = document.querySelectorAll('.step-button');
+        const progress = document.querySelector('#progress');
+
+        Array.from(stepButtons).forEach((button,index) => {
+            button.addEventListener('click', () => {
+                progress.setAttribute('value', index * 100 /(stepButtons.length - 1) );//there are 3 buttons. 2 spaces.
+
+                stepButtons.forEach((item, secindex)=>{
+                    if(index > secindex){
+                        item.classList.add('done');
+                    }
+                    if(index < secindex){
+                        item.classList.remove('done');
+                    }
+                })
+            })
+        })
+   </SCript>
+   <!--Progress bar script-->
+</html>
