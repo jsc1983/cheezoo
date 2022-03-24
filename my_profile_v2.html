@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.88.1">
+<title>Cheezoo</title>
+<link rel="canonical" href="">
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="custom.css" rel="stylesheet">
+<link href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade select_event_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="se_heading">Select Event</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form class="row g-3 se_row">
+            <div class="col-md-6">
+              <div class="event_occasion">
+                 <div class="graphic-pic"><img src="images/graphic.jpg"></div>
+                 <div class="event_occassion_name">Wedding Show</div>
+                 <div class="event_ocassion_location"><span><i class="fas fa-map-marker-alt"></i></span>Trunk Park, New York</div>
+              </div>
+              <!-- event_occasion -->
+            </div>
+            <!-- col-md-6 -->
+  
+            <div class="col-md-6">
+              <div class="event_occasion">
+                 <div class="graphic-pic"><img src="images/graphic.jpg"></div>
+                 <div class="event_occassion_name">Wedding Show</div>
+                 <div class="event_ocassion_location"><span><i class="fas fa-map-marker-alt"></i></span>Trunk Park, New York</div>
+              </div>
+              <!-- event_occasion -->
+            </div>
+            <!-- col-md-6 -->
+  
+            <div class="col-md-6">
+              <div class="event_occasion">
+                 <div class="graphic-pic"><img src="images/graphic.jpg"></div>
+                 <div class="event_occassion_name">Wedding Show</div>
+                 <div class="event_ocassion_location"><span><i class="fas fa-map-marker-alt"></i></span>Trunk Park, New York</div>
+              </div>
+              <!-- event_occasion -->
+            </div>
+            <!-- col-md-6 -->
+  
+            <div class="col-md-6">
+              <div class="event_occasion">
+                 <div class="graphic-pic"><img src="images/graphic.jpg"></div>
+                 <div class="event_occassion_name">Wedding Show</div>
+                 <div class="event_ocassion_location"><span><i class="fas fa-map-marker-alt"></i></span>Trunk Park, New York</div>
+              </div>
+              <!-- event_occasion -->
+            </div>
+            <!-- col-md-6 -->
+            <div class="request_text">You can send hiring request to maximum 3 photographers per event</div>
+         
+            <div class="col-12">
+              <button type="button" class="form-control btn btn-connect" data-bs-toggle="modal" data-bs-target="#summaryModal">Submit</button>
+              <div class="ce-or-section"><span><div class="ce-or-text">or</div></span></div>
+              <button type="button" class="form-control btn btn-create-event">Create New Event</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+      <!-- Modal -->
+      
+    <!-- summary_event_modal -->
+    <div class="modal fade summary_event_modal" id="summaryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="se_heading">Summary</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- modal-header -->
+          <div class="row g-3 se_row">
+            <div class="summary_itembox">
+              <div class="summary_selected_heading">Selected Photographer</div>
+         <div class="selected_photographer">
+          <div class="row g-0  overflow-hidden flex-md-row">
+            <div class="col-auto d-lg-block">
+              <div class="summaryavatar-pic">
+              <img src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg">
+            </div>
+            <!-- summaryavatar-pic -->
+          </div>
+          <!-- col-auto d-lg-block -->
+            <div class="col d-flex flex-column position-relative align-self-center summary_content_col">
+              <a href="" class="summmarywish_list_icon"><i class="fas fa-heart"></i></a>
+              <h3 class="mb-0">Alex Carter</h3>
+              <ul class="summarymodal_star_rating">
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star blackstar"></i></li>
+                <li><i class="fas fa-star blackstar"></i></li>
+                <li><span>(2450)</span></li>
+              </ul>
+              <!-- summarymodal_star_rating -->
+              <p class="card-text mb-auto"><span class="map-icon"><i class="fas fa-map-marker-alt"></i></span>Trunk Park, New York</p>
+            </div>
+            <!-- col d-flex flex-column position-relative align-self-center summary_content_col -->
+          </div>
+          <!-- row g-0  overflow-hidden flex-md-row -->
+         </div>
+         <!-- selected_photographer -->
+            </div>
+            <!-- summary_itembox -->
+
+            <div class="summary_itembox">
+              <div class="summary_selected_heading">Selected Event</div>
+         <div class="selected_event">
+          <div class="row g-0  overflow-hidden flex-md-row">
+            <div class="col-auto d-lg-block">
+              <div class="summaryavatar-pic">
+              <img src="images/cheezo_icon_white.jpg">
+            </div>
+            <!-- summaryavatar-pic -->
+          </div>
+          <!-- col-auto d-lg-block -->
+            <div class="col d-flex flex-column position-relative align-self-center summary_content_col">
+              <a href="" class="summmarywish_list_icon"><i class="fas fa-heart"></i></a>
+              <h3 class="mb-0">Wedding Show</h3>
+             <div class="date_timne_summary">
+              <span class="summary_date_text">15 Dec 2022</span>
+              <span class="summary_time_text">1:00 PM</span>
+             </div>
+              <!-- summarymodal_star_rating -->
+              <p class="card-text mb-auto"><span class="map-icon"><i class="fas fa-map-marker-alt"></i></span>Trunk Park, New York</p>
+            </div>
+            <!-- col d-flex flex-column position-relative align-self-center summary_content_col -->
+          </div>
+          <!-- row g-0  overflow-hidden flex-md-row -->
+         </div>
+         <!-- selected_event -->
+            </div>
+            <!-- summary_itembox -->
+
+            <div class="summary_itembox">
+              <div class="summary_selected_heading">Selected Packages</div>
+         <div class="selected_packages">
+          <div class="row g-0  overflow-hidden flex-md-row">
+            <div class="col d-flex flex-column position-relative align-self-center summary_content_col">
+              <ul class="selected_packages">
+                <li>
+                  <span class="sp_title">Package Name:</span>
+                  <span class="sp_subtitle">Wedding 1</span>
+                </li>
+                <!-- li -->
+
+                <li>
+                  <span class="sp_title">No of Pictures:</span>
+                  <span class="sp_subtitle">20</span>
+                </li>
+                <!-- li -->
+
+                <li>
+                  <span class="sp_title">No. of hours:</span>
+                  <span class="sp_subtitle">2</span>
+                </li>
+                <!-- li -->
+
+                <li>
+                  <span class="sp_title">Total Price:</span>
+                  <span class="sp_subtitle">$20</span>
+                </li>
+                <!-- li -->
+
+
+              </ul>
+            </div>
+            <!-- col d-flex flex-column position-relative align-self-center summary_content_col -->
+          </div>
+          <!-- row g-0  overflow-hidden flex-md-row -->
+         </div>
+         <!-- selected_packages -->
+            </div>
+            <!-- summary_itembox -->
+
+            <ul class="d-flex justify-content-end  summary_modal_button">
+              <li class="d-flex align-items-center justify-content-between">
+                <!-- <span class="d-flex flex-column hourly-rate"><span class="amount">$20</span>/hr</span> -->
+                <span class="connect-btn"><button type="button" class="form-control btn send_request_btn">Send Request</button></span>
+                <span class="connect-btn"><button type="button" class="form-control btn cancel_request_btn">Cancel Request</button></span>
+               </li>
+               <!-- li -->
+              </ul>
+          </div>
+          <!-- row g-3 se_row -->
+        </div>
+        <!-- modal-content -->
+      </div>
+      <!-- modal-dialog modal-dialog-centered -->
+    </div>
+      <!-- summary_event_modal -->
+
+
+<div class="main_wrapper">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-shadow" aria-label="">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/cheezoo-logo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex flex-row-reverse orderclass">
+        <ul class="account-setting">
+          <li>
+            <span class="notify-bell dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="far fa-bell"></i>
+              <span class="badge badge-light">4</span>
+          </span>
+          <div class="dropdown-menu dropdown-notification">
+            <div class="dropdown-item noti-title">
+              <h5 class="m-0">
+                  <span class="float-end">
+                      <a href="javascript: void(0);" class="text-dark">
+                          <small>Clear All</small>
+                      </a>
+                  </span>Notification
+              </h5>
+          </div>
+          <!-- dropdown-item noti-title -->
+          <ul class="notify-item">
+              <li>
+                <span class="notify-icon notify-color"><i class="fas fa-user"></i></span>
+                <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+              </li>
+              <li>
+                <span class="notify-icon notify-color"><i class="fas fa-user"></i></span>
+                <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+              </li>
+              <li>
+                <span class="notify-icon"><img class="img-fluid rounded-circle" src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg"></span>
+                <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+              </li>
+              <li>
+                <span class="notify-icon notify-color"><i class="fas fa-user"></i></span>
+                <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+              </li>
+            </ul>
+            <a href="javascript:void(0);" class="notify-all">View All</a>
+          </div>
+          <!-- dropdown-menu dropdown-notification -->
+          </li>
+          <!-- li -->
+
+
+          <li>
+            <span class="account-user dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-fluid rounded-circle" src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg">
+            </span>
+            <div class="dropdown-menu dropdown-account">
+            <ul class="account-item">
+                <li>
+                  <span class="account-icon account-color"><i class="fas fa-user"></i></span>
+                  <span class="account-content">My Account</span>
+                </li>
+                <li>
+                  <span class="account-icon account-color"><i class="fas fa-cog"></i></span>
+                  <span class="account-content">Settings</span>
+                </li>
+                <li>
+                  <span class="account-icon account-color"><i class="far fa-life-ring"></i></span>
+                  <span class="account-content">Support</span>
+                </li>
+                <li>
+                  <span class="account-icon account-color"><i class="fas fa-sign-out-alt"></i></span>
+                  <span class="account-content">Logout</span>
+                </li>
+              
+              </ul>
+            </div>
+            <!-- dropdown-menu dropdown-account -->
+          </li>
+
+        </ul>
+        <!-- account-setting -->
+      </div>
+      <!-- d-flex -->
+
+    
+
+      <div class="collapse navbar-collapse" id="navbarCollapse" style="">
+        <ul class="navbar-nav  ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Find a Photographer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Be a Photographer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+        </ul>
+      </div>
+      <!-- collapse navbar-collapse  -->
+
+
+    </div>
+    <!-- container -->
+  </nav>
+  <!-- nav close here -->
+
+  <section class="mid-content bg-grey">
+<div class="banner-section"></div>  <!-- banner-section -->
+<div class="profile_info">
+ <div class="container">
+   <div class="row">
+     <div class="col-md-4">
+      <div class="personal_info">
+        <div class="avatar-pic"><img src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg"></div>
+        <div class="avatar-name">Alex Carter</div>
+        <ul class="star-rating">
+          <li><i class="fas fa-star"></i></li>
+          <li><i class="fas fa-star"></i></li>
+          <li><i class="fas fa-star"></i></li>
+          <li><i class="fas fa-star-half-alt"></i></li>
+          <li><i class="far fa-star"></i></li>
+        </ul>
+        <!-- star-rating -->
+        <!-- <div class="hourly-rate">$60.0/hr</div> -->
+        <p class="d-inline-block card-text tags">Wedding Expert</p>
+        <ul class="share_event share_events">
+         <li><a href="" class="fb_color"><i class="fab fa-facebook-f"></i></a></li>
+         <li><a href="" class="tw_color"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="" class="insta_color"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <div class="button-section d-flex justify-content-center">
+          <a class="hirebtn" href=""  data-bs-toggle="modal" data-bs-target="#exampleModal">Connect</a>
+          
+        </div>
+        <!-- button-section d-flex justify-content-center -->
+     </div>
+     <!-- personal_info -->
+
+      <div class="personal_details">
+         <div class="pd-heading">Personal Details</div>
+         <ul class="pd-info">
+           <li class="d-flex align-items-center justify-content-between">
+             <span class="d-flex flex-column left-info">Name</span>
+             <span class="d-flex flex-row-reverse right-info">Alex Carter</span>
+            </li>
+            <!-- li item -->
+            <li class="d-flex align-items-center justify-content-between">
+              <span class="d-flex flex-column left-info">Location</span>
+              <span class="d-flex flex-row-reverse right-info">Ohio Columbus</span>
+             </li>
+             <!-- li item -->
+             <li class="d-flex align-items-center justify-content-between">
+              <span class="d-flex flex-column left-info">Languages</span>
+              <span class="d-flex flex-row-reverse right-info">English, Spanish</span>
+             </li>
+             <!-- li item -->
+             <li class="d-flex align-items-center justify-content-between">
+              <span class="d-flex flex-column left-info">Email</span>
+              <span class="d-flex flex-row-reverse right-info">Alex@gmail.com</span>
+             </li>
+             <!-- li item -->
+             <li class="d-flex align-items-center justify-content-between">
+              <span class="d-flex flex-column left-info">Phone Number</span>
+              <span class="d-flex flex-row-reverse right-info">+1 63487857855</span>
+             </li>
+             <!-- li item -->
+             <li class="d-flex align-items-center justify-content-between">
+              <span class="d-flex flex-column left-info">Total Event Covered</span>
+              <span class="d-flex flex-row-reverse right-info">10</span>
+             </li>
+             <!-- li item -->
+         </ul>
+         <!-- pd-info -->
+      </div>
+      <!-- personal_details -->
+     </div>
+     <!-- col-md-4 -->
+     <div class="col-md-8">
+       <div class="about_us">
+         <div class="about_us_heading">About Us</div>
+         <div class="about_us_description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. aliqua. Quis ipsum 
+          suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. aliqua. 
+          Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+         </div>
+         <!-- about_us_description -->
+       </div>
+       <!-- about_us -->
+
+
+       <div class="packages">
+        <div class="d-flex align-items-center  justify-content-between packages_heading">
+         <span>My Packages </span> 
+          <span>
+            <select id="">
+              <option>- Select Event Type -</option>
+            </select>
+          </span>
+        </div>
+        <div class="packages_tables">
+          <div class="table" id="results">
+            <div class='theader'>
+              <div class='table_header'>Choose Package</div>
+              <div class='table_header'>Packages</div>
+              <div class='table_header'>Hrs</div>
+              <div class='table_header'>Pics</div>
+              <div class='table_header'>Rate</div>
+            </div>
+            <div class='table_row'>
+              <div class='table_small'>
+                <div class='table_cell'>Choose Package</div>
+                <div class='table_cell d-flex justify-content-center'> 
+                  <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">&nbsp;</label>
+                </div>
+                <!-- form-check -->
+              </div>
+              </div>
+              <div class='table_small'>
+                <div class='table_cell'>Packages</div>
+                <div class='table_cell'>Wedding 1</div>
+              </div>
+              <div class='table_small'>
+                <div class='table_cell'>Hrs</div>
+                <div class='table_cell'>2</div>
+              </div>
+              <div class='table_small'>
+                <div class='table_cell'>Pics</div>
+                <div class='table_cell'>20</div>
+              </div>
+              <div class='table_small'>
+                <div class='table_cell'>Rate</div>
+                <div class='table_cell'>$50.00</div>
+              </div>
+            </div>
+            <!-- table_row -->
+
+            <div class='table_row'>
+              <div class='table_small'>
+                <div class='table_cell'>Choose Package</div>
+                <div class='table_cell d-flex justify-content-center'> 
+                  <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">&nbsp;</label>
+                </div>
+                <!-- form-check -->
+              </div>
+              </div>
+              <div class='table_small'>
+                <div class='table_cell'>Packages</div>
+                <div class='table_cell'>Wedding 2</div>
+              </div>
+              <div class='table_small'>
+                <div class='table_cell'>Hrs</div>
+                <div class='table_cell'>4</div>
+              </div>
+              <div class='table_small'>
+                <div class='table_cell'>Pics</div>
+                <div class='table_cell'>40</div>
+              </div>
+              <div class='table_small'>
+                <div class='table_cell'>Rate</div>
+                <div class='table_cell'>$100.00</div>
+              </div>
+            </div>
+            <!-- table_row -->
+          </div>
+        </div>
+        <!-- packages_tables -->
+       </div>
+       <!-- packages -->
+
+       <div class="achievement">
+        <div class="achievement_heading">Cheezoo Achievement badges</div>
+        <ul class="achievement_badge">
+          <li><img src="images/badge-1.png"></li>
+          <li><img src="images/badge-2.png"></li>
+        </ul>
+        <!-- achievement_badge -->
+       </div>
+       <!-- achievement -->
+
+       <div class="showcase">
+        <div class="showcase_heading">Showcase </div>
+        <!-- showcase_heading -->
+        <div class="showcase_gallery">
+          Gallery Plugin Goes Here
+        </div>
+       </div>
+       <!-- showcase -->
+     </div>
+     <!-- col-md-8 -->
+   </div>
+   <!-- row -->
+ </div>
+ <!-- profile_info -->
+</div>
+ <!-- container -->
+  </section>
+  <!-- mid-content bg-grey -->
+  <footer>
+    <div class="ft-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col info-col">
+           <div class="ft-logo"><img src="images/cheezoo-logo-footer.png"></div>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+             labore et dolore magna aliqua. </p>
+             <div class="app-icon"><img src="images/ios-logo.png"></div>
+             <div><img src="images/google-play-logo.png"></div>
+          </div>
+          <!-- col info-col -->
+          <div class="col link-col">
+           <div class="link-heading"> Quick links</div>
+          <ul class="ft-link">
+           <li><a href="">Home</a></li>
+           <li><a href="">Who we are</a></li>
+           <li><a href="">join</a></li>
+           <li><a href="">blog</a></li>
+           <li><a href="">gallery</a></li>
+          </ul>
+           </div>
+           <!-- col info-col -->
+           <div class="col link-col">
+            <div class="link-heading">Navigation</div>
+           <ul class="ft-link">
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Privacy Policy</a></li>
+           </ul>
+            </div>
+            <!-- col info-col -->
+            <div class="col subscribe-col">
+              <div class="subscribe-heading">Subscribe Now</div>
+              <form>
+                  <input type="text" class="form-control border-radius-0" id="" placeholder="">
+                  <button type="submit" class="form-control btn btn-subscribe border-radius-0 mb-3">Subscribe</button>
+              </form>
+              <ul class="social-media">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              </ul>
+            </div>
+             <!-- col info-col -->
+        </div>
+        <!-- row -->
+        <div class="row copyright-row">
+          <p>Copright 2021 Cheezoo</p>
+        </div>
+      </div>
+      <!-- container -->
+    </div>
+    <!-- ft-wrapper -->
+  </footer>
+  <!-- footer -->
+</div>
+<!-- main_wrapper close here -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+
+</html>

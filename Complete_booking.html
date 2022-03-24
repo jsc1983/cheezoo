@@ -118,12 +118,12 @@
             <div class="manage_profile">
                <div class="mp_heading">Complete your booking</div>
                 
-                    <div class="accordion m-auto" id="accordionExample">
+                    
                         <div class="steps">
                             <progress id="progress" value=0 max=100 ></progress>
                             <div class="step-item">
                                 <button class="step-button text-center" type="button" data-toggle="collapse"
-                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" onclick="javascript:showSummaryDiv();">
                                     <i class="fa-regular fa-check"></i>
                                 </button>
                                 <div class="step-title">
@@ -132,7 +132,7 @@
                             </div>
                             <div class="step-item">
                                 <button class="step-button text-center collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="javascript:showPaymentDiv();">
                                     <i class="fa-regular fa-check"></i>
                                 </button>
                                 <div class="step-title">
@@ -141,7 +141,7 @@
                             </div>
                             <div class="step-item">
                                 <button class="step-button text-center collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="javascript:showConfirmedPaymentDiv();">
                                     <i class="fa-regular fa-check"></i>
                                 </button>
                                 <div class="step-title">
@@ -149,8 +149,9 @@
                                 </div>
                             </div>
                         </div>
-                </div>
+                <!-- payments steps -->
                 
+                <div id="Summary">
                <div class="container">
                   <div class="row">
                      <div class="col-7 user_profile_forms">
@@ -223,23 +224,15 @@
                             <div class="create_event_info">
                                 <div class="col-md-12">
                                   <div class="card cards flex-md-row box-shadow h-md-250">
-                                    <div class="d-flex" >
-                                        <div class="p-2 col flex-fill card-text event_place">
-                                            <ul class="star-rating-phtographer card-text event_place">
+                                    
+                                            <ul class="selected_event_listitem">
                                                 <li><span>Package Name: </span>Wedding 1</li>
-                                                 <br>
-                                                <li><span>No. of hours: </span>2</li>
-                                              </ul>
-                                        </div>
-                                        <div class="flex-fill col card-text event_place">
-                                            <ul class="star-rating-phtographer card-text event_place" style="margin-left: 100px;">
                                                 <li><span>No. of Pictures: </span>20</li>
-                                                 <br>
+                                                <li><span>No. of hours: </span>2</li>
                                                 <li><span>Total Price: </span>$20</li>
                                               </ul>
-                                        </div>
-                                      </div>
-                                      <!-- card-text total_request -->
+                              
+                                     
                                   </div>
                                     </div>
                                     <!-- card-body d-flex flex-column align-items-start -->
@@ -250,51 +243,151 @@
 
                      <div class="col-4  user_profile_forms">
                         <label for="" class="form-label">Summary</label>
-                        <!-- <div class="d-flex" >
-                            <div class="p-2 flex-fill col-md-6 card-text event_place">
-                                <span>
-                               <p>Price</p>
-                               <p>Coupon Discount(Cheezoo1)</p>
-                               <p><B>TOTAL</B></p>
-                            </span>
-                            </div>
-                            <div class="flex-fill col-md-6 card-text event_place text-end">
-                            <span>
-                                <p>$23 </p>
-                                 <p>-$23</p>
-                                 <p class="text_black"><B>$87.00</B></p>
-                               
-                            </span>
-                            </div>
-                          </div> -->
                           <div class="pr-2 col flex-fill card-text event_place">
                           <ul class="star-rating-phtographer card-text event_place">
-                              <li  class="col-9">Price</li>
-                              <li class=" col-2 text-end text-success">$23</li>
+                              <li >Price <span class="text-success">$23</span></li>
+                              <li >Coupon Discount(Cheezoo1) <span class="text-success">-$23</span></li>
                           </ul>
-                        
-                          <ul class="star-rating-phtographer card-text event_place">
-                            <li class="col-9">Coupon Discount(Cheezoo1)</li>
-                            <li class="text-end col-2 text-success">-$23</li>
-                        </ul>
-                        <ul class="star-rating-phtographer card-text event_place">
-                            <li class="col-9"></li>
-                            <li class="text-end col-2 text-danger">Remove</li>
-                        </ul>
+                          <div class="remove_text text-danger">Remove</div>
                         <hr>
                         <ul class="star-rating-phtographer card-text event_place">
-                            <li class="col-9"><B>TOTAL</B></li>
-                            <li class="text-end col-2"><B>$87.00</B></li>
-                        </ul></div>
-                          <!--Flex ends here-->
-                          <button type="submit" class="btn btn-up-button btn_submit">Checkout</button>
-                          <br>
-                          <p class="center text-warning">Having a Coupon?</p>
+                           <li ><b>TOTAL</b> <span><b>$87.00</b></span></li>
+                        </ul>
                      </div>
+                          <!--Flex ends here-->
+                          <button type="submit" class="btn btn-up-button btn_submit mt-2">Checkout</button>
+                          <br>
+                          <p class="center coupon_text" data-bs-toggle="modal" data-bs-target="#Coupon_popup">Having a Coupon?</p>
+                     </div>
+                     <!-- Modal -->
+                     <div class="modal fade Coupon_popup_modal" id="Coupon_popup" tabindex="-1" aria-labelledby="Coupon_popupLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <span class="md_title  Coupon_modal_heading">Coupons</span>
+                              <button type="button" class="btn-close Coupon_close" data-bs-dismiss="modal" aria-label="Close"></button>
+                           </div>
+                           <div class="container Coupons">
+                              <div class="Cheezoo_Coupon Cheezoo1_Coupon bg-grey">
+                                 <div class="form-check Coupon-form_check" >
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                    <p><span  class="Coupon_modal_heading">Cheezoo1</span></p>
+                                       <p class="Coupon_content"><b>Get 50% OFF up to $89</b></p>
+                                       <p class="Coupon_content">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+                              </p> 
+                                    </label>
+                                  </div>
+                              </div>
+                              <div class="Cheezoo_Coupon Cheezoo2_Coupon bg-grey">
+                                 <div class="form-check Coupon-form_check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                    <p><span  class="Coupon_modal_heading">Cheezoo1</span></p>
+                                       <p class="Coupon_content"><b>Get 50% OFF up to $89</b></p>
+                                       <p class="Coupon_content">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+                              </p> 
+                                    </label>
+                                  </div>
+                              </div>
+                              <div class="Cheezoo_Coupon Cheezoo3_Coupon bg-grey">
+                                 <div class="form-check Coupon-form_check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                    <p><span  class="Coupon_modal_heading">Cheezoo1</span></p>
+                                       <p class="Coupon_content"><b>Get 50% OFF up to $89</b></p>
+                                       <p class="Coupon_content">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+                              </p> 
+                                    </label>
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="Coupon-buttons">
+                           <div class="row">
+                              <div class="col-6">
+                                 <button type="submit" class="btn btn-coupon-button btn_submit">Apply</button>
+                              </div>
+                              <div class="col-6">
+                                 <button type="submit" class="btn btn-coupon-button btn_submit">Cancel</button>
+                              </div>
+                           </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+
+                  </div>
                   <!-- row -->
                </div>
                <!-- container -->
             </div>
+            <!-- 1st Step summary -->
+            <div id="Payment">
+               <div class="container">
+                  <div class="row">
+                     <div class="col user_profile_forms">
+                         <div class="payment_content mb-3">
+                           <p>
+                              Payment screen goes here
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+              
+            </div>
+         <!-- 1st Step Payment -->
+            <div id="ConfirmedPayment" class="payment">
+            <div class="container">
+               <div class="row">
+                  <!-- col -->
+                  <div class="col-7 d-flex justify-content-center m-auto">
+                     <div class="user_profile_form payment_content_padding">
+                        <div class="check_logo" style="text-align: center;">
+                         <i class="fa-regular fa-check"></i>
+                        </div>
+                        <div class="content_payment" style="text-align: center;">
+                        <label for="" class="form-label">Payment Complete</label>
+                        <p class="card-text event_place pt-4"><span>Thank You, Your payment has been successful. A confirmation email has been sent to <sub>*******</sub>@gmail.com</span></p>
+                     </div>
+                        <label for="" class="form-label">Booking Detail</label>
+                        <div class="d-flex" >
+                         <div class="p-2 flex-fill col-md-6 card-text event_place booking_details">
+                             <span>
+                            <p>BOOKING ID</p>
+                            <p>TRANSACTION ID</p>
+                            <p>PAYMENT DATE & TIME</p>
+                            <p>PAYMENT MODE</p>
+                            <p><b>TOTAL</b></p>
+                         </span>
+                         </div>
+                         <div class="flex-fill col-md-6 card-text event_place booking_details">
+                         <span>
+                             <p>CHEEZOO89698</p>
+                              <p>CHEEZOO89698</p>
+                              <p>DEC 07, 2020, 11:53 AM</p>
+                              <p>STRIPE</p>
+                              <p class="text_black"><b>$87.00</b></p>
+                            
+                         </span>
+                         </div>
+                       </div>
+                       <!--Flex box ends here-->
+                       <button type="submit" class="btn btn-up-button btn_submit">Download Invoice</button>
+                      </div>
+                  <!-- col -->
+               </div>
+               <!-- row -->
+            </div>
+            <!-- container -->
+         </div>
+            </div>
+         <!-- 2nd Step Payment -->
+
+            <!-- Selected photographer and summry -->
             
             <!-- manage_profile -->
          </section>
@@ -390,4 +483,49 @@
         })
    </SCript>
    <!--Progress bar script-->
+
+<!-- Complete yo booking script start -->
+   <script>
+      function showSummaryDiv() {
+    div = document.getElementById('Summary');
+    div.style.display = "block";
+
+    ConfirmedPayment = document.getElementById('ConfirmedPayment');
+    ConfirmedPayment.style.display= "none"
+
+    Payment = document.getElementById('Payment');
+    Payment.style.display = "none";
+}
+   </script>
+   <script>
+
+   </script>
+   <script>
+      function showConfirmedPaymentDiv() {
+    div = document.getElementById('ConfirmedPayment');
+    div.style.display = "block";
+
+    Summary = document.getElementById('Summary');
+    Summary.style.display= "none"
+
+    Payment = document.getElementById('Payment');
+    Payment.style.display = "none";
+}
+
+   </script>
+   <script>
+      function showPaymentDiv() {
+    div = document.getElementById('Payment');
+    div.style.display = "block";
+
+    Summary = document.getElementById('Summary');
+    Summary.style.display= "none"
+
+    ConfirmedPayment = document.getElementById('ConfirmedPayment');
+    ConfirmedPayment.style.display= "none"
+}
+   </script>
+
+<!-- Complete your booking script end -->
+ 
 </html>

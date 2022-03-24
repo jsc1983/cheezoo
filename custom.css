@@ -1236,11 +1236,13 @@ background-color: rgb(157, 189, 226);
 /* Progress bar css starts from here */
 .steps {
 display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 2rem;
-position: relative;
-max-width: 800px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 .step-button {
@@ -1255,13 +1257,13 @@ transition: .4s;
 .step-button[aria-expanded="true"] {
 width: 40px;
 height: 40px;
-background-color: green;
+background-color: #1e9f45;
 color: #fff;
 font-weight: 600;
 }
 
 .done {
-background-color: green;
+background-color: #1e9f45;
 color: #fff;
 }
 
@@ -1282,7 +1284,7 @@ margin-bottom: 18px;
 
 /* to customize progress bar */
 #progress::-webkit-progress-value {
-background-color: green;
+background-color: #56bb55;
 transition: .5s ease;
 }
 
@@ -1293,12 +1295,12 @@ background-color: white;
 .accordion{
 max-width: 800px;
 }
-
+.check_logo {margin-bottom: 10px;}
 .check_logo i{
 font-weight: 800;
-font-size: 50px;
-border: 5px solid green;
-color: green;
+font-size: 100px;
+border: 5px solid #56bb55;
+color: #56bb55;
 text-align: center;
 border-radius: 50%;
 padding: 10px;
@@ -1318,7 +1320,7 @@ background-color: white;
 
 
 .black_heading{
-color: black;
+color: black !important;
 }
 
 .hourly_connect_border{
@@ -1430,10 +1432,95 @@ border-bottom: none;
 }
 
 
+/* Complete booking css */
+
+
+#ConfirmedPayment{
+  display: none;
+}
+#Payment{
+  display: none;
+}
+
+.Coupon_modal_heading{
+  font-size: 24px;
+  font-weight: 800;
+}
+
+
+#Coupon_popup .modal-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+#Coupon_popup .modal-content .modal-header .Coupon_close{
+  position: absolute;
+    right: 16px;
+}
+
+.Coupon_content{font-size: 17px;
+    font-weight: 600;
+    margin: 0 0 12px;
+}
+
+.Cheezoo_Coupon{
+  margin-bottom: 15px;
+}
+
+.Coupon-form_check{
+  padding-top: 20px; padding-left: 50px; padding-right: 50px;
+}
+.Coupon-buttons{
+  align-items: center;
+}
+.btn-coupon-button { 
+  color: #fff;  
+  background-color: #333233; 
+  border-color: #333233; 
+  font-size: 21px;  
+  padding: 10px; 
+  font-weight: 600;  
+  margin: auto;
+  width: 100%;  
+  display: block;
+  margin-bottom: 20px; 
+  margin-top: 20px;
+  width: 200px;
   
+}
+ .btn-coupon-button:hover { 
+   color: #fff;
+  }
+
+ .modal-content{
+   padding: 10px;
+ }
+.payment_content_padding{
+  padding: 50px;
+}
+.booking_details span{
+  line-height: 40px;
+}
+ul.event_place li {width: 100%;
+  display: block;}
+
+  ul.event_place li span {    float: right;}
+
+  .content_payment {
+    margin-bottom: 30px;
+}
+
+ul.selected_event_listitem {margin: 0; padding: 0;     width: 100%}
+ul.selected_event_listitem li {margin: 0; padding: 5px 0px; list-style-type: none; display: inline-block; width: 49%; font-size: 20px;}
+ul.selected_event_listitem li span {color: #7d7d7d;}
+  /* Complete booking css */
 /* Jigyasa CSS ends here */
 
-
+.pt_16{padding-top: 16px !important;}
+.remove_text {text-align: right; font-size: 16px;}
+.coupon_text {cursor: pointer; color: #e1a103;}
 
 
 /* footer css */
@@ -1481,6 +1568,9 @@ ul.find_photographer {padding-top: 0;}
 .create_event_info .photographer_imgplaceholder img {width: 100% !important;}
 .create_event_info .photographer_imgplaceholder { position: initial;}
 ul.weather_itemlist { display: block; text-align: center;}
+.user_profile_forms  {flex: inherit;width: 100%;}
+
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
