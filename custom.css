@@ -1240,9 +1240,9 @@ display: flex;
   align-items: center;
   margin-bottom: 2rem;
   position: relative;
-  max-width: 800px;
+  max-width: 1080px;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .step-button {
@@ -1268,18 +1268,26 @@ color: #fff;
 }
 
 .step-item {
-z-index: 10;
-text-align: center;
+  z-index: 10;
+  text-align: center;
+  width: 33%; position: relative;
 }
-
+.step-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
 #progress {
--webkit-appearance:none;
-position: absolute;
-width: 90%;
-z-index: 5;
-height: 5px;
-margin-left: 18px;
-margin-bottom: 18px;
+  -webkit-appearance: none;
+  position: absolute;
+  width: 68%;
+  z-index: 5;
+  height: 5px;
+  margin-left: 18px;
+  margin-bottom: 18px;
+  margin: auto;
+  left: 0;
+  right: 0;top: 20px;
 }
 
 /* to customize progress bar */
@@ -1314,7 +1322,7 @@ background-color: #f5f5f5;
 background-color: white;
 }
 
-.user_profile_forms {background-color: #fff;    padding: 30px; height: 40%; margin: 10px;}
+.user_profile_forms {background-color: #fff;    padding: 30px; overflow: hidden;}
 
 .user_profile_forms label {font-size: 26px;font-weight: 600;}
 
@@ -1516,6 +1524,166 @@ ul.selected_event_listitem {margin: 0; padding: 0;     width: 100%}
 ul.selected_event_listitem li {margin: 0; padding: 5px 0px; list-style-type: none; display: inline-block; width: 49%; font-size: 20px;}
 ul.selected_event_listitem li span {color: #7d7d7d;}
   /* Complete booking css */
+
+
+
+/* 24th march */
+#progress-my-cart {
+  -webkit-appearance:none;
+  position: absolute;
+  width: 90%;
+  z-index: 5;
+  height: 5px;
+  margin-left: 3px;
+  margin-bottom: 18px;
+  }
+  
+  /* to customize progress bar */
+  #progress-my-cart::-webkit-progress-value {
+  background-color: green;
+  transition: .5s ease;
+  }
+  
+  #progress-my-cart::-webkit-progress-bar {
+  background-color: white;
+  
+  }
+  
+ul.Quantity li{
+  display: inline-block;
+  vertical-align: center;
+  
+}
+ul.Quantity{
+  margin: 0;
+  padding-left: 0;
+}
+.no_quantity i{
+  background-color: #bbbbbb;
+  font-size: 26px;
+  padding: 4px 8px;
+  border-radius: 50%;
+  position: relative;
+    top: 3px;
+}
+.quantity_box input{
+  max-width: 50px;
+  height: 40px;
+}
+ul.Quantity button{
+  height: 38px;
+}
+/* @media */
+
+.btn-quantity {
+  color: #fff;
+  background-color: #333;
+  border-color: #333;
+}
+.btn-quantity:hover{
+  background-color: #333;
+  border-color: #333;
+}
+.btn-quantity:focus{
+  background-color: #333;
+  border-color: #333;
+}
+.table_padding{
+  padding: 0;
+}
+
+.user_profile_forms_padding{
+  padding: 20px 0;
+}
+
+.table_header-content{
+font-size: 20px;
+font-weight: 200;
+}
+ul.event_place_color li span {color: #7d7d7d;}
+
+ul.event_place_color li{
+margin: 0 0 15px;
+
+}
+
+
+ #Summary_hide{
+display: none;
+} 
+.My_cart_background {background-color: #fff;    padding: 30px; }
+
+.My_cart_background label {font-size: 26px;font-weight: 600;}
+
+
+.table_headers_position{
+
+padding: 25px 0 10px 0;
+
+}
+.payment_content
+.selected_address{
+border: 1px solid black;
+padding: 15px;
+border-radius: 5px;
+color: #333233;
+font-weight: 600;
+font-size: 20px;
+position: relative;
+}
+.selected_address_content{
+font-weight: 600;
+font-size: 20px;
+}
+.payment_content .new_address{
+border: 1px dashed black;
+/*padding: 70px;*/
+border-radius: 5px;
+color: #333233;
+font-weight: 800;
+font-size: 20px;
+background-color: #e4e4e4;
+height: 100%;
+}
+
+
+.payment_content.selected_address p .check_icon{
+position: absolute;
+}
+.check_icon i{
+background: #000;
+color: #fff;
+padding: 4px;
+border-radius: 50%;
+}
+.check_icon{
+position: absolute;
+top: -10px;
+right: -6px;
+}
+.btn-checkout { 
+color: #fff;  
+background-color: #333233; 
+border-color: #333233; 
+font-size: 21px;  
+padding: 10px; 
+font-weight: 600;  
+margin: auto;
+width: 100%;  
+display: block;
+margin-bottom: 20px; 
+margin-top: 20px;
+width: 200px;
+position: absolute
+
+}
+.btn-checkout:hover { 
+ color: #fff;
+}
+
+
+
+
 /* Jigyasa CSS ends here */
 
 .pt_16{padding-top: 16px !important;}
@@ -1535,6 +1703,9 @@ ul.selected_event_listitem li span {color: #7d7d7d;}
   padding-left: 10px;
   margin-bottom: 10px;
 }
+.sp_date {padding-left: 0px; float: none !important;     color: #333233 !important;}
+.sp_start_date {padding-right: 0px; float: none !important;     color: #333233 !important;}
+.sp_end_date {padding-right: 10px; padding-left: 10px; float: none !important;     color: #333233 !important;}
 
 /* footer css */
 .ft-wrapper {background: #333233; padding: 40px 0px; color: #fff;}
@@ -1632,6 +1803,13 @@ margin-left: 0;
 .package_row .shot_button {
 width: 100% !important;
 margin-top: 10px;}
+
+.delivery_address_container .col-8 {flex: inherit; width: 100%;}
+.delivery_address_container .col-4  {flex: inherit; width: 100%;}
+.delivery_address_container .col-6 {flex: inherit; width: 100%;}
+.payment_content .new_address {min-height: 242px; margin-top: 15px;}
+.select_photographer_summary_row .col-8 {flex: inherit; width: 100%;}
+.select_photographer_summary_row .col-4  {flex: inherit; width: 100%; margin-top: 15px;}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1733,7 +1911,11 @@ flex: inherit;
 .recieve_on {display: block !important; justify-content: inherit !important;     align-items: inherit !important;} 
 .transection_history li   {display: block !important; justify-content: inherit !important;     align-items: inherit !important;}
 .transection_history li span {display: block !important;     padding-top: 6px;}
-
+ul.selected_event_listitem li { display: block; width: 100%;}
+.Coupon-buttons {    width: 100%;     padding: 0 24px;}
+.Coupon-buttons .col-6 {    flex: inherit;width: 100%;}
+.Coupon-buttons .btn-coupon-button {width: 100%;margin: 5px 0px;}
+.Coupon-buttons .cancel_btn  {margin-bottom: 20px;} 
 }
 
 @media only screen and (min-width: 320px) and (max-width: 719px) {
@@ -1810,6 +1992,10 @@ font-size: 16px;
 .ce-or-section span::after {width: calc(100% - 80%);}
 .manage_profile .nav-pills .nav-link { padding: 20px 15px;}
 .browse_button {font-size: 14px !important;}
+ul.event_place li span {
+  float: none;
+  display: block;
+}
 }
 
 

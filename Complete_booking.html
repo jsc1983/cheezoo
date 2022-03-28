@@ -153,8 +153,9 @@
                 
                 <div id="Summary">
                <div class="container">
-                  <div class="row">
-                     <div class="col-7 user_profile_forms">
+                  <div class="row select_photographer_summary_row">
+                     <div class="col-8">
+                        <div class="user_profile_forms">
                          <div class="payment_content mb-3">
                             <label for="" class="form-label">Selected Photographer</label>
                             <div class="create_event_info">
@@ -203,8 +204,11 @@
                                         Alex Carter
                                       </div>
                                       <ul class="star-rating-phtographer card-text event_place">
-                                       <li>15 Dec 2020</li>
-                                       <li>1:00 PM</li>
+                                       <li>
+                                          <span class="sp_start_date">15 Dec 2020</span>
+                                          <span class="sp_end_date">25 Jan 2021</span> 
+                                       <span class="sp_date">1:00 PM</span></li>
+                                       <!-- <li>1:00 PM</li> -->
                                      </ul>
                                       <p class="card-text event_place"><span><i class="fas fa-map-marker-alt"></i></span> Trunk Park, New York</p>
                                       <!-- card-text total_request -->
@@ -220,7 +224,7 @@
 
                          </div>
                          <div class="payment_content mb-3">
-                            <label for="" class="form-label">Selected Event</label>
+                            <label for="" class="form-label">Selected Packages</label>
                             <div class="create_event_info">
                                 <div class="col-md-12">
                                   <div class="card cards flex-md-row box-shadow h-md-250">
@@ -240,8 +244,12 @@
                                   <!-- card flex-md-row mb-4 box-shadow h-md-250 -->
                                 </div>
                          </div>
+                         <!-- user_profile_forms -->
+                        </div>
+                         <!-- col-7 -->
 
-                     <div class="col-4  user_profile_forms">
+                     <div class="col-4">
+                        <div class="user_profile_forms">
                         <label for="" class="form-label">Summary</label>
                           <div class="pr-2 col flex-fill card-text event_place">
                           <ul class="star-rating-phtographer card-text event_place">
@@ -259,7 +267,10 @@
                           <br>
                           <p class="center coupon_text" data-bs-toggle="modal" data-bs-target="#Coupon_popup">Having a Coupon?</p>
                      </div>
+                  </div>
                      <!-- Modal -->
+
+
                      <div class="modal fade Coupon_popup_modal" id="Coupon_popup" tabindex="-1" aria-labelledby="Coupon_popupLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
@@ -311,7 +322,7 @@
                                  <button type="submit" class="btn btn-coupon-button btn_submit">Apply</button>
                               </div>
                               <div class="col-6">
-                                 <button type="submit" class="btn btn-coupon-button btn_submit">Cancel</button>
+                                 <button type="submit" class="btn btn-coupon-button btn_submit cancel_btn">Cancel</button>
                               </div>
                            </div>
                         </div>
