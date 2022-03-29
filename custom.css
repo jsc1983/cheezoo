@@ -1236,13 +1236,13 @@ background-color: rgb(157, 189, 226);
 /* Progress bar css starts from here */
 .steps {
 display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-  position: relative;
-  max-width: 1080px;
-  margin: auto;
-  margin-bottom: 70px;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 2rem;
+position: relative;
+max-width: 1080px;
+margin: auto;
+margin-bottom: 70px;
 }
 
 .step-button {
@@ -1268,26 +1268,26 @@ color: #fff;
 }
 
 .step-item {
-  z-index: 10;
-  text-align: center;
-  width: 33%; position: relative;
+z-index: 10;
+text-align: center;
+width: 33%; position: relative;
 }
 .step-title {
-  position: absolute;
-  left: 0;
-  right: 0;
+position: absolute;
+left: 0;
+right: 0;
 }
 #progress {
-  -webkit-appearance: none;
-  position: absolute;
-  width: 68%;
-  z-index: 5;
-  height: 5px;
-  margin-left: 18px;
-  margin-bottom: 18px;
-  margin: auto;
-  left: 0;
-  right: 0;top: 20px;
+-webkit-appearance: none;
+position: absolute;
+width: 68%;
+z-index: 5;
+height: 5px;
+margin-left: 18px;
+margin-bottom: 18px;
+margin: auto;
+left: 0;
+right: 0;top: 20px;
 }
 
 /* to customize progress bar */
@@ -1419,8 +1419,8 @@ padding: 5px;
 border-bottom: none;
 }
 .img_gallery_check_input .form-check-input:checked {
-  background-color: #333;
-  border-color: #333; 
+background-color: #333;
+border-color: #333; 
 }
 
 .img_gallery_check_input .form-check-input:focus  {box-shadow: none; border-color: #333 !important;}
@@ -1428,15 +1428,15 @@ border-bottom: none;
 .eventt_gallery_info_col {background-color: none; padding: 0;}
 
 .event_gallery_heading_icons{
-  position: absolute;
-  right: 0;
+position: absolute;
+right: 0;
 }
 
 .event_gallery_heading_icons i{
-  padding: 12px;
-  font-size: 28px;
-  color: #333;
- 
+padding: 12px;
+font-size: 28px;
+color: #333;
+
 }
 
 
@@ -1444,169 +1444,169 @@ border-bottom: none;
 
 
 #ConfirmedPayment{
-  display: none;
+display: none;
 }
 #Payment{
-  display: none;
+display: none;
 }
 
 .Coupon_modal_heading{
-  font-size: 24px;
-  font-weight: 800;
+font-size: 24px;
+font-weight: 800;
 }
 
 
 #Coupon_popup .modal-content{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  font-weight: 600;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 24px;
+font-weight: 600;
 }
 #Coupon_popup .modal-content .modal-header .Coupon_close{
-  position: absolute;
-    right: 16px;
+position: absolute;
+right: 16px;
 }
 
 .Coupon_content{font-size: 17px;
-    font-weight: 600;
-    margin: 0 0 12px;
+font-weight: 600;
+margin: 0 0 12px;
 }
 
 .Cheezoo_Coupon{
-  margin-bottom: 15px;
+margin-bottom: 15px;
 }
 
 .Coupon-form_check{
-  padding-top: 20px; padding-left: 50px; padding-right: 50px;
+padding-top: 20px; padding-left: 50px; padding-right: 50px;
 }
 .Coupon-buttons{
-  align-items: center;
+align-items: center;
 }
 .btn-coupon-button { 
-  color: #fff;  
-  background-color: #333233; 
-  border-color: #333233; 
-  font-size: 21px;  
-  padding: 10px; 
-  font-weight: 600;  
-  margin: auto;
-  width: 100%;  
-  display: block;
-  margin-bottom: 20px; 
-  margin-top: 20px;
-  width: 200px;
-  
-}
- .btn-coupon-button:hover { 
-   color: #fff;
-  }
+color: #fff;  
+background-color: #333233; 
+border-color: #333233; 
+font-size: 21px;  
+padding: 10px; 
+font-weight: 600;  
+margin: auto;
+width: 100%;  
+display: block;
+margin-bottom: 20px; 
+margin-top: 20px;
+width: 200px;
 
- .modal-content{
-   padding: 10px;
- }
+}
+.btn-coupon-button:hover { 
+color: #fff;
+}
+
+.modal-content{
+padding: 10px;
+}
 .payment_content_padding{
-  padding: 50px;
+padding: 50px;
 }
 .booking_details span{
-  line-height: 40px;
+line-height: 40px;
 }
 ul.event_place li {width: 100%;
-  display: block;}
+display: block;}
 
-  ul.event_place li span {    float: right;}
+ul.event_place li span {    float: right;}
 
-  .content_payment {
-    margin-bottom: 30px;
+.content_payment {
+margin-bottom: 30px;
 }
 
 ul.selected_event_listitem {margin: 0; padding: 0;     width: 100%}
 ul.selected_event_listitem li {margin: 0; padding: 5px 0px; list-style-type: none; display: inline-block; width: 49%; font-size: 20px;}
 ul.selected_event_listitem li span {color: #7d7d7d;}
-  /* Complete booking css */
+/* Complete booking css */
 
 
 
 /* 24th march */
 #progress-my-cart {
-  /* -webkit-appearance:none;
-  position: absolute;
-  width: 90%;
-  z-index: 5;
-  height: 5px;
-  margin-left: 3px;
-  margin-bottom: 18px; */
+/* -webkit-appearance:none;
+position: absolute;
+width: 90%;
+z-index: 5;
+height: 5px;
+margin-left: 3px;
+margin-bottom: 18px; */
 
-  -webkit-appearance: none;
-  position: absolute;
-  width: 75%;
-  z-index: 5;
-  height: 5px;
-  margin-left: 18px;
-  margin-bottom: 18px;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 20px;
+-webkit-appearance: none;
+position: absolute;
+width: 75%;
+z-index: 5;
+height: 5px;
+margin-left: 18px;
+margin-bottom: 18px;
+margin: auto;
+left: 0;
+right: 0;
+top: 20px;
 
-  }
-  
-  /* to customize progress bar */
-  #progress-my-cart::-webkit-progress-value {
-  background-color: green;
-  transition: .5s ease;
-  }
-  
-  #progress-my-cart::-webkit-progress-bar {
-  background-color: white;
-  
-  }
-  
+}
+
+/* to customize progress bar */
+#progress-my-cart::-webkit-progress-value {
+background-color: green;
+transition: .5s ease;
+}
+
+#progress-my-cart::-webkit-progress-bar {
+background-color: white;
+
+}
+
 ul.Quantity li{
-  display: inline-block;
-  vertical-align: center;
-  
+display: inline-block;
+vertical-align: center;
+
 }
 ul.Quantity{
-  margin: 0;
-  padding-left: 0;
+margin: 0;
+padding-left: 0;
 }
 .no_quantity i{
-  background-color: #bbbbbb;
-  font-size: 26px;
-  padding: 4px 8px;
-  border-radius: 50%;
-  position: relative;
-    top: 3px;
+background-color: #e2e2e2;
+font-size: 26px;
+padding: 4px 8px;
+border-radius: 50%;
+position: relative;
+top: 3px;
 }
 .quantity_box input{
-  max-width: 50px;
-  height: 40px;
+max-width: 50px;
+height: 40px;
 }
 ul.Quantity button{
-  height: 38px;
+height: 38px;
 }
 /* @media */
 
 .btn-quantity {
-  color: #fff;
-  background-color: #333;
-  border-color: #333;
+color: #fff;
+background-color: #333;
+border-color: #333;
 }
 .btn-quantity:hover{
-  background-color: #333;
-  border-color: #333;
+background-color: #333;
+border-color: #333;
 }
 .btn-quantity:focus{
-  background-color: #333;
-  border-color: #333;
+background-color: #333;
+border-color: #333;
 }
 .table_padding{
-  padding: 0;
+padding: 0;
 }
 
 .user_profile_forms_padding{
-  padding: 20px 0;
+padding: 20px 0;
 }
 
 .table_header-content{
@@ -1621,7 +1621,7 @@ margin: 0 0 15px;
 }
 
 
- #Summary_hide{
+#Summary_hide{
 display: none;
 } 
 .My_cart_background {background-color: #fff;    padding: 30px; }
@@ -1691,10 +1691,27 @@ position: absolute
 
 }
 .btn-checkout:hover { 
- color: #fff;
+color: #fff;
 }
 
+.btn-update-cart { 
+color: #fff;  
+background-color: #333233; 
+border-color: #333233; 
+font-size: 21px;  
+padding: 10px; 
+font-weight: 600;  
+width: 100%;  
+display: block;
+margin-bottom: 20px; 
+margin-top: 20px;
+width: 200px;
 
+
+}
+.btn-update-cart:hover { 
+color: #fff;
+}
 /* Jigyasa CSS ends here */
 
 .pt_16{padding-top: 16px !important;}
@@ -1705,25 +1722,28 @@ position: absolute
 .time-text span i {cursor: pointer;}
 
 .delete_all_block input[type=checkbox] {
-  width: 20px;
-  height: 20px;
-  border-radius: 0px;
+width: 20px;
+height: 20px;
+border-radius: 0px;
 }
 .delete_all_block .form-check-label {
-  font-size: 18px;
-  padding-left: 10px;
-  margin-bottom: 10px;
+font-size: 18px;
+padding-left: 10px;
+margin-bottom: 10px;
 }
 .sp_date {padding-left: 0px; float: none !important;     color: #333233 !important;}
 .sp_start_date {padding-right: 0px; float: none !important;     color: #333233 !important;}
 .sp_end_date {padding-right: 10px; padding-left: 10px; float: none !important;     color: #333233 !important;}
 ul.bd_itemlist {margin: 0; padding: 0;} 
 ul.bd_itemlist li {margin: 0; padding: 0; list-style-type: none;     color: #737375;     width: 100%;padding-bottom: 10px;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 20px;} 
-  ul.bd_itemlist li span {float: right; line-height: normal;}
-  ul.bd_itemlist li:last-child {color: #000;}
+display: inline-block;
+font-weight: 600;
+font-size: 20px;} 
+ul.bd_itemlist li span {float: right; line-height: normal;}
+ul.bd_itemlist li:last-child {color: #000;}
+.my_cart_tablerow .table_small   { padding:0px 15px;}
+.my_cart_theader .table_headers  { padding:15px;}
+
 
 /* footer css */
 .ft-wrapper {background: #333233; padding: 40px 0px; color: #fff;}
@@ -1761,6 +1781,12 @@ ul.find_photographer {padding-top: 0;}
 .user_profile_form, .up_workprofile_form, .user_workprofile_form { margin-top: 30px;}
 .up_tabs_col {  max-width: 100%; flex: auto; }
 #ConfirmedPayment .col-7 { flex: inherit;width: 100%;}
+.my_cart_tablerow .table_small   { padding:0px 2px;}
+.my_cart_theader .table_headers  { padding:15px 2px;}
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+.my_cart_theader .table_headers {font-size: 16px;}
+ul.Quantity { display: flex;}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1199px) {
@@ -1937,15 +1963,21 @@ ul.selected_event_listitem li { display: block; width: 100%;}
 .Coupon-buttons .cancel_btn  {margin-bottom: 20px;} 
 
 .select_photographer_summary_row .create_event_info .card-body {
-  padding: 20px 0px;
+padding: 20px 0px;
 }
 ul.bd_itemlist li span {
-  float: none;
-  display: block;
+float: none;
+display: block;
 }
 ul.bd_itemlist li  {margin-bottom: 20px;}
 .payment_content_padding {padding: 50px 15px;}
 
+
+.my_cart_tablerow {padding-bottom: 0 !important; }
+.table_mycart .table_row {border: none !important;}
+.mycart_summary .table { border-top: none !important;}
+.mycart_summary .table_row {border: none !important;} 
+.mycart_summary .table_row {padding-bottom: 0 !important; }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 719px) {
@@ -1953,7 +1985,7 @@ ul.bd_itemlist li  {margin-bottom: 20px;}
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
 .table {
 display: block;
 }
@@ -1997,7 +2029,7 @@ border-top-right-radius: 5px;
 border-top: #ccc 1px solid;
 }
 .table_row > .table_small:last-child > .table_cell:first-child {
-border-right: none;
+/* border-right: none; */
 }
 .table_row > .table_small > .table_cell:last-child {
 border-right: #ccc 1px solid;
@@ -2023,8 +2055,8 @@ font-size: 16px;
 .manage_profile .nav-pills .nav-link { padding: 20px 15px;}
 .browse_button {font-size: 14px !important;}
 ul.event_place li span {
-  float: none;
-  display: block;
+float: none;
+display: block;
 }
 }
 
