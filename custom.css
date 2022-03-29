@@ -1712,6 +1712,26 @@ width: 200px;
 .btn-update-cart:hover { 
 color: #fff;
 }
+
+/* order history */
+.order-history-heading {font-size: 32px; font-weight: 600; text-align: center;}
+.order-history {padding: 160px 0px 80px;}
+.order-history-content{background-color: #fff; padding: 30px; margin-top: 40px;}
+.oh-highlights {text-align: center;}
+.order-history-image img{width: 275px; height: 200px;}
+.order_history{width: 100%;}
+.oh_heading {font-size: 32px;  color: #e1a103; text-align: left; font-weight: 700;}
+.oh_heading{color:black;}
+.oh_orders {color: #333233; font-weight: 400; font-size: 25px; padding-top: 0px;}
+ul.oh_orders li {width: 100%; display: block;}
+ul.oh_orders li span {float: right;}
+.text_black{color: #000; font-weight: 600; font-size: 30px;}
+.oh_tag_content { font-size: 25px; margin-bottom: 0px; padding: 5px 15px 5px 25px; background-color: #858485; color: #fff; margin-left: 32px;  cursor: pointer;}
+.oh_tag_content img{height: 30px;}
+hr.margins{margin-bottom: 35px; margin-top: 35px; color: #858485;}
+/* order history */
+
+
 /* Jigyasa CSS ends here */
 
 .pt_16{padding-top: 16px !important;}
@@ -1743,7 +1763,27 @@ ul.bd_itemlist li span {float: right; line-height: normal;}
 ul.bd_itemlist li:last-child {color: #000;}
 .my_cart_tablerow .table_small   { padding:0px 15px;}
 .my_cart_theader .table_headers  { padding:15px;}
+.dropbtn {
+  background-color: #f1f1f1;
+  color: #000000;
+  padding: 16px 2px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;min-height: 77px;
+  border: 1px solid #dadada;
+  border-radius: 0.25rem;width: 100%;
 
+}
+
+.dropdown { position: relative; display: inline-block; width: 100%;}
+.dropdown span i {padding-left: 10px;}
+.dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 100%; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;  
+  border: 1px solid #dadada; border-radius: 0.25rem; font-size: 24px;}
+.dropdown-content span {font-size: 16px; display: block; color: #a6a6a6;}
+.dropdown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block;  border-bottom: 1px solid #dadada;}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content { display: block;}
+.dropdown:hover .dropbtn { background-color: #f1f1f1;}
 
 /* footer css */
 .ft-wrapper {background: #333233; padding: 40px 0px; color: #fff;}
@@ -1855,6 +1895,25 @@ margin-top: 10px;}
 .payment_content .new_address {min-height: 242px; margin-top: 15px;}
 .select_photographer_summary_row .col-8 {flex: inherit; width: 100%;}
 .select_photographer_summary_row .col-4  {flex: inherit; width: 100%; margin-top: 15px;}
+.invte_modal .col-9 {
+  flex: inherit;
+  width: 100%;
+}
+.invte_modal .col {
+  flex: inherit;
+  width: 100%;
+}
+
+.order-history-content .oh-highlights {
+  display: block !important;
+}
+.order-history-image img {
+  width: 100%;
+  height: auto;
+}
+ul.order_history {padding-left: 0;}
+.oh_tag_content {margin-left: 0;}
+ul.order_history li {text-align: left;}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1978,6 +2037,10 @@ ul.bd_itemlist li  {margin-bottom: 20px;}
 .mycart_summary .table { border-top: none !important;}
 .mycart_summary .table_row {border: none !important;} 
 .mycart_summary .table_row {padding-bottom: 0 !important; }
+
+ul.order_history li {  align-items: inherit !important; display: block !important;}
+
+
 }
 
 @media only screen and (min-width: 320px) and (max-width: 719px) {
