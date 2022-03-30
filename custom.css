@@ -765,8 +765,8 @@ transition: all #333233;
 
 .container .box {
 position:relative;
-width:calc(200px - 60px);
-height:calc(150px - 30px);
+width:calc(223px - 60px);
+height:calc(212px - 30px);
 background:#000;
 float:left;
 margin:0px;
@@ -811,12 +811,12 @@ transform:scaleY(1);
 opacity:1;
 }
 .container .box .imgBox {
-position:relative;
+position:relative; height: 100%;
 }
 .container .box .imgBox img {
 width: 100%;
 transition:0.5s;
-height: auto;
+height: auto; object-fit: cover;height: 100%;
 }
 .container .box:hover .imgBox img {
 opacity:.2;
@@ -849,8 +849,8 @@ visibility:visible;
 transform:translateY(0px);
 }
 
-
-
+ul.photo_selection_list {margin: 0; padding: 0;}
+ul.photo_selection_list li {display: flex; width: 20%;}
 
 .card-container {
 display: inline-block;
@@ -880,8 +880,7 @@ font-size: 3px;
 padding-top:10px;
 border-radius: 6px;
 height: 40px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-weight: bolder;
+font-weight: bolder;  cursor: pointer;
 }
 .contents .hoverText .caption i{
 margin-right: 5px;
@@ -891,13 +890,14 @@ padding: 8px;
 background-color: white;
 color: black;
 width: 40px;
-height: 40px;
+height: 40px; font-size: 20px;
 }
 
-.modal-dialog {
-max-width: 600px;
+.showcase_gallery .modal-dialog {
+max-width: 1000px;
 margin: 1.75rem auto;
 }
+.showcase_gallery .modal-dialog .modal-body img {max-width: 100%;}
 
 
 ul.photo_selection_link {margin: 0; padding: 0;display: flex;}
@@ -1854,6 +1854,11 @@ ul.pd-info li {display: block !important; align-items: inherit !important;justif
 span.left-info {flex-direction: inherit !important; display: inherit !important;}
 span.right-info { flex-direction: inherit !important; display: inherit !important;}
 ul.nav-tabs li button { padding: 0px 15px 15px 15px;}
+.contents .hoverText .caption i {
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 991px) {
@@ -2040,6 +2045,21 @@ ul.bd_itemlist li  {margin-bottom: 20px;}
 
 ul.order_history li {  align-items: inherit !important; display: block !important;}
 
+ul.photo_selection_list {
+  justify-content: inherit !important;
+  display: block !important;
+  width: 100%;
+}
+ul.photo_selection_list li {
+  display: block;
+  width: 100%;
+}
+.container .box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: none;
+}
 
 }
 
