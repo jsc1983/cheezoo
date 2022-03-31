@@ -1880,8 +1880,105 @@ ul.dashboard_gender li .form-check-input:checked {background-color: #e1a103; bor
 .dashboard-btn{position: relative;}
 .dashboard-btn .btn{ right: 10px; top: 15px;}
 /* Dashboard */
+.cebtn_button {float: right; color: #fff;background-color: #333233; border-color: #333233;  font-size: 24px; width: auto;  padding: 9px 19px;   margin-left: 40px; font-weight: 600;}
+.cebtn_button:hover {color: #fff;} 
+.cebtn_button:focus {color: #333233;}
+.event_gallery_heading_icons{
+  position: absolute;
+  right: 0;
+}
 
+.event_gallery_heading_icons i{
+  padding: 12px;
+  font-size: 28px;
+  color: #333;
+ 
+}
+.AddFile .modal-header .md_title {
+  font-size: 38px;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 30px;
+  }
+  
+  .AddFile .modal-content {padding: 40px;}
+  .AddFile .modal-dialog {max-width: 870px;}
+  .AddFile .modal-header {border-bottom: none;padding: 0;}
+  .AddFile .modal-header .btn-close {position: absolute;right: 13px;z-index: 999;top: 13px;}
+  .AddFile input {border: 1px solid #dadada; padding: 18px 10px; font-size: 26px; font-weight: 600;}
+  .AddFile input::placeholder {color: #707070; border-radius: 0;font-size: 26px; font-weight: 600;}
+  .AddFile textarea {border: 1px solid #dadada; padding: 18px 10px; font-size: 26px; font-weight: 600; height: 150px;}
+  .AddFile textarea::placeholder {color: #707070; border-radius: 0;font-size: 26px; font-weight: 600;}
+  .AddFile select {border: 1px solid #dadada; padding: 18px 10px; font-size: 26px; font-weight: 600;}
+  .AddFile select::placeholder {color: #707070; border-radius: 0;font-size: 26px; font-weight: 600;}
+  
+  .AddFile input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  border-radius: 0px;
+  padding: 0;
+  position: relative;
+  top: 12px;
+  margin-right: 10px;
+  }
+  
+  .AddFile label {    font-size: 20px;}
+  .btn-checkout:hover { 
+    color: #fff;
+   }
+ .search_photographer .sp_heading .fa-plus{
+   color: white;
+ }
+ .search_photographer .sp_heading .fa-plus:visited{
+   color: #333;
+ }
+ .drag-upload-text h3 p{
+   font-weight: 300;
+   color: #333233;
+   padding: 60px 0;
+   }
+ .image-upload-wrap1
+ .progress{
+   width: 80%;
+   border: 4px solid white;
+   padding: 2px;
+   position: absolute;
+   top: 70px;
+   left: 20px;;
+   padding: 2px;
+ }
+ .image-upload-wrap1 i{
+   background-color: #333;
+   color: #fff;
+   padding: 7px 10px;
+   border-radius: 50%;
+ }
+ .image-upload-wrap1
+ .fa-xmark{
+ position: absolute;
+ top: -10px;
+ right: -7px;
+ }
+ .image-upload-wrap1 .upload_img{
+   width: 240px; 
+   height: 150px;
+ }
+ .image-upload-wrap1
+ .upload_img img{
+   height: auto;
+   object-fit: cover;
+   width: 100%;
+ }
 
+ .modal-content .btn-close {
+  position: absolute;
+  right: 13px;
+  z-index: 999;
+  top: 13px;
+}
 /* Jigyasa CSS ends here */
 
 .pt_16{padding-top: 16px !important;}
@@ -2202,7 +2299,7 @@ flex: inherit;
 .th_block {display: block !important;}
 .th_itemlist {display: block !important; justify-content: inherit !important;     align-items: inherit !important;}
 .transection_icon {margin: auto;} 
-.event_info_heading {text-align:center; }
+.event_info_heading {text-align:center; font-size: 28px; }
 .recieve_on {display: block !important; justify-content: inherit !important;     align-items: inherit !important;} 
 .transection_history li   {display: block !important; justify-content: inherit !important;     align-items: inherit !important;}
 .transection_history li span {display: block !important;     padding-top: 6px;}
@@ -2293,6 +2390,7 @@ ul.photo_selection_list li {
   ul.dashboard_gender {
      padding-top: 0px;
 }
+.cebtn_button {float: none; width: 100%; margin-left: 0;}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 719px) {
@@ -2385,6 +2483,12 @@ display: block;
   top: inherit;
   align-items: center;
   justify-content: center;
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+.past_select_bx select {
+  min-width: inherit;
 }
 }
 @media only screen and (min-width: 320px) and (max-width: 405px) {
