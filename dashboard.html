@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.88.1">
+        <title>Cheezoo</title>
+        <link rel="canonical" href="">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="custom.css" rel="stylesheet">
+        <link href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+     </head>
+  <body class="bg-grey">
+    <div class="main_wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-shadow" aria-label="">
+           <div class="container-fluid container-fluid-position">
+              <a class="navbar-brand" href="#"><img src="images/cheezoo-logo.png"></a>
+              <!-- navbar-toggler -->
+              <p class="dashboard-toggler" id="show"><i class="fa-solid fa-align-justify" data-bs-toggle="offcanvas" data-bs-target="#dashboardcanvas" aria-controls="dashboardcanvas"></i></p>
+              <!-- navbar-toggler -->
+              <div class="d-flex flex-row-reverse orderclass">
+                 <ul class="account-setting">
+                    <li>
+                       <span class="notify-bell dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <i class="far fa-bell"></i>
+                       <span class="badge badge-light">4</span>
+                       </span>
+                       <div class="dropdown-menu dropdown-notification">
+                          <div class="dropdown-item noti-title">
+                             <h5 class="m-0">
+                                <span class="float-end">
+                                <a href="javascript: void(0);" class="text-dark">
+                                <small>Clear All</small>
+                                </a>
+                                </span>Notification
+                             </h5>
+                          </div>
+                          <!-- dropdown-item noti-title -->
+                          <ul class="notify-item">
+                             <li>
+                                <span class="notify-icon notify-color"><i class="fas fa-user"></i></span>
+                                <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+                             </li>
+                             <li>
+                                <span class="notify-icon notify-color"><i class="fas fa-user"></i></span>
+                                <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+                             </li>
+                             <li>
+                                <span class="notify-icon"><img class="img-fluid rounded-circle" src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg"></span>
+                                <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+                             </li>
+                             <li>
+                                <span class="notify-icon notify-color"><i class="fas fa-user"></i></span>
+                                <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+                             </li>
+                          </ul>
+                          <a href="javascript:void(0);" class="notify-all">View All</a>
+                       </div>
+                       <!-- dropdown-menu dropdown-notification -->
+                    </li>
+                    <!-- li -->
+                    <li>
+                       <span class="account-user dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <img class="img-fluid rounded-circle" src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg">
+                       </span>
+                       <div class="dropdown-menu dropdown-account">
+                          <ul class="account-item">
+                             <li>
+                                <span class="account-icon account-color"><i class="fas fa-user"></i></span>
+                                <span class="account-content">My Account</span>
+                             </li>
+                             <li>
+                                <span class="account-icon account-color"><i class="fas fa-cog"></i></span>
+                                <span class="account-content">Settings</span>
+                             </li>
+                             <li>
+                                <span class="account-icon account-color"><i class="far fa-life-ring"></i></span>
+                                <span class="account-content">Support</span>
+                             </li>
+                             <li>
+                                <span class="account-icon account-color"><i class="fas fa-sign-out-alt"></i></span>
+                                <span class="account-content">Logout</span>
+                             </li>
+                          </ul>
+                       </div>
+                       <!-- dropdown-menu dropdown-account -->
+                    </li>
+                 </ul>
+                 <!-- account-setting -->
+              </div>
+              <!-- d-flex -->
+              <!-- <div class="collapse navbar-collapse" id="navbarCollapse">
+                 <ul class="navbar-nav  ml-auto">
+                    <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="#">Find a Photographer</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="#">Be a Photographer</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="#">Resources</a>
+                    </li>
+                 </ul>
+              </div> -->
+              <!-- collapse navbar-collapse  -->
+           </div>
+           <!-- container -->
+        </nav>
+        
+<!-- dashboard starts from here -->
+
+    <div class="container-fluid">
+      <div class="row">
+<!--Side bar starts from here-->
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar" id="sidebar">
+          <div class="sidebar-sticky" id="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                    <i class="fa-regular fa-house-blank"></i>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa-regular fa-list-check"></i>
+                  Event List
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa-regular fa-camera"></i>
+                  Photographers
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa-regular fa-list"></i>
+                  Client List
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa-regular fa-gear"></i>
+                  Setting
+                  <i class="fa-regular fa-angle-down"></i>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+<!-- side bar ends here -->
+
+
+<!-- main content goes here according to side bar -->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 dashboard_content" id="dashboard_content">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3">
+            <h2 class="dashboard_heading">Dashboard</h2>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <div class="btn-group mr-2">
+                <button class="today-btn"><span>Today</span><i class="fa-regular fa-angle-down"></i></button>
+                <div class=" event_active" data-bs-toggle="modal" data-bs-target="#dashboard-popup"><button class="expert-btn">Export PDF</button></div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-main-content">
+            <div class="row">
+                <div class="new_client_entry">
+                <ul class="client-filter">
+                    <li>
+                        <div class="mb-3">
+                        <label class="form-label">Sort By</label>
+                        <select class="form-select">
+                            <option selected></option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                      </div>
+                    </li>
+                    <li>
+                    <div class="mb-3">
+                        <label class="form-label">Status</label>
+                        <input class="form-control">
+                    </div>
+                    </li>
+                    <li>
+                    <div class="mb-3">
+                        <label class="form-label">Month</label>
+                        <input class="form-control">
+                    </div>
+                    </li>
+                    <li>
+                    <div class="mb-3">
+                        <label class="form-label">Year</label>
+                        <input class="form-control">
+                    </div>
+                    </li>
+                </ul>
+                </div>
+                <!-- Client table starts from here -->
+                <div class="clients_table">
+                    <div class="table" id="results">
+                      <div class='theader'>
+                        <div class='table_header bg-white border-0 clients_table_header'>Client Name</div>
+                        <div class='table_header bg-white border-0 clients_table_header'>Email ID</div>
+                        <div class='table_header bg-white border-0 clients_table_header'>Created at</div>
+                        <div class='table_header bg-white border-0 clients_table_header'>Status</div>
+                        <div class='table_header bg-white border-0 clients_table_header'>Action</div>
+                        <div class='table_header bg-white border-0 clients_table_header'>Active</div>
+                      </div>
+                      <div class='table_row bg-grey'>
+                        <div class='table_small'>
+                          <div class='table_cell'>Client Name</div>
+                          <div class='table_cell  border-0'>
+                              <ul class="d-flex aligns-item-center client_profile_pic">
+                                  <li class="client-profile"><span class="client-name" type="button">
+                                    <img src="images/placeholder-1.jpg">
+                                    </span><span class="client-name-content">Ajay Nagar</span></li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class='table_small'>
+                          <div class='table_cell'>Email ID</div>
+                          <div class='table_cell  border-0'>xyz@gmail.com</div>
+                        </div>
+                        <div class='table_small'>
+                          <div class='table_cell'>Created at</div>
+                          <div class='table_cell  border-0'>01/31/2022, 10:00 AM</div>
+                        </div>
+                        <div class='table_small'>
+                          <div class='table_cell'>Status</div>
+                          <div class='table_cell  border-0'><p><span class="green_color tags_padding">Active</span></p></div>
+                        </div>
+                        <div class='table_small'>
+                          <div class='table_cell'>Action</div>
+                          <div class='table_cell  border-0'><i class="fa-regular fa-pencil"></i><i class="fa-regular fa-eye"></i></div>
+                        </div>
+                        <div class='table_small'>
+                            <div class='table_cell'>Active</div>
+                            <div class='table_cell  border-0'>
+                                <p>
+                                    <label class="toggleSwitch nolabel" onclick="">
+                                        <input type="checkbox" checked />
+                                        <span>
+                                            <span>Inactive</span>
+                                            <span>Active</span>
+                                        </span>
+                                        <a></a>
+                                    </label>
+                                </p>
+                                </div>
+                          </div>
+                      </div>
+                      <!-- row-1 -->
+                      <div class='table_row bg-white'>
+                        <div class='table_small'>
+                          <div class='table_cell'>Client Name</div>
+                          <div class='table_cell border-0'>
+                              <ul class="client_profile_pic">
+                                  <li class="client-profile"><span class="client-name" type="button">
+                                    <img src="images/placeholder-1.jpg">
+                                    </span><span class="client-name-content">Ajay Nagar</span></li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class='table_small'>
+                          <div class='table_cell'>Email ID</div>
+                          <div class='table_cell  border-0'>xyz@gmail.com</div>
+                        </div>
+                        <div class='table_small'>
+                          <div class='table_cell'>Created at</div>
+                          <div class='table_cell  border-0'>01/31/2022, 10:00 AM</div>
+                        </div>
+                        <div class='table_small'>
+                          <div class='table_cell'>Status</div>
+                          <div class='table_cell  border-0'><p><span class="red_color tags_padding">Inactive</span></p></div>
+                        </div>
+                        <div class='table_small'>
+                          <div class='table_cell'>Action</div>
+                          <div class='table_cell  border-0'><i class="fa-regular fa-pencil"></i><i class="fa-regular fa-eye"></i></div>
+                        </div>
+                        <div class='table_small'>
+                            <div class='table_cell'>Active</div>
+                            <div class='table_cell  border-0'>
+                                <p>
+                                    <label class="toggleSwitch nolabel" onclick="">
+                                        <input type="checkbox" checked />
+                                        <span>
+                                            <span>Inactive</span>
+                                            <span>Active</span>
+                                        </span>
+                                        <a></a>
+                                    </label>
+                                </p>
+                                </div>
+                          </div>
+                      </div>
+                      <!-- row-2 -->
+                      <div class='table_row bg-grey'>
+                        <div class='table_small'>
+                          <div class='table_cell'>Client Name</div>
+                          <div class='table_cell  border-0'>
+                              <ul class="d-flex aligns-item-center client_profile_pic">
+                                  <li class="client-profile"><span class="client-name" type="button">
+                                    <img src="images/placeholder-1.jpg">
+                                    </span><span class="client-name-content">Ajay Nagar</span></li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class='table_small'>
+                          <div class='table_cell'>Email ID</div>
+                          <div class='table_cell  border-0'>xyz@gmail.com</div>
+                        </div>
+                        <div class='table_small'>
+                          <div class='table_cell'>Created at</div>
+                          <div class='table_cell  border-0'>01/31/2022, 10:00 AM</div>
+                        </div>
+                        <div class='table_small'>
+                          <div class='table_cell'>Status</div>
+                          <div class='table_cell  border-0'><p><span class="green_color tags_padding">Active</span></p></div>
+                        </div>
+                        <div class='table_small'>
+                          <div class='table_cell'>Action</div>
+                          <div class='table_cell  border-0'><i class="fa-regular fa-pencil"></i><i class="fa-regular fa-eye"></i></div>
+                        </div>
+                        <div class='table_small'>
+                            <div class='table_cell'>Active</div>
+                            <div class='table_cell  border-0'>
+                                <p>
+                                    <label class="toggleSwitch nolabel" onclick="">
+                                        <input type="checkbox" checked />
+                                        <span>
+                                            <span>Inactive</span>
+                                            <span>Active</span>
+                                        </span>
+                                        <a></a>
+                                    </label>
+                                </p>
+                                </div>
+                          </div>
+                      </div>
+                      <!-- row-3 -->
+                    </div>
+                      <!-- table_row -->
+                </div>
+                <div class="clients-page">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                          </li>
+                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item" aria-current="page">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                </div>
+                    <!-- Client table starts ends here -->
+
+                  </div>
+            </div>
+        </div>
+        </main>
+<!-- main content ends here -->
+      </div>
+    </div>
+</div>
+<!--Canvas of Dashboard-->
+  <div class="dashboardcanvas offcanvas offcanvas-start" tabindex="-1" id="dashboardcanvas" aria-labelledby="dashboardcanvas">
+    <a class="dashboard-logo" href="#"><img src="images/cheezoo-logo.png"></a>
+    <i class="fa-regular fa-xmark" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+                <i class="fa-regular fa-house-blank"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <i class="fa-regular fa-list-check"></i>
+              Event List
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <i class="fa-regular fa-camera"></i>
+              Photographers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <i class="fa-regular fa-list"></i>
+              Client List
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#">
+                <i class="fa-regular fa-gear"></i>
+              Setting
+            </a>
+          </li>
+        </ul>
+
+</div>
+<!-- Modal -->
+<!-- <div class="modal dashboard-popup" id="dashboard-popup" tabindex="-1" aria-labelledby="dashboard-popup" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+       <form class="row">
+          <div class="col-md-12 mb-4">
+             <label for="" class="form-label">Account Number</label>
+          <input type="text" class="form-control" id="" placeholder="Account Number">
+          </div>
+          <div class="col-md-12 mb-4">
+             <label for="" class="form-label">Bank Select</label>
+             <select id="" class="form-select" placeholder="Bank Select">
+                <option>Bank Select</option>
+             </select>
+          </div>
+       </form>
+    </div>
+    </div>
+    </div> -->
+    <div class="modal fade dashboard-popup" id="dashboard-popup" tabindex="-1" aria-labelledby="dashboard-popup" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="md_title">Export PDF</span>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="row g-3">
+    
+              <div class="col-12 mb-4">
+                <input type="text" class="form-control" id="" placeholder="Name">
+              </div>
+              <div class="col-12 mb-4">
+                <select id="" class="form-select" placeholder="Email">
+                    <option>Select</option>
+                 </select>
+              </div>
+             
+              <div class="col-12">
+                <button type="button" class="form-control btn btn-save">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+<!--Canvas of Dashboard-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> -->
+   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+      });
+   </script>
+  </body>
+</html>
