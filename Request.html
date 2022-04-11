@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.88.1">
+<title>Cheezoo</title>
+<link rel="canonical" href="">
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="custom.css" rel="stylesheet">
+<link href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="main_wrapper">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-shadow" aria-label="">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/cheezoo-logo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex flex-row-reverse orderclass">
+        <ul class="account-setting">
+          <li>
+            <span class="notify-bell dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="far fa-bell"></i>
+              <span class="badge badge-light">4</span>
+          </span>
+          <div class="dropdown-menu dropdown-notification">
+            <div class="dropdown-item noti-title">
+              <h5 class="m-0">
+                  <span class="float-end">
+                      <a href="javascript: void(0);" class="text-dark">
+                          <small>Clear All</small>
+                      </a>
+                  </span>Notification
+              </h5>
+          </div>
+          <!-- dropdown-item noti-title -->
+          <ul class="notify-item">
+              <li>
+                <span class="notify-icon notify-color"><i class="fas fa-user"></i></span>
+                <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+              </li>
+              <li>
+                <span class="notify-icon notify-color"><i class="fas fa-user"></i></span>
+                <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+              </li>
+              <li>
+                <span class="notify-icon"><img class="img-fluid rounded-circle" src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg"></span>
+                <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+              </li>
+              <li>
+                <span class="notify-icon notify-color"><i class="fas fa-user"></i></span>
+                <span class="notify-content">Lorem Ipsum Content... <small class="text-muted">5 hours ago</small> </span>
+              </li>
+            </ul>
+            <a href="javascript:void(0);" class="notify-all">View All</a>
+          </div>
+          <!-- dropdown-menu dropdown-notification -->
+          </li>
+          <!-- li -->
+
+
+          <li>
+            <span class="account-user dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-fluid rounded-circle" src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg">
+            </span>
+            <div class="dropdown-menu dropdown-account">
+            <ul class="account-item">
+                <li>
+                  <span class="account-icon account-color"><i class="fas fa-user"></i></span>
+                  <span class="account-content">My Account</span>
+                </li>
+                <li>
+                  <span class="account-icon account-color"><i class="fas fa-cog"></i></span>
+                  <span class="account-content">Settings</span>
+                </li>
+                <li>
+                  <span class="account-icon account-color"><i class="far fa-life-ring"></i></span>
+                  <span class="account-content">Support</span>
+                </li>
+                <li>
+                  <span class="account-icon account-color"><i class="fas fa-sign-out-alt"></i></span>
+                  <span class="account-content">Logout</span>
+                </li>
+              
+              </ul>
+            </div>
+            <!-- dropdown-menu dropdown-account -->
+          </li>
+
+        </ul>
+        <!-- account-setting -->
+      </div>
+      <!-- d-flex -->
+
+    
+<!-- 
+      <div class="collapse navbar-collapse" id="navbarCollapse" style="">
+        <ul class="navbar-nav  ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Find a Photographer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Be a Photographer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          
+          
+        </ul>
+      </div> -->
+      <!-- collapse navbar-collapse  -->
+
+
+    </div>
+    <!-- container -->
+  </nav>
+  <!-- nav close here -->
+
+<section class="mid-content">
+
+  <!-- Requests part-->
+  <div class="request_bx bg-grey">
+    <div class="request_heading">Request</div>
+  <div class="container">
+    <div class="d-flex flex-row-reverse delete_all_block">
+      <div class="form-check">
+        <div class="past_select_bx">
+            <div class="d-flex align-items-center  justify-content-between past_heading">
+              <span></span> 
+               <span>
+                 <select id="">
+                   <option>Request Received</option>
+                   <option>Request Sent</option>
+                 </select>
+               </span>
+             </div>
+            </div>
+      </div>
+    </div>
+    <div class="d-flex text-muted pt-4 shadow p-3 mb-2 rounded request-box">
+      <span><img src="images/placeholder.jpg" alt="" class="profile-picture"></span>
+        <div class="flex-grow-1 request_text">
+          <p class="pb-3 mb-0 small lh-sm paragraph">
+            <span class="d-block">
+              <span class="person_name">Allan Cooper</span>
+          </span>
+          </p>
+        </div>
+        <!-- flex-fill request_text -->
+        <div class="request_time">
+          <span>
+            <ul class="request pt_53 request_btn_section">
+            <li class="d-flex align-items-center justify-content-end">
+              <span class="d-flex flex-row-reverse">
+                  <button type="button" class="form-control btn request-btn request-btn-first"><i class="fa-regular fa-check"></i> Approve</button>
+              </span>
+              <span class="d-flex flex-row-reverse">
+              <button type="button" class="form-control btn request-btn request-btn-color"><i class="fa-regular fa-xmark"></i> Reject</button>
+              </span>
+              <span class="d-flex flex-row-reverse">
+                <button type="button" class="form-control btn request-btn"><i class="fa-regular fa-message-lines"></i> Chat</button>
+              </span>
+             </li>
+             <!-- li -->
+            </ul>
+        </span>
+        </div>
+  </div>
+   <!-- d-flex text-muted pt-4 shadow p-3 mb-2 rounded request-box -->
+
+   <div class="d-flex text-muted pt-4 shadow p-3 mb-2 rounded request-box">
+    <span><img src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg" alt="" class="profile-picture"></span>
+      <div class="flex-grow-1 request_text">
+        <p class="pb-3 mb-0 small lh-sm paragraph">
+          <span class="d-block">
+            <span class="person_name">John Carter</span> 
+        </span>
+        </p>
+      </div>
+      <!-- flex-fill request_text -->
+      <div class="request_time">
+        <span>
+            <ul class="request pt_53 request_btn_section">
+            <li class="d-flex align-items-center justify-content-end">
+              <span class="d-flex flex-row-reverse">
+                  <button type="button" class="form-control btn request-btn request-btn-first"><i class="fa-regular fa-check"></i> Approve</button>
+              </span>
+              <span class="d-flex flex-row-reverse">
+              <button type="button" class="form-control btn request-btn request-btn-color"><i class="fa-regular fa-xmark"></i> Reject</button>
+              </span>
+              <span class="d-flex flex-row-reverse">
+                <button type="button" class="form-control btn request-btn"><i class="fa-regular fa-message-lines"></i> Chat</button>
+              </span>
+             </li>
+             <!-- li -->
+            </ul>
+        </span>
+      </div>
+</div>
+ <!-- d-flex text-muted pt-4 shadow p-3 mb-2 rounded request-box -->
+
+
+ <div class="d-flex text-muted pt-4 shadow p-3 mb-2 rounded request-box">
+ <span> <img src="images/placeholder.jpg" alt="" class="profile-picture"></span>
+    <div class="flex-grow-1 request_text">
+      <p class="pb-3 mb-0 small lh-sm paragraph">
+        <span class="d-block">
+          <span class="person_name">Richard Grey</span>
+      </span>
+      </p>
+    </div>
+    <!-- flex-fill request_text -->
+    <div class="request_time">
+        <span>
+            <ul class="request pt_53 request_btn_section">
+            <li class="d-flex align-items-center justify-content-end">
+              <span class="d-flex flex-row-reverse">
+                  <button type="button" class="form-control btn request-btn request-btn-first"><i class="fa-regular fa-check"></i> Approve</button>
+              </span>
+              <span class="d-flex flex-row-reverse">
+              <button type="button" class="form-control btn request-btn request-btn-color"><i class="fa-regular fa-xmark"></i> Reject</button>
+              </span>
+              <span class="d-flex flex-row-reverse">
+                <button type="button" class="form-control btn request-btn"><i class="fa-regular fa-message-lines"></i> Chat</button>
+              </span>
+             </li>
+             <!-- li -->
+            </ul>
+        </span>
+    </div>
+</div>
+<!-- d-flex text-muted pt-4 shadow p-3 mb-2 rounded request-box -->
+
+<div class="d-flex text-muted pt-4 shadow p-3 mb-2 rounded request-sent-box">
+   <span> <img src="images/placeholder.jpg" alt="" class="profile-picture"></span>
+      <div class="flex-grow-1 request-sent_text">
+        <p class="pb-3 mb-0 small lh-sm paragraph">
+          <span class="d-block">
+            <span class="person_name">Allan Cooper<p class="card-text tags_past green_color green_color_position">Request Accepted</p></span>
+        </span>
+        </p>
+      </div>
+      <!-- flex-fill request_text -->
+      <div class="request-sent_time">
+        <span>
+            <ul class="request pt_53 request_btn_section">
+            <li class="d-flex align-items-center justify-content-end">
+              <span class="d-flex flex-row-reverse">
+                  <button type="button" class="form-control btn request-btn request-btn-first"><i class="fa-solid fa-image-polaroid-user"></i> Book Now</button>
+              </span>
+              <span class="d-flex flex-row-reverse">
+              <button type="button" class="form-control btn request-btn request-btn-color"><i class="fa-regular fa-rectangle-xmark"></i> Cancel Requests</button>
+              </span>
+              <span class="d-flex flex-row-reverse">
+                <button type="button" class="form-control btn request-btn"><i class="fa-regular fa-message-lines"></i> Chat</button>
+              </span>
+             </li>
+             <!-- li -->
+            </ul>
+        </span>
+      </div>
+</div>
+ <!-- d-flex text-muted pt-4 shadow p-3 mb-2 rounded request-box -->
+
+ <div class="d-flex text-muted pt-4 shadow p-3 mb-2 rounded request-sent-box">
+  <span><img src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-4.jpg" alt="" class="profile-picture"></span>
+    <div class="flex-grow-1 request-sent_text">
+      <p class="pb-3 mb-0 small lh-sm paragraph">
+        <span class="d-block">
+          <span class="person_name">John Carter<p class="card-text tags_past orange_color green_color_position">Request Pending</p></span>
+      </span>
+      </p>
+    </div>
+    <!-- flex-fill request_text -->
+    <div class="request-sent_time">
+      <span>
+            <ul class="request pt_53 request_btn_section">
+            <li class="d-flex align-items-center justify-content-end">
+              <span class="d-flex flex-row-reverse">
+                  <button type="button" class="form-control btn request-btn request-btn-first"><i class="fa-solid fa-image-polaroid-user"></i> Book Now</button>
+              </span>
+              <span class="d-flex flex-row-reverse">
+              <button type="button" class="form-control btn request-btn request-btn-color"><i class="fa-regular fa-rectangle-xmark"></i> Cancel Requests</button>
+              </span>
+              <span class="d-flex flex-row-reverse">
+                <button type="button" class="form-control btn request-btn"><i class="fa-regular fa-message-lines"></i> Chat</button>
+              </span>
+             </li>
+             <!-- li -->
+            </ul>
+        </span>
+    </div>
+</div>
+<!-- d-flex text-muted pt-4 shadow p-3 mb-2 rounded request-box -->
+
+
+<div class="d-flex text-muted pt-4 shadow p-3 mb-2 rounded request-sent-box">
+<span><img src="images/placeholder.jpg" alt="" class="profile-picture"></span>
+  <div class="flex-grow-1 request-sent_text">
+    <p class="pb-3 mb-0 small lh-sm paragraph">
+      <span class="d-block">
+        <span class="person_name">Richard Grey<p class="card-text tags_past green_color green_color_position">Request Accepted</p></span>
+    </span>
+    </p>
+  </div>
+  <!-- flex-fill request_text -->
+  <div class="request-sent_time">
+        <span>
+            <ul class="request pt_53 request_btn_section">
+            <li class="d-flex align-items-center justify-content-end">
+              <span class="d-flex flex-row-reverse">
+                  <button type="button" class="form-control btn request-btn request-btn-first"><i class="fa-solid fa-image-polaroid-user"></i> Book Now</button>
+              </span>
+              <span class="d-flex flex-row-reverse">
+              <button type="button" class="form-control btn request-btn request-btn-color"><i class="fa-regular fa-rectangle-xmark"></i> Cancel Requests</button>
+              </span>
+              <span class="d-flex flex-row-reverse">
+                <button type="button" class="form-control btn request-btn"><i class="fa-regular fa-message-lines"></i> Chat</button>
+              </span>
+             </li>
+             <!-- li -->
+            </ul>
+        </span>
+  </div>
+</div>
+    <!-- find_photographer -->
+
+
+
+</div>
+<!-- container -->
+</div>
+<!-- request_bx -->
+  </section>
+  <!-- mid-content bg-grey -->
+
+  <footer>
+    <div class="ft-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col info-col">
+           <div class="ft-logo"><img src="images/cheezoo-logo-footer.png"></div>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+             labore et dolore magna aliqua. </p>
+             <div class="app-icon"><img src="images/ios-logo.png"></div>
+             <div><img src="images/google-play-logo.png"></div>
+          </div>
+          <!-- col info-col -->
+          <div class="col link-col">
+           <div class="link-heading"> Quick links</div>
+          <ul class="ft-link">
+           <li><a href="">Home</a></li>
+           <li><a href="">Who we are</a></li>
+           <li><a href="">join</a></li>
+           <li><a href="">blog</a></li>
+           <li><a href="">gallery</a></li>
+          </ul>
+           </div>
+           <!-- col info-col -->
+           <div class="col link-col">
+            <div class="link-heading">Navigation</div>
+           <ul class="ft-link">
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Privacy Policy</a></li>
+           </ul>
+            </div>
+            <!-- col info-col -->
+            <div class="col subscribe-col">
+              <div class="subscribe-heading">Subscribe Now</div>
+              <form>
+                  <input type="text" class="form-control border-radius-0" id="" placeholder="">
+                  <button type="submit" class="form-control btn btn-subscribe border-radius-0 mb-3">Subscribe</button>
+              </form>
+              <ul class="social-media">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              </ul>
+            </div>
+             <!-- col info-col -->
+        </div>
+        <!-- row -->
+        <div class="row copyright-row">
+          <p>Copright 2021 Cheezoo</p>
+        </div>
+      </div>
+      <!-- container -->
+    </div>
+    <!-- ft-wrapper -->
+  </footer>
+  <!-- footer -->
+</div>
+<!-- main_wrapper close here -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
+  </script>
+</html>
